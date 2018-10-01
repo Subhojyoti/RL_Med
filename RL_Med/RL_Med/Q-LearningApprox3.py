@@ -1,8 +1,9 @@
 '''
-Created on Sep 27, 2018
+Created on Sep 29, 2018
 
 @author: subhojyotimukherjee
 '''
+
 
 
 
@@ -14,6 +15,7 @@ import numpy as np
 import sys
 import sklearn.pipeline
 import sklearn.preprocessing
+import math
 
 if "../" not in sys.path:
   sys.path.append("../") 
@@ -47,6 +49,12 @@ featurizer = sklearn.pipeline.FeatureUnion([
         ("rbf2", RBFSampler(gamma=2.0, n_components=100)),
         ("rbf3", RBFSampler(gamma=1.0, n_components=100)),
         ("rbf4", RBFSampler(gamma=0.5, n_components=100))
+        #("rbf5", RBFSampler(gamma=0.25, n_components=1000)),
+        #("rbf6", RBFSampler(gamma=0.05, n_components=100)),
+        #("rbf7", RBFSampler(gamma=0.01, n_components=100)),
+        #("rbf8", RBFSampler(gamma=1.25, n_components=100)),
+        #("rbf9", RBFSampler(gamma=1.75, n_components=100)),
+        #("rbf10", RBFSampler(gamma=2.25, n_components=100))
         ])
 featurizer.fit(scaler.transform(observation_examples))
 
@@ -63,11 +71,10 @@ class Estimator():
         # into the features, but this way it's easier to code up.
         self.models = []
         for _ in range(env.action_space.n):
-            model = SGDRegressor(learning_rate="constant", max_iter = 10, tol = None)
-            # We need to call partial_fit once to initialize the model
-            # or we get a NotFittedError when trying to make a prediction
-            # This is quite hacky.
+            model = SGDRegressor(learning_rate="constant", shuffle=True, max_iter = 5, tol = None)
+            
             model.partial_fit([self.featurize_state(env.reset())], [0])
+            #model.fit([self.featurize_state(env.reset())], [0])
             self.models.append(model)
     
     def featurize_state(self, state):
@@ -76,6 +83,7 @@ class Estimator():
         """
         scaled = scaler.transform([state])
         featurized = featurizer.transform(scaled)
+        #print(featurized[0], len(featurized[0]))
         return featurized[0]
     
     def predict(self, s, a=None):
@@ -105,8 +113,11 @@ class Estimator():
         Updates the estimator parameters for a given state and action towards
         the target y.
         """
+        
+        
         features = self.featurize_state(s)
         self.models[a].partial_fit([features], [y])
+        #self.models[a].fit([features], [y])
 
 
 
@@ -125,7 +136,7 @@ def make_epsilon_greedy_policy(estimator, epsilon, nA):
         the probabilities for each action in the form of a numpy array of length nA.
     
     """
-    def policy_fn(observation):
+    def policy_fn(observation, epsilon):
         A = np.ones(nA, dtype=float) * epsilon / nA
         q_values = estimator.predict(observation)
         best_action = np.argmax(q_values)
@@ -134,10 +145,80 @@ def make_epsilon_greedy_policy(estimator, epsilon, nA):
     return policy_fn
 
 
+def run_last_epsiode(stats):
+    
+    epsilon = 0.0
+    epsilon_decay = 1.0
+    discount_factor = 1.0
+    num_episodes = 10
+    
+    
+    for i_episode in range(num_episodes):
+        
+        policy = make_epsilon_greedy_policy(estimator, epsilon * epsilon_decay**i_episode, env.action_space.n)
+        
+        # Only used for SARSA, not Q-Learning
+        next_action = None
+        state = env.reset()
+        
+        observation = env.reset()
+        last_reward = stats.episode_rewards[i_episode - 1]
+        # One step in the environment        
+        for t in itertools.count():
+                        
+            # Choose an action to take
+            # If we're using SARSA we already decided in the previous step
+            
+            
+            #epsilon = 1.0/math.sqrt(t+1.0)
+            if next_action is None:
+                action_probs = policy(state, epsilon)
+                action = np.random.choice(np.arange(len(action_probs)), p=action_probs)
+            else:
+                action = next_action
+            
+            # Take a step
+            next_state, reward, done, _ = env.step(action)
+            
+            
+            
+            
+            
+            
+            
+            # TD Update
+            q_values_next = estimator.predict(next_state)
+            
+            # Use this code for Q-Learning
+            # Q-Value TD Target
+            
+            td_target = (reward + discount_factor * np.max(q_values_next))
+            #print(estimator.predict(state)[action])
+            
+            # Use this code for SARSA TD Target for on policy-training:
+            # next_action_probs = policy(next_state)
+            # next_action = np.random.choice(np.arange(len(next_action_probs)), p=next_action_probs)             
+            # td_target = reward + discount_factor * q_values_next[next_action]
+            
+            # Update the function approximator using our target
+            
+            print("\rStep {} @ Episode {}/{} ({})".format(t, i_episode + 1, num_episodes, last_reward), end="")
+                
+            if done:
+                break
+                
+            state = next_state
+            env.render()
+            print(observation)
+        
+        observation, reward, done, info = env.step(action)
+        print(reward, action)
+        if done:
+            print("Episode finished after {} timesteps".format(t+1))
+            break
 
 
-
-def q_learning(env, estimator, num_episodes, discount_factor=1.0, epsilon=0.01, epsilon_decay=1.0):
+def q_learning(env, estimator, num_episodes, discount_factor=1.0, epsilon=0.0, epsilon_decay=1.0):
     """
     Q-Learning algorithm for fff-policy TD control using Function Approximation.
     Finds the optimal greedy policy while following an epsilon-greedy policy.
@@ -163,7 +244,7 @@ def q_learning(env, estimator, num_episodes, discount_factor=1.0, epsilon=0.01, 
     
     
     
-    
+    flag = True
     
     
     for i_episode in range(num_episodes):
@@ -187,19 +268,24 @@ def q_learning(env, estimator, num_episodes, discount_factor=1.0, epsilon=0.01, 
         history = []
         tderror = []
         
+        
         # One step in the environment        
         for t in itertools.count():
                         
             # Choose an action to take
             # If we're using SARSA we already decided in the previous step
+            
+            #epsilon = 1.0/math.sqrt(t+1.0)
             if next_action is None:
-                action_probs = policy(state)
+                action_probs = policy(state, epsilon)
                 action = np.random.choice(np.arange(len(action_probs)), p=action_probs)
             else:
                 action = next_action
             
             # Take a step
             next_state, reward, done, _ = env.step(action)
+            
+            
             
             #Save history
             history.append([state,action,reward,next_state])
@@ -215,9 +301,10 @@ def q_learning(env, estimator, num_episodes, discount_factor=1.0, epsilon=0.01, 
             
             # Use this code for Q-Learning
             # Q-Value TD Target
-            td_target = reward + discount_factor * np.max(q_values_next)
+            
+            td_target = (reward + discount_factor * np.max(q_values_next))
             #print(estimator.predict(state)[action])
-            tderror.append(td_target - estimator.predict(state)[action])
+            tderror.append(abs(td_target - estimator.predict(state)[action]))
             
             # Use this code for SARSA TD Target for on policy-training:
             # next_action_probs = policy(next_state)
@@ -225,7 +312,18 @@ def q_learning(env, estimator, num_episodes, discount_factor=1.0, epsilon=0.01, 
             # td_target = reward + discount_factor * q_values_next[next_action]
             
             # Update the function approximator using our target
-            estimator.update(state, action, td_target)
+            if flag == True:
+                #print(stats.episode_rewards[i_episode - 1])
+                   
+                estimator.update(state, action, td_target)
+            else:
+                take = []
+                for i in range(0,20):
+                    take.append(stats.episode_rewards[i_episode - i-1])
+                    
+                if np.mean(take) >= -95.0:
+                    print("update")
+                    estimator.update(state, action, td_target)
             
             print("\rStep {} @ Episode {}/{} ({})".format(t, i_episode + 1, num_episodes, last_reward), end="")
                 
@@ -235,14 +333,17 @@ def q_learning(env, estimator, num_episodes, discount_factor=1.0, epsilon=0.01, 
             state = next_state
             
         stats.episode_tderror[i_episode] = np.mean(tderror)   
-        
+        if stats.episode_rewards[i_episode] >= -95.0:
+            print("Reached")
+            flag = False
         
         f = open('history/QLearning/Eps'+str(i_episode + 1)+'.txt', 'w')
         for r in range(0,len(history)):
             f.write(str(list(history[r][0])) + ", " + str(history[r][1]) + ", " + str(history[r][2]) + ", " + str(list(history[r][3]))+"\n")
         f.close()
         
-        
+    
+    run_last_epsiode(stats)    
     
     return stats
 
@@ -259,7 +360,7 @@ estimator = Estimator()
 # Note: For the Mountain Car we don't actually need an epsilon > 0.0
 # because our initial estimate for all states is too "optimistic" which leads
 # to the exploration of all states.
-stats = q_learning(env, estimator, 10000, epsilon=0.01)
+stats = q_learning(env, estimator, 1000, epsilon=0.0)
 
 
 
@@ -267,6 +368,8 @@ stats = q_learning(env, estimator, 10000, epsilon=0.01)
 
 plotting.plot_cost_to_go_mountain_car(env, estimator)
 plotting.plot_episode_stats(stats, smoothing_window=25)
+
+
 
 
 
