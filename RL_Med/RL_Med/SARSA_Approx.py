@@ -196,13 +196,16 @@ def run_last_epsiode(stats, estimator):
             # Use this code for Q-Learning
             # Q-Value TD Target
             
-            td_target = (reward + discount_factor * np.max(q_values_next))
+            #td_target = (reward + discount_factor * np.max(q_values_next))
             #print(estimator.predict(state)[action])
             
             # Use this code for SARSA TD Target for on policy-training:
-            # next_action_probs = policy(next_state)
-            # next_action = np.random.choice(np.arange(len(next_action_probs)), p=next_action_probs)             
-            # td_target = reward + discount_factor * q_values_next[next_action]
+            next_action_probs = policy(next_state, epsilon)
+            next_action = np.random.choice(np.arange(len(next_action_probs)), p=next_action_probs)             
+            
+            td_target = reward + discount_factor * q_values_next[next_action]
+            
+            estimator[i_episode].update(state, action, td_target)
             
             # Update the function approximator using our target
             
