@@ -101,7 +101,7 @@ class Estimator():
             
         """
         features = self.featurize_state(s)
-        #print(features, len(features))
+        print(features, len(features))
         
         if not a:
             return np.array([m.predict([features])[0] for m in self.models])

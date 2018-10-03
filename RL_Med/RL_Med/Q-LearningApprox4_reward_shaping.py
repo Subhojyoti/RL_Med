@@ -14,6 +14,7 @@ import itertools
 import matplotlib
 import numpy as np
 import sys
+
 import sklearn.pipeline
 import sklearn.preprocessing
 import math
@@ -298,8 +299,8 @@ def q_learning(env, estimator, num_episodes, discount_factor=1.0, epsilon=0.0, e
             
             #print(next_state)
             
-            if next_state[0] > 0.4:
-                path_reward += 0.01
+            if next_state[0] >= 0.5:
+                path_reward += 0.9
                 print(path_reward)
             
             # TD Update
@@ -345,8 +346,8 @@ def q_learning(env, estimator, num_episodes, discount_factor=1.0, epsilon=0.0, e
         
         #if stats.episode_tderror[i_episode - 1] < stats.episode_tderror[i_episode]:
         #if (np.mean(take) > np.mean(take1)) and flag == True:
-        #if (np.mean(take) > np.mean(take1)) and i_episode < 1500:
-        if i_episode < 1500:    
+        if (np.mean(take) > np.mean(take1)) and i_episode < 1500:
+        #if i_episode < 1500:    
             
             num = random.uniform(0,1)
             
@@ -373,10 +374,12 @@ def q_learning(env, estimator, num_episodes, discount_factor=1.0, epsilon=0.0, e
             estimator.update(state, action, td_target)
         
         elif(i_episode >= 1500 and flag == True):
-              
+            
+            print("reached") 
             take2 = []
             for i in range(0,i_episode+1):
                 take2.append(stats.episode_rewards[i])
+                #take2.append(stats.episode_tderror[i])
                 
             eps = np.argmax(take2)
             
