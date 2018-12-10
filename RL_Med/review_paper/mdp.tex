@@ -1,0 +1,22 @@
+
+
+A RL setting is usually characterized by a MDP or Markov Decision Process. A MDP is defined by the tuple $\lbrace \S,\A, P, d_R, d_{0},\gamma\rbrace$ where each element of the tuple is defined as:-
+\begin{enumerate}
+\item $\S$ is the finite state space such that at each time step $t$ the patient is in state $S_t \in \S$. This state space can be discrete or continuous depending on the modeling assumption of the learner.
+\item $\A$ is the action space such that at each time t, the agent takes
+action $\A_t \in \A$, which causes it to change its state from $S_t$ to $S_{t+1}$. Again this action space can be discrete or continuous depending on the modeling assumption of the learner.
+\item $P$ is the transition function which describes how the state of the environment changes. So, $P(s,a,s') = Pr(S_{t+1}=s' | S_{t} = s, A_{t} = a)$
+\item $d_R$ denotes the process of reward generation when the state of the agent changes.
+\item $d_0$ denotes the initial state distribution of the agent.
+\item The discount factor, $\gamma$, determines the relative weight of immediate and long-term rewards. 
+\end{enumerate}
+
+The goal of the RL agent is to learn a policy, i.e. a mapping $\pi : \S \times \A \rightarrow [0,1]$  from states to actions, that maximizes the expected discounted return $G_t$
+
+\begin{align*}
+J(\pi) &= \mathbb{E}[\sum_{t=0}^{\infty}G_t | \pi] = \mathbb{E}[\sum_{t=0}^{\infty}\gamma^t R_t | \pi]
+\end{align*}
+
+where $R_t$ is all the accumulated rewards by the agent and $T$ denotes the time horizon. 
+
+%$T$ denotes the time horizon. We use capitalized calligraphic notations to denote sets while individual elements within the set is denoted by non-capitalized alphabets. $\A$ denotes the finite set of actions  with individual action indexed by $a$ such that $a=1,\ldots, K$. We assume that the total number of actions is constant throughout the time horizon and $|\A|=K$. The state of an 

@@ -1,0 +1,142 @@
+%\subsection{Proposed Algorithms}
+
+We first introduce the policy UCB-CPD in Algorithm \ref{alg:UCBCPD} which is an adaptive algorithm based on the standard UCB1 \citep{auer2002finite} approach. UCB-CPD pulls an arm at every timestep as like UCB1. It calls upon the Changepoint Detection (CPD)  subroutine in Algorithm \ref{alg:CPD} for detecting a changepoint. Note, that like CD-UCB, and CUSUM the UCB-CPD also calls upon the changepoint detection subroutine at \emph{every} timestep. UCB-CPD is an anytime algorithm which does not require the horizon as an input parameter or to tune its parameter $\delta$. This is in stark contrast with CD-UCB, CUSUM, DUCB or SWUCB, that require the knowledge of $G$ or $T$ for optimal performance.
+
+\noindent
+\begin{minipage}[r][\dimexpr 0.34\textheight-2\fboxsep-2\fboxrule\relax][t]{\dimexpr .5\textwidth-2\fboxsep-2\fboxrule\relax}
+    \noindent
+    \fbox{%
+    \begin{minipage}[c][\dimexpr 0.34\textheight-2\fboxsep-2\fboxrule\relax][t]{\dimexpr \textwidth-2\fboxsep-2\fboxsep\relax}%
+        
+	\centering
+     \captionof{algorithm}{UCB with Changepoint Detection (UCB-CPD)}
+
+\label{alg:UCBCPD}
+\begin{algorithmic}[1]
+\State {\bf Input:} $\delta > 0$; 
+\State {\bf Initialization:} $t_s := 1$, $t_p := 1$.
+%\State {\bf New Expert:} Start a new expert $f_{t_s}$ and add it to $\M$.
+\State Pull each arm once
+\For{$t=K+1,..,T$}
+\State Pull arm $j\in\argmax_{i\in\A}\bigg\lbrace \hat{\mu}_{i,t_s:t_p} + \sqrt{\dfrac{2\log( t)}{N_{i,t_s:t_p}}}\bigg\rbrace$, observe reward $X_{j,t}$.
+\State Update $\hat{\mu}_{j,t_s:t_p} := \hat{\mu}_{j,t_s:t_p} + X_{j,t}$, $N_{j,t_s:t_p}:=N_{j,t_s:t_p} + 1.$
+\State $t_p := t_p + 1.$
+\If{ (CPD($t_s$, $t_p$, $\delta$)) == True}
+\State {\bf Restart:} Set $\hat{\mu}_{i,t_s:t_p} := 0$, $N_{i,t_s:t_p}:=0$, $\forall i \in\A$, $t_s := 1$, $t_p := 1$. 
+\State Pull each arm once.
+\EndIf
+\EndFor
+\end{algorithmic}        
+    \end{minipage}
+    }
+\end{minipage}
+    %\vfill
+    
+\begin{minipage}[r][\dimexpr 0.18\textheight-2\fboxsep-2\fboxrule\relax][t]{\dimexpr .5\textwidth-2\fboxsep-2\fboxrule\relax}
+    \noindent
+    \fbox{%
+    \begin{minipage}[c][\dimexpr 0.18\textheight-2\fboxsep-2\fboxrule\relax][t]{\dimexpr \textwidth-2\fboxsep-2\fboxsep\relax}%
+        
+		\centering
+     \captionof{algorithm}{Changepoint Detection($t_s$, $t_p$, $\delta$) (CPD)}
+\label{alg:CPD}
+\begin{algorithmic}[1]
+\State \textbf{Definition: } $S_{i,t_s:t'} := \sqrt{\dfrac{\log({4t^2}/{\delta})}{2N_{i,t_s:t'}}}$.
+\For{$i=1,..,K$}
+\For{$t' = t_s ,..,t_p$}
+\If{$\big(\hat{\mu}_{i,t_s:t'} + S_{i,t_s:t'} < \hat{\mu}_{i,t'+1:t_p} - S_{i,t'+1:t_p}\big)$  or $\big(\hat{\mu}_{i,t_s:t'} + S_{i,t_s:t'} < \hat{\mu}_{i,t'+1:t_p} - S_{i,t'+1:t_p}\big)$}
+\State Return True
+%\Else{$\hat{r}_{i,t_s , t'} - \sqrt{\dfrac{(n_{i,t_s:t'}+1)\log(\frac{(n_{i,t_s:t'}+1)}{\sqrt{\delta}})}{2n_{i,t_s:t'}^2}} > \hat{r}_{i,t'+1:t_p} + \sqrt{\dfrac{(n_{i,t'+1:t}+1)\log(\frac{(n_{i,t'+1:t}+1)}{\sqrt{\delta}})}{2n_{i,t'+1:t}^2}}$}
+%\State Return True
+\EndIf
+\EndFor
+\EndFor
+\end{algorithmic}        
+\end{minipage}
+}
+\end{minipage}
+    %\vfill
+%\noindent
+
+
+\begin{minipage}[r][\dimexpr 0.22\textheight-2\fboxsep-2\fboxrule\relax][t]{\dimexpr .5\textwidth-2\fboxsep-2\fboxrule\relax}
+    \noindent
+    \fbox{%
+    \begin{minipage}[c][\dimexpr 0.22\textheight-2\fboxsep-2\fboxrule\relax][t]{\dimexpr \textwidth-2\fboxsep-2\fboxsep\relax}%
+	\centering
+\captionof{algorithm}{Changepoint Detection Improved($m,L_m,\alpha,\psi$) (CPDI)}
+\label{alg:CPDI}
+\begin{algorithmic}[1]
+\State \textbf{Definition:}$S_{i,t_s:L_{m}}=\sqrt{\dfrac{\alpha\log(\psi T\epsilon_m^2)}{2N_{i,t_s:L_{m}}}}$.
+\For{$i=1,..,K$}
+\For{$m' = 1 ,\ldots,m$}
+\If{$\big(\hat{\mu}_{i,t_s:L_{m'}}  + S_{i,t_s:L_{m'}} 
+ < \hat{\mu}_{i,L_{m'}+1:L_{m}} - S_{i,L_{m'+1}:L_{m}}\big)$ or $\big(\hat{\mu}_{i,t_s:L_{m'}} - S_{i,t_s:L_{m'}} > \hat{\mu}_{i,L_{m'}+1:L_{m}} + S_{i,L_{m'+1}:L_{m}}\big)$}
+\State Return True
+\EndIf
+\EndFor
+\EndFor
+\end{algorithmic}
+    \end{minipage}
+    }
+\end{minipage}%
+\vfill
+
+Next, we introduce the actively adaptive Improved Changepoint Detector policy, referred to as ImpCPD in Algorithm \ref{alg:ImpCPD}. This algorithm is motivated from UCB-Improved in \citet{auer2010ucb} and is a phase-based algorithm. To detect changepoints, ImpCPD calls upon an additional sub-routine, the Changepoint Detection Improved (CPDI) sub-routine in Algorithm \ref{alg:CPDI} at the end of every phase. Unlike UCB-Improved, ImpCPD does not pull all arms equally at every timestep.  Rather between two phases it pulls the arm that maximizes the upper confidence bound as like UCB1 in \citet{auer2002finite}.
+
+\noindent
+\begin{minipage}[r][\dimexpr 0.7\textheight-2\fboxsep-2\fboxrule\relax][t]{\dimexpr 0.69\textwidth-2\fboxsep-2\fboxrule\relax}
+    \noindent
+    \fbox{
+\begin{minipage}[c][\dimexpr 0.7\textheight-2\fboxsep-2\fboxrule\relax][t]{\dimexpr 0.69\textwidth-2\fboxsep-2\fboxrule\relax}%
+    
+    \centering
+ \captionof{algorithm}{Improved Changepoint Detector (ImpCPD)}
+\label{alg:ImpCPD}
+\begin{algorithmic}[1]
+\State {\bf Input:} Time horizon $T$, $0<\gamma\leq 1$.
+\State {\bf Initialization:} $B_{0}:=\mathcal{A}$, $m:=0$, $\epsilon_{0}:=1$, $\psi :=\dfrac{T}{K^2\log K}$, $\alpha := \dfrac{3}{2}$.
+\begin{align*}
+& M := \left\lfloor \frac{1}{2}\log_{1+\gamma} \frac{T}{e}\right\rfloor, \hspace*{2mm}
+\ell_{0} :=\left\lceil \frac{\log(\psi T\epsilon_{0}^2)}{2\epsilon_{0}} \right\rceil,
+\\
+& L_{0} :=K\ell_{0}\text{, }t_s :=1\text{, }t_p :=1.
+\end{align*}
+\State {\bf Definition:} $S_{i,t_s:t_p}:=\sqrt{\dfrac{\alpha\log(\psi T\epsilon_m^2)}{2N_{i,t_s:t_p}}}$.
+\For{$t=K+1,..,T$}
+\State Pull arm $j\in\argmax_{i\in\A}\bigg\lbrace \hat{\mu}_{i,t_s:t_p} + S_{i,t_s:t_p}\bigg\rbrace$, observe reward $X_{j,t}$.
+\State $t:= t+1, t_p := t_p + 1$. 
+\If{$t\geq L_{m}$ and $m \leq M$}
+\If{CPDI($m,L_m,\alpha,\psi$)==True}
+\State \textbf{Restart:} $B_{m}:=\A$; $m:=0$. 
+%\State $B_{m}=\A$; $m=0$; 
+\State Set $N_{i,t_s:t_p} := 0, \forall i\in\A$.
+\State Set $\hat{\mu}_{i,t_s:t_p}:=0,\forall i\in\A$.
+\State  $t_s := 1$, $t_p := 1$.
+\State Pull each arm once.
+\Else{
+\For{$i\in\A$}
+\If{$\hat{\mu}_{i,t_s:t_p} + S_{i,t_s:t_p}  < \max_{j\in\A}\lbrace\hat{\mu}_{j,t_s:t_p} - S_{j,t_s:t_p}\rbrace$}
+\State $|B_m| := |B_m|-1$\hspace*{4mm} 
+\EndIf
+\EndFor
+\State \textbf{Reset Parameters: } 
+\State $\epsilon_{m+1}:=\frac{\epsilon_{m}}{(1+\gamma)}$.
+\State $B_{m+1}:= B_{m}$.
+\State $\ell_{m+1}:=\left\lceil \dfrac{\log(\psi T\epsilon_{m}^2)}{2\epsilon_{m}} \right\rceil$.
+\State $L_{m+1}:= t + |B_{m+1}|\ell_{m+1}$.
+\State $m := m+1.$}
+\EndIf
+\EndIf
+\EndFor
+\end{algorithmic}
+\end{minipage}
+}
+\hfill
+\end{minipage}
+\vfill
+
+Also, ImpCPD employs pseudo arm elimination like CCB \citep{liu2016modification} algorithm such that a sub-optimal arm $i$ is never actually eliminated but the active list $B_m$ is just modified to control the phase length. This helps ImpCPD adapt quickly because this is a global changepoint scenario and for some sub-optimal arm the changepoint maybe detected very fast. Another important divergence from UCB-Improved is the exploration parameter $0<\gamma\leq 1$ that controls how often the changepoint detection sub-routine CPDI is called. After every phase, we reduce $\epsilon_m$  by a factor of $\left( 1+\gamma\right)$ instead of halving it (as like UCB-Improved) so that the number of pulls allocated for exploration to each arm is lesser than UCB-Improved. The CPDI sub-routine at the end of the $m-th$ phase scans statistics so that if there is a significant difference between the sample mean of any two slices then it raises an alarm. 
+
+
+\textbf{Running time of two algorithms:} UCB-CPD calls the changepoint detection at every timestep, and ImpCPD calls upon the sub-routine only at end of phases.Hence, for a fixed horizon $T$ and $K$ arms, UCB-CPD calls the changepoint detection subroutine $O(KT)$ times while ImpCPD calls the changepoint detection $O(K\log T)$ times, thereby substantially reducing the costly operation of calculating the changepoint detection statistics. By appropriately modifying the confidence interval, this reduction comes at no additional cost in the order of regret (see Discussion \ref{dis:Corollary:2_1})

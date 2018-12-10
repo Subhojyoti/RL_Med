@@ -1,0 +1,154 @@
+\begin{thebibliography}{}
+
+\bibitem[Bertsekas and Tsitsiklis, 1996]{bertsekas1996neuro}
+Bertsekas, D.~P. and Tsitsiklis, J.~N. (1996).
+\newblock Neuro-dynamic programming (optimization and neural computation
+  series, 3).
+\newblock {\em Athena Scientific}, 7:15--23.
+
+\bibitem[Ernst et~al., 2005]{DBLP:journals/jmlr/ErnstGW05}
+Ernst, D., Geurts, P., and Wehenkel, L. (2005).
+\newblock Tree-based batch mode reinforcement learning.
+\newblock {\em Journal of Machine Learning Research}, 6:503--556.
+
+\bibitem[Ernst et~al., 2006]{ernst2006clinical}
+Ernst, D., Stan, G.-B., Goncalves, J., and Wehenkel, L. (2006).
+\newblock Clinical data based optimal sti strategies for hiv: a reinforcement
+  learning approach.
+\newblock In {\em Decision and Control, 2006 45th IEEE Conference on}, pages
+  667--672. IEEE.
+
+\bibitem[Escandell{-}Montero et~al.,
+  2014]{DBLP:journals/artmed/Escandell-MonteroCMGBSMVSGM14}
+Escandell{-}Montero, P., Chermisi, M., Mart{\'{\i}}nez{-}Mart{\'{\i}}nez,
+  J.~M., G{\'{o}}mez{-}Sanch{\'{\i}}s, J., Barbieri, C., Soria{-}Olivas, E.,
+  Mari, F., Vila{-}Franc{\'{e}}s, J., Stopper, A., Gatti, E., and
+  Mart{\'{\i}}n{-}Guerrero, J.~D. (2014).
+\newblock Optimization of anemia treatment in hemodialysis patients via
+  reinforcement learning.
+\newblock {\em Artificial Intelligence in Medicine}, 62(1):47--60.
+
+\bibitem[Gottesman et~al., 2018]{DBLP:journals/corr/abs-1805-12298}
+Gottesman, O., Johansson, F.~D., Meier, J., Dent, J., Lee, D., Srinivasan, S.,
+  Zhang, L., Ding, Y., Wihl, D., Peng, X., Yao, J., Lage, I., Mosch, C.,
+  Lehman, L.~H., Komorowski, M., Faisal, A., Celi, L.~A., Sontag, D., and
+  Doshi{-}Velez, F. (2018).
+\newblock Evaluating reinforcement learning algorithms in observational health
+  settings.
+\newblock {\em CoRR}, abs/1805.12298.
+
+\bibitem[Guez et~al., 2008]{DBLP:conf/aaai/GuezVAP08}
+Guez, A., Vincent, R.~D., Avoli, M., and Pineau, J. (2008).
+\newblock Adaptive treatment of epilepsy via batch-mode reinforcement learning.
+\newblock In {\em Proceedings of the Twenty-Third {AAAI} Conference on
+  Artificial Intelligence, {AAAI} 2008, Chicago, Illinois, USA, July 13-17,
+  2008}, pages 1671--1678.
+
+\bibitem[Holt et~al., 2011]{holt2011textbook}
+Holt, R., Cockram, C., Flyvbjerg, A., and Goldstein, B. (2011).
+\newblock {\em Textbook of Diabetes}.
+\newblock Wiley.
+
+\bibitem[Jiang and Li, 2015]{DBLP:journals/corr/JiangL15}
+Jiang, N. and Li, L. (2015).
+\newblock Doubly robust off-policy evaluation for reinforcement learning.
+\newblock {\em CoRR}, abs/1511.03722.
+
+\bibitem[Nemati et~al., 2016]{DBLP:conf/embc/NematiGC16}
+Nemati, S., Ghassemi, M.~M., and Clifford, G.~D. (2016).
+\newblock Optimal medication dosing from suboptimal clinical examples: {A} deep
+  reinforcement learning approach.
+\newblock In {\em 38th Annual International Conference of the {IEEE}
+  Engineering in Medicine and Biology Society, {EMBC} 2016, Orlando, FL, USA,
+  August 16-20, 2016}, pages 2978--2981.
+
+\bibitem[Ng and Russell, 2000]{DBLP:conf/icml/NgR00}
+Ng, A.~Y. and Russell, S.~J. (2000).
+\newblock Algorithms for inverse reinforcement learning.
+\newblock In {\em Proceedings of the Seventeenth International Conference on
+  Machine Learning {(ICML} 2000), Stanford University, Stanford, CA, USA, June
+  29 - July 2, 2000}, pages 663--670.
+
+\bibitem[Padmanabhan et~al., 2014]{DBLP:conf/adprl/PadmanabhanMH14}
+Padmanabhan, R., Meskin, N., and Haddad, W.~M. (2014).
+\newblock Closed-loop control of anesthesia and mean arterial pressure using
+  reinforcement learning.
+\newblock In {\em 2014 {IEEE} Symposium on Adaptive Dynamic Programming and
+  Reinforcement Learning, {ADPRL} 2014, Orlando, FL, USA, December 9-12, 2014},
+  pages 1--8.
+
+\bibitem[Prasad et~al., 2017]{DBLP:journals/corr/PrasadCCDE17}
+Prasad, N., Cheng, L., Chivers, C., Draugelis, M., and Engelhardt, B.~E.
+  (2017).
+\newblock A reinforcement learning approach to weaning of mechanical
+  ventilation in intensive care units.
+\newblock {\em CoRR}, abs/1704.06300.
+
+\bibitem[Precup et~al., 2000]{DBLP:conf/icml/PrecupSS00}
+Precup, D., Sutton, R.~S., and Singh, S.~P. (2000).
+\newblock Eligibility traces for off-policy policy evaluation.
+\newblock In {\em Proceedings of the Seventeenth International Conference on
+  Machine Learning {(ICML} 2000), Stanford University, Stanford, CA, USA, June
+  29 - July 2, 2000}, pages 759--766.
+
+\bibitem[Raghu et~al., 2018]{DBLP:journals/corr/abs-1807-01066}
+Raghu, A., Gottesman, O., Liu, Y., Komorowski, M., Faisal, A., Doshi{-}Velez,
+  F., and Brunskill, E. (2018).
+\newblock Behaviour policy estimation in off-policy policy evaluation:
+  Calibration matters.
+\newblock {\em CoRR}, abs/1807.01066.
+
+\bibitem[Raghu et~al., 2017]{DBLP:journals/corr/RaghuKCSG17}
+Raghu, A., Komorowski, M., Celi, L.~A., Szolovits, P., and Ghassemi, M. (2017).
+\newblock Continuous state-space models for optimal sepsis treatment - a deep
+  reinforcement learning approach.
+\newblock {\em CoRR}, abs/1705.08422.
+
+\bibitem[Rubinstein, 1981]{DBLP:books/lib/Rubinstein81}
+Rubinstein, R.~Y. (1981).
+\newblock {\em Simulation and the Monte Carlo method}.
+\newblock Wiley series in probability and mathematical statistics. Wiley.
+
+\bibitem[Singh and Sutton, 1996]{DBLP:journals/ml/SinghS96}
+Singh, S.~P. and Sutton, R.~S. (1996).
+\newblock Reinforcement learning with replacing eligibility traces.
+\newblock {\em Machine Learning}, 22(1-3):123--158.
+
+\bibitem[Sutton and Barto, 1998]{sutton1998reinforcement}
+Sutton, R.~S. and Barto, A.~G. (1998).
+\newblock {\em Reinforcement learning: An introduction}.
+\newblock MIT press.
+
+\bibitem[Thomas and Brunskill, 2016]{DBLP:conf/icml/ThomasB16}
+Thomas, P.~S. and Brunskill, E. (2016).
+\newblock Data-efficient off-policy policy evaluation for reinforcement
+  learning.
+\newblock In {\em Proceedings of the 33nd International Conference on Machine
+  Learning, {ICML} 2016, New York City, NY, USA, June 19-24, 2016}, pages
+  2139--2148.
+
+\bibitem[Vapnik et~al., 1996]{DBLP:conf/nips/VapnikGS96}
+Vapnik, V., Golowich, S.~E., and Smola, A.~J. (1996).
+\newblock Support vector method for function approximation, regression
+  estimation and signal processing.
+\newblock In {\em Advances in Neural Information Processing Systems 9, NIPS,
+  Denver, CO, USA, December 2-5, 1996}, pages 281--287.
+
+\bibitem[Watkins and Dayan, 1992]{DBLP:journals/ml/WatkinsD92}
+Watkins, C. J. C.~H. and Dayan, P. (1992).
+\newblock Technical note q-learning.
+\newblock {\em Machine Learning}, 8:279--292.
+
+\bibitem[Weng et~al., 2017]{DBLP:journals/corr/abs-1712-00654}
+Weng, W., Gao, M., He, Z., Yan, S., and Szolovits, P. (2017).
+\newblock Representation and reinforcement learning for personalized glycemic
+  control in septic patients.
+\newblock {\em CoRR}, abs/1712.00654.
+
+\bibitem[Zhao et~al., 2011]{zhao2011reinforcement}
+Zhao, Y., Zeng, D., Socinski, M.~A., and Kosorok, M.~R. (2011).
+\newblock Reinforcement learning strategies for clinical trials in nonsmall
+  cell lung cancer.
+\newblock {\em Biometrics}, 67(4):1422--1433.
+
+\end{thebibliography}

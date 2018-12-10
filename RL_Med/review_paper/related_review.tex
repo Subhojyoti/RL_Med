@@ -1,0 +1,485 @@
+We first review the papers related to sepsis, ICU patients, Lung Cancer, Epilepsy, Heparin Dosing treatment.
+
+\begin{table}[!th]
+%\begin{center}
+%\vspace*{-1.5em}
+\caption{Review of papers}
+\label{tab:review1}
+\begin{tabular}{|p{3 em}|p{3 em}|p{3 em}|p{3em}|p{6em}|p{10em}|p{5 em}|p{6em}|}
+\toprule
+Paper  & Disease  & Algo type & MDP info & Contributions  & Approach & Conclusions/ Observations  & Limitations \& Future Works \\
+\hline
+\citet{DBLP:journals/corr/RaghuKCSG17} & Sepsis 
+& 
+Dueling Double-Deep Q Network (Off-policy algorithm)
+& 
+\textbf{1)} Continuous States
+\textbf{2)} Discrete Actions
+&  
+\textbf{1)} Deep RL models with continuous-state spaces, improving on earlier work with discretized models.
+\textbf{2)} Identify treatment policies that could improve patient outcomes
+\textbf{3)} Investigate the learned policies for clinical interpretability
+&
+\textbf{1)}  Q-values are frequently overestimated in practice,
+leading to incorrect predictions and poor policies. So, uses Double-Deep Q Network, where the target Q values are determined using actions found through a feed-forward pass on the main network, as opposed to being determined directly from the target network. \textbf{2)} For finding optimal treatments, they separate the influence on Q-values of a) a patient’s underlying state being good (e.g. near discharge), and b) the correct action being taken at that timestep. So, uses a Dueling Q Network, where the action-value function for a given (s, a) pair, Q(s, a), is split into separate value and advantage streams. The value stream represents the quality of the current state, and the advantage represents the quality of the chosen action. Training such a model can be slow as reward signals are sparse and only available on terminal timesteps. They use Prioritized Experience Replay to accelerate learning by sampling a transition from the training set with probability proportional to the previous error observed.
+& 
+Their policies learned that vasopressors may
+not be a good first response to sepsis and maybe harmful in some populations.
+& 
+\textbf{1)} The reward assignment in this model is quite sparse, with rewards/penalties only being issued at terminal states. There is scope for improvement here; one idea could be to use a clinically informed reward function based on patient blood counts to help learn better policies. \textbf{2)} Another approach could be to use inverse RL techniques to derive a suitable reward function based on the actions of experts (the physicians). 
+   \\\midrule
+\end{tabular}
+\vspace*{-2em}
+%\end{tabular}
+%\end{center}
+\end{table}   
+
+
+
+\begin{table}[!th]
+%\begin{center}
+%\vspace*{-1.5em}
+\caption{Review of papers}
+\label{tab:review2}
+\begin{tabular}{|p{3 em}|p{3 em}|p{3 em}|p{3em}|p{6em}|p{10em}|p{5 em}|p{6em}|}
+\toprule
+Paper  & Disease  & Algo type & MDP info & Contributions  & Approach & Conclusions/ Observations  & Limitations \& Future Works \\
+\hline
+\citet{DBLP:journals/corr/abs-1712-00654} & Sepsis 
+& 
+Off-policy evaluation using policy iteration for $\pi^*$, $\pi^r$ from real trajectories.
+& 
+\textbf{1)} Discrete State Space, with patient conditions being noted at regular intervals.
+\textbf{2)} Discrete Actions with continuous glucose level being categorized into 11 bins.
+&  
+\textbf{1} They hypothesize that the patient states, glycemic values, and patient outcomes can be modeled by a Markov decision process (MDP) whose parameters and optimal policies can be learned from data. \textbf{2)} They develop a decision support for glycemic control to target specific ranges of serum glucose that optimizes outcomes and is  personalized for each patient depending on their specific circumstances.
+%optimize outcomes for patients personalized for each patient depending on their specific circumstances.
+%
+%They do not recommend specific interventions such as insulin oral hypoglycemic agent administration to achieve the target goals, but focus on finding the optimal targets. Thus the action  formulation is choosing the best glycemic target under the circumstances of the patient at that time. They  leaving the choice of agents and doses to achieve that target to the clinicians. This simplification avoids the need to model the variability of patients’ glycemic responses to actual insulin doses and avoids data problems with incorrectly recorded dose timing.
+&
+\textbf{1)} To learn the patient state representation they use two types of
+feature representations: raw interpretable clinical features and the feature representation generated
+by a sparse autoencoder. After they generate the state representation, they categorize the patients into 500 clusters by using k-means clustering algorithm. \textbf{2} Policy Iteration algorithm is used to learn $\pi^*$ which is the behavior policy. The estimation policy $\pi^r$ is evaluated based on real trajectories where they  limited the action space of each state to only the one with the highest probability in the transition matrix  instead of exploring all possible actions. \textbf{3)} $\pi^r$ and real mortality rate were used
+to obtain the estimated \textit{mortality–expected return function}, which reveals the relationship between
+expected return and the estimated 90-day mortality rate. This function was used to compute and
+compare the estimated mortality rate of real and optimal glycemic trajectories obtain by $\pi^r$ and $\pi^*$
+& 
+\textbf{1)} If clinicians chosen dosages can actually achieve the target glucose
+levels chosen by the policy then it may reduce the
+mortality rate of septic patients. \textbf{2)} Their mortality–expected return function shows that using raw feature representation or learned feature representation using autoencoder may yield a good result, that is both are close to mortality rate calculated from the real data.
+%result indicate that the learned expected return reflects the real patient status well. They compute the empirically estimated mortality rate of the real glycemic trajectory using the mortality–expected return function acquired from raw and encoded patient state representations. The average expected 90-day mortality rate of the testing
+%dataset is 31.00\% using the raw feature representation, and 31.08\% using the sparse autoencoder
+latent representation. Both are close to the mortality rate calculated from the real data (31.17\%).
+& 
+\textbf{1)} State space is discrete, which is an issue. \textbf{2)} The off policy evaluation needs to be better.
+   \\\midrule
+\end{tabular}
+\vspace*{-2em}
+%\end{tabular}
+%\end{center}
+\end{table}   
+
+
+\begin{table}[!th]
+%\begin{center}
+%\vspace*{-1.5em}
+\caption{Review of papers}
+\label{tab:review3}
+\begin{tabular}{|p{3 em}|p{3 em}|p{3 em}|p{3em}|p{6em}|p{8em}|p{7 em}|p{6em}|}
+\toprule
+Paper  & Disease  & Algo type & MDP info & Contributions  & Approach & Conclusions/ Observations  & Limitations \& Future Works \\
+\hline
+\citet{DBLP:journals/corr/abs-1805-12298}  \textbf{This paper is very impt. as it is like a review paper detailing the challenges}& Sepsis 
+& 
+Comapre Per-Decision Importance Sampling (PDIS), Weighted Per-decision Importance sampling (WPDIS), Doubly-Robust (DR), and Weighted Doubly-Robust (WDR).
+& 
+\textbf{1)} Discrete State Space, with patient conditions being noted at regular intervals.
+\textbf{2)} Discretized treatment IV fluids and vasopressors each into 5 bins, the first representing
+no treatment (zero dosage), and the rest representing quartiles of the actions prescribed by
+physicians. Hence total 25 actions.
+\textbf{3} Reward is zero till the last action.
+&  
+\textbf{1)} Data needs to be processed correctly otherwise the susceptibility of AI algorithms to learn harmful policies due to artifacts in the data increases. \textbf{2)} The algorithm learns to recognize patients who need additional care \textit{but} lack of options in actions makes the algorithm choose intubation which is not recommended. \textbf{3)} They observed the learned policies recommend minimal treatment for patients with very high SOFA (Sequential Organ Failure Assessment) score. This recommendation is faulty but algorithms predict this because the mortality rate for this subpopulation is high and hence the policy have not learnt what to do.
+&
+\textbf{1)} The weighted methods (WPDIS, WDR) trade increased bias for reduced variance, while the per decision methods reduce variance by computing the weights in a way that does not
+penalize the probability of a current action based on future ones. \textbf{2)} Doubly robust methods (DR, WDR) leverage an approximate model of the reward function to reduce variance. \textbf{3)} All of the policies have relatively close median values and large variances, making it hard to draw definitive conclusions. The model-based WDR estimator uses a model to reduce variance, but also inherits the optimistic bias of the model. The model-free WPDIS estimator also suffers from large variances. \textbf{4)} To the patients belonging to a lower risk group, the WPDIS method suffers from a selection bias. It predicts a no-treatment policy to these group as they have lower mortality rate.
+& 
+\textbf{1)}  State representation need to account for any variables that might confound estimates of outcomes under the policy. \textbf{2)} It's impossible to account for the entire history of the patient and determine/avoid such confounding variables.  Instead, domain knowledge by an expert/clinical researcher must be applied to take care of this. This is especially a difficult problem to solve in sequential setting.
+& 
+\textbf{1)} If outcomes are sparse then performance suffers. \textbf{2)} High variance in the performance of Importance sampling algorithms as some actions which are never tested has close to zero probability. \textbf{3)} Sufficient confidence on the action by the policies cannot be guaranteed.
+   \\\midrule
+\end{tabular}
+\vspace*{-2em}
+%\end{tabular}
+%\end{center}
+\end{table}   
+
+
+
+\begin{table}[!th]
+%\begin{center}
+%\vspace*{-1.5em}
+\caption{Review of papers}
+\label{tab:review4}
+\begin{tabular}{|p{3 em}|p{3 em}|p{3 em}|p{3em}|p{6em}|p{8em}|p{7 em}|p{6em}|}
+\toprule
+Paper  & Disease  & Algo type & MDP info & Contributions  & Approach & Conclusions/ Observations  & Limitations \& Future Works \\
+\hline
+\citet{DBLP:journals/corr/abs-1807-01066} & Sepsis 
+& 
+Per Horizon Weighted Importance sampling (PHWIS), and Per Horizon Weighted Doubly-Robust (PHWDR).
+& 
+\textbf{1)} Continuous State Space (Toy domain)
+\textbf{2)} Discrete Action Space (Toy Domain)
+&  
+\textbf{1)} This work evaluates the sensitivity of off-policy evaluation
+to calibration errors in the learned behaviour policy. They show how powerful parametric models such as neural networks can result in highly uncalibrated behaviour policy models on a real-world medical dataset
+&
+\textbf{1)} They use PHWIS and PHWDR instead of step-wise IS and DR to reduce variance. \textbf{2)} To split the horizon for estimation and behavior policy, two methods are considered, random and intervention splitting. Random splitting randomly chooses half the trajectories for each policies, while intervention splitting splits patients who have been treated with vasopressors (or not).  \textbf{3)} To compare between $\pi_e$ and $\pi_b$ the use Mean square estimation.
+& 
+\textbf{1)} Uncalibrated behaviour policy models can result in
+highly inaccurate OPE in a simple, controlled navigation
+domain.
+\textbf{2)} In a real-world sepsis management domain, powerful
+parametric models such as deep neural networks produce
+highly uncalibrated probability estimates. Neural networks can produce overconfident and incorrect probability estimates of actions.
+\textbf{3)} A simple, non-parametric, k-nearest neighbours model
+is shown to be better calibrated than all the other parametric models
+in their medical domain, and using this as a behaviour
+policy model results in superior OPE.
+& 
+\textbf{1)} The proposed
+procedure can be used in other situations where the
+behaviour policy is unknown, and could improve the quality
+of OPE estimates.
+   \\\midrule
+\end{tabular}
+\vspace*{-2em}
+%\end{tabular}
+%\end{center}
+\end{table}   
+
+
+\begin{table}[!th]
+%\begin{center}
+%\vspace*{-1.5em}
+\caption{Review of papers}
+\label{tab:review5}
+\begin{tabular}{|p{3 em}|p{3 em}|p{3 em}|p{3em}|p{6em}|p{6em}|p{6 em}|p{9em}|}
+\toprule
+Paper  & Disease  & Algo type & MDP info & Contributions  & Approach & Conclusions/ Observations  & Limitations \& Future Works \\
+\hline
+\citet{DBLP:journals/corr/PrasadCCDE17} & ICU patient 
+& 
+Fitted Q-Iteration wither Extra Trees and Neural Network as function  approximators .
+& 
+\textbf{1)} Continuous State Space 
+\textbf{2)} Discrete Action Space 
+\textbf{3)} They do not consider this as a POMDP
+&  
+\textbf{1)} This work develops a decision support tool to alert clinicians when a patient is ready for weaning (taken off mechanical ventilation). \textbf{2)} It uses available patient information in the 
+ICU setting and proposes the off-policy Fitted Q-Iteration (FQI) algorithm with different regressors for optimal treatment.
+&
+\textbf{1)} Simple Q-Learning using 3 layers of hidden layer fails to learn propoerly. \textbf{2)} They use FQI (with batch mode learning) with Regressor as Extra Trees for Function approximation and this performs well. \textbf{3)} Neural FQI with 3 hidden layers for function approximation also performs well in this dataset. Neural FQI achieves a four-fold gain in performance as compared to FQI with extra trees. 
+& 
+\textbf{1)} They show that the algorithm
+is capable of extracting meaningful indicators in recommending extubation time and sedation levels, on average outperforming clinical
+practice in terms of regulation of vitals and reintubations for patients.
+& 
+\textbf{1)} Policies must show some invariance to reward shaping. The current methods display considerable sensitivity to the relative weighting
+of various components of the feedback received after each
+transition. A more principled approach to the design of the reward function, for example by applying techniques in inverse
+reinforcement learning \citep{DBLP:conf/icml/NgR00}, can help
+tackle this sensitivity. 
+\textbf{2)} Effective communication of the best action,
+expected reward, and the associated uncertainty, calls
+for a probabilistic approach to estimation of the Q-function,
+which can perhaps be addressed by pairing regressors such
+as Gaussian processes with Fitted Q-iteration.
+\textbf{3)} Increase the sophistication of the state space by handling
+long term effects more explicitly using second-order
+statistics of vitals \textbf{4)} Modeling the system as a partially observable MDP, in which observations map to some underlying state
+space. \textbf{5)} Extending the discrete action space to continuous action space so that continuous
+dosages of specific drug types and settings such as ventilator
+modes can be taken into account. 
+   \\\midrule
+\end{tabular}
+\vspace*{-2em}
+%\end{tabular}
+%\end{center}
+\end{table}   
+
+
+\begin{table}[!th]
+%\begin{center}
+%\vspace*{-1.5em}
+\caption{Review of papers}
+\label{tab:review6}
+\begin{tabular}{|p{5 em}|p{4 em}|p{3 em}|p{3em}|p{6em}|p{6em}|p{6 em}|p{6em}|}
+\toprule
+Paper  & Disease  & Algo type & MDP info & Contributions  & Approach & Conclusions/ Observations  & Limitations \& Future Works \\
+\hline
+\citet{DBLP:conf/adprl/PadmanabhanMH14} & Anesthesia of ICU patient with respiratory  disease symdromes
+& 
+Modified Watkin's Q-learning (on-policy).
+& 
+\textbf{1)} Discrete State Space 
+\textbf{2)} Discrete Action Space 
+&  
+\textbf{1)} This work develop a RL-based closed-
+loop anesthesia controller using the bispectral index (BIS) as a control variable while concurrently accounting for mean
+arterial pressure (MAP). \textbf{2)} This work uses these two parameters to control propofol infusion rates to
+regulate the BIS and MAP within a desired range. 
+&
+\textbf{1)} The states of the system
+should be observable for decision making. \textbf{2)} The states of the  system are based on the measurable parameters BIS and MAP. \textbf{3)} The error is measured based on  a weighted combination of the error of the BIS(error) and MAP(error). This reduces the computational complexity of the RL algorithm and
+consequently the controller processing time\textbf{4)} Finally Q-Learning is used to learn the sequence of infusion rates that results in a minimum BIS(error) and MAP(error). 
+& 
+\textbf{1)} In this paper, a reinforcement learning-based approach
+for the simultaneous control of sedation and hemodynamic
+parameter management is proposed using the regulation of
+the anesthetic drug propofol. 
+\textbf{2)} Simulation results using 30 patient models with varying pharmacokinetic and pharma-codynamic parameters show that the proposed RL control strategy is promising in designing closed-loop controllers for ICU sedation to regulate sedation and hemodynamic pa-
+rameters simultaneously. \textbf{3)} The simulations show
+that the RL-based, closed-loop control is robust to system
+uncertainties. 
+& 
+\textbf{1)}  Discrete State and Action Space is a drawback
+\textbf{2)} Too less number of patients in the experiment, so doubtful conclusions can be drawn.
+   \\\midrule
+\end{tabular}
+\vspace*{-2em}
+%\end{tabular}
+%\end{center}
+\end{table}   
+
+\begin{table}[!th]
+%\begin{center}
+%\vspace*{-1.5em}
+\caption{Review of papers}
+\label{tab:review7}
+\begin{tabular}{|p{3 em}|p{3 em}|p{3 em}|p{3em}|p{6em}|p{9em}|p{6 em}|p{6em}|}
+\toprule
+Paper  & Disease  & Algo type & MDP info & Contributions  & Approach & Conclusions/ Observations  & Limitations \& Future Works \\
+\hline
+\citet{zhao2011reinforcement} & Treating Non-Small Cell Lung Cancer (NSCLC)
+& 
+Q-learning with SVR used for function approximation (on-policy).
+& 
+\textbf{1)} Discrete State Space 
+\textbf{2)} Discrete Action Space 
+&  
+\textbf{1)} This work presents an adaptive reinforcement learning approach to discover optimal individualized treatment
+regimens for patients with advanced NSCLC. \textbf{2)} Q-learning is used to learn an optimal regimen from patient data generated from the clinical reinforcement trial.
+%complexity of the problem of selecting optimal compounds for first- and second-line treatments based on prognostic factors, another primary goal is to determine the optimal time to initiate second-line therapy, either immediately or delayed after induction therapy, yielding the longest overall survival time. 
+%to successfully handle the complex fact of heterogeneity in treatment across individuals as well as right-censored survival data, we modify the support vector regression (SVR) approach \citep{DBLP:conf/nips/VapnikGS96} within a Q-learning framework to fit potentially nonlinear Q-functions for each of the two decision times (before first line and before second line). 
+%In addition, a second, confirmatory trial with a phase III structure is proposed to be conducted after this first trial to validate the optimal individualized therapy in comparison to standard care and/or other valid alternatives.
+&
+\textbf{1)}The proposed clinical reinforcement trial for NSCLC involves a randomization of patients among the different therapies in first and second-line treatments, as well as randomization of second-line initiation time. This design enables estimation of optimal individualized treatment regimes. \textbf{2)} Next, reinforcement learning is used to analyze the resulting data. They use Q-Learning with a modified SVR \citep{DBLP:conf/nips/VapnikGS96} to fit nonlinear Q-functions for each of the two decision times (before first line and before second line). This is required to handle the complex fact of heterogeneity in treatment across individuals as well as right-censored survival data. \textbf{3)} In addition, a second, confirmatory trial with a phase III structure is conducted after the first trial to validate the optimal individualized therapy.
+& 
+\textbf{1)} They believe that Q-functions in clinical applications will be too complex for para-metric regression and that semi-parametric and non-parametric regression approaches, such as -SVR-C, is needed.
+& 
+\textbf{1)} Future work includes giving a confidence set for the resulting treatment regimens and associated Q-functions
+\textbf{2)} How to determine an appropriate sample size for a clinical reinforcement trial to reliably obtain treatment regimen that is very close to the true optimal regimen.
+   \\\midrule
+\end{tabular}
+\vspace*{-2em}
+%\end{tabular}
+%\end{center}
+\end{table}   
+
+\begin{table}[!th]
+%\begin{center}
+%\vspace*{-1.5em}
+\caption{Review of papers}
+\label{tab:review8}
+\begin{tabular}{|p{3 em}|p{3 em}|p{3 em}|p{3em}|p{6em}|p{6em}|p{6 em}|p{9em}|}
+\toprule
+Paper  & Disease  & Algo type & MDP info & Contributions  & Approach & Conclusions/ Observations  & Limitations \& Future Works \\
+\hline
+\citet{DBLP:journals/artmed/Escandell-MonteroCMGBSMVSGM14} &  Anemia treatment in Hemodialysis patients
+& 
+Fitted Q-Iteration algorithm with Extremely Randomized trees.
+& 
+\textbf{1)} Discrete State Space 
+\textbf{2)} Discrete Action Space 
+&  
+\textbf{1)} The methodology proposed in this work uses the algorithm fit-
+ted Q iteration to learn a policy of ESA administration from a set of medical records. The features employed to define the MDP model
+are extracted in part from the laboratory tests and in part from a
+clustering procedure of the patient’s main attributes. In order to
+test the methodology, a series of experiments has been conducted
+using a computational model that simulates the response of the
+patients. The performance has been assessed against the algorithm
+Q-learning and a standard protocol of dose adjustment.
+&
+\textbf{1)} The Gaussian RBF network with fixed bases is employed to approximate the Q-function. This requires the definition of the number of
+Gaussian functions, their centers and standard deviations. This process typically requires trial and error experimentation with various configurations. 
+& 
+\textbf{1)} In this paper, a reinforcement learning-based approach
+for the simultaneous control of sedation and hemodynamic
+parameter management is proposed using the regulation of
+the anesthetic drug propofol. 
+\textbf{2)} Simulation results using 30 patient models with varying pharmacokinetic and pharma-codynamic parameters show that the proposed RL control strategy is promising in designing closed-loop controllers for ICU sedation to regulate sedation and hemodynamic pa-
+rameters simultaneously. \textbf{3)} The simulations show
+that the RL-based, closed-loop control is robust to system
+uncertainties. 
+& 
+\textbf{1)}  Discrete State and Action Space is a drawback
+\textbf{2)} Too less number of patients in the experiment, so doubtful conclusions can be drawn.
+   \\\midrule
+\end{tabular}
+\vspace*{-2em}
+%\end{tabular}
+%\end{center}
+\end{table}   
+
+
+\begin{table}[!th]
+%\begin{center}
+%\vspace*{-1.5em}
+\caption{Review of papers}
+\label{tab:review9}
+\begin{tabular}{|p{3 em}|p{3 em}|p{3 em}|p{3em}|p{6em}|p{6em}|p{6 em}|p{9em}|}
+\toprule
+Paper  & Disease  & Algo type & MDP info & Contributions  & Approach & Conclusions/ Observations  & Limitations \& Future Works \\
+\hline
+\citet{DBLP:conf/aaai/GuezVAP08} & Epilepsy
+& 
+Fitted-Q Iteration (on-policy).
+& 
+\textbf{1)} Discrete State Space 
+\textbf{2)} Discrete Action Space 
+&  
+\textbf{1)} This paper examines the problem of applying reinforcement
+learning technology to optimize control strategies for
+deep-brain electrical stimulation in the treatment of epilepsy. \textbf{2)}
+In this case, acquiring large amounts of patient data is extremely
+expensive and invasive. Therefore they use of batch reinforcement learning techniques
+to learn from in vitro studies of stimulation. 
+&
+\textbf{1)} Informally, the learning problem can be formulated as
+follows: at every moment in time, given some information
+about what happened to the signal previously (our state), we
+need to decide which stimulation action we should choose
+(if any) so as to minimize seizures now and in the future. \textbf{2)} The fitted Q iteration algorithm requires a supervised regression algorithm to learn the Q-functions. In this paper they use Extremely Randomized trees.
+& 
+\textbf{1)} Their results show that by using reinforcement
+learning, they are able to reduce the incidence of seizures
+by 25\%, compared to the current best stimulation strategies
+in the neuroscience literature (and 60\% compared to when
+there is no stimulation).
+& 
+\textbf{1)}  Discrete State and Action Space is a drawback
+\textbf{2)} Some of the important questions and future directions noted  by them are mentioned here:- How should we quantify performance
+of adaptive strategies? How we can learn from very
+little training data? Can we design ”safe” exploration policies,
+with formal guarantees on worse-case performance?
+How can we re-use data, or learned policies, between different
+patients? 
+   \\\midrule
+\end{tabular}
+\vspace*{-2em}
+%\end{tabular}
+%\end{center}
+\end{table}   
+
+\begin{table}[!th]
+%\begin{center}
+%\vspace*{-1.5em}
+\caption{Review of papers}
+\label{tab:review10}
+\begin{tabular}{|p{3 em}|p{3 em}|p{3 em}|p{3em}|p{6em}|p{9em}|p{6 em}|p{6em}|}
+\toprule
+Paper  & Disease  & Algo type & MDP info & Contributions  & Approach & Conclusions/ Observations  & Limitations \& Future Works \\
+\hline
+\citet{DBLP:conf/embc/NematiGC16} & Heparin Dosing
+& 
+Discriminative Hidden Markov Model (DHMM) for state
+estimation. Within the fitted Q-learning framework the Q-function is represented by a neural network. (off-policy)
+& 
+\textbf{1)} Discrete State Space 
+\textbf{2)} Discrete Action Space 
+&  
+\textbf{1)} This work tries to infer an optimal dosing strategy that
+accounts for both the activated partial thromboplastin time (aPTT) level, and evolving patient physiological condition. \text{2)}To accomplish this inference, they train a RL model (using DHMM and Neural FQI) using the time series of several common clinical measurements within the patient’s electronic medical record (EMR).
+&
+\textbf{1)} The objective of the RL medication dosing agent is to
+learn a dosing policy that maximizes the overall fraction of
+time a given patient stays within his/her therapeutic aPTT
+range. \textbf{2)} Since the actual physiological state of the patient is at best only partially observed, the agent has to infer both the state
+of the patient and an optimal policy from sample trajectories
+of its interaction with the environment. \textbf{3)} When optimizing over a large patient cohort, a stochastic optimization
+approach—using mini-batches with a few iterations per batch and a momentum term—yielded improved generalization
+performance with significant speed up. \textbf{4)} Hyper-parameters of
+the DHMM and the neural network representing the policy
+(such the number of layers and nodes) were tuned using
+Bayesian Optimization.
+& 
+\textbf{1)} The RL agent’s recommendation starts slightly above the population mean for heparin and then converges to the population mean,
+which is likely to bring patients within their therapeutic range
+more quickly. \textbf{2)} They further tested this hypothesis, and found that patients whose administered heparin trajectory most closely followed the RL agent’s policy could on average expect a positive reward after just a few adjustment and stay within range.
+%we grouped each instance of heparin administration according to its distance from the dosage recommended by our trained RL agent. Thus, a distance of zero indicates that the clinically administered
+%dose matched the RL agent’s recommendation. The testing
+%set results presented in Fig. 2(b) shows that, on average
+%and consistently over time, following the recommendations
+%of the RL agent (red line) results in the best long-term
+%performance. In fact, while the expected reward over all
+%dosing trajectories in our cohort is negative, patients whose
+%administered heparin trajectory most closely followed the RL
+%agent’s policy could on average expect a positive reward after
+%just a few adjustment.
+& 
+\textbf{1)} Whether the suboptimal heparin dosing we observed were from intentional actions on the part of the clinician, mistakes, or simply due to a lack of adherence to hospital guidelines are beyond our ability to investigate with the dataset at hand. This points at one of the major challenges of retrospective analysis of clinical big data; the rational for
+treatment decisions are often unknown, and some features
+which may be important for understanding outcomes may
+be missing, most likely not at random.
+   \\\midrule
+\end{tabular}
+\vspace*{-2em}
+%\end{tabular}
+%\end{center}
+\end{table}   
+
+\begin{table}[!th]
+%\begin{center}
+%\vspace*{-1.5em}
+\caption{Review of papers}
+\label{tab:review11}
+\begin{tabular}{|p{3 em}|p{3 em}|p{3 em}|p{3em}|p{6em}|p{6em}|p{6 em}|p{9em}|}
+\toprule
+Paper  & Disease  & Algo type & MDP info & Contributions  & Approach & Conclusions/ Observations  & Limitations \& Future Works \\
+\hline
+\citet{ernst2006clinical} & HIV infected patient
+& 
+fitted Q iteration
+& 
+\textbf{1)} Discrete State Space 
+\textbf{2)} Discrete Action Space 
+&  
+\textbf{1)} This work computes optimal structured treatment interruption strategies for HIV infected patients. They show that reinforcement learning may be useful to extract such strategies directly from clinical data, without the need of an accurate mathematical model of HIV
+infection dynamics. 
+&
+\textbf{1)} They use batch-mode supervised learning Extra-Trees algorithm \citep{geurts2006extremely}. This algorithm builds a model in the form of the average
+prediction of an ensemble of regressions trees obtained by
+randomization. 
+& 
+\textbf{1)} Trial-and error approaches were chosen for setting the hyper-parameters. But this is a risky approach and cannot be used on real patients. There is a need to rely on medical expertise in order
+to state properly the optimal control problem. \textbf{2)} Also some specific tools should be built to help in this task. \textbf{3)} Based on a sufficient amount of simulated data, they found that reinforcement learning was indeed able to derive STI therapies which appear as excellent when used to “treat” simulated patients.
+%just a few adjustment.
+& 
+\textbf{1)} One of their limitation was that they did not consider partial observability. In their example they assumed that all the state variables were directly observable. \textbf{2)} They also did not account for corrupted measurements. Collected clinical data are not
+necessarily thorough and accurate. \textbf{3)} Furthermore, the patients
+may not necessarily comply with the prescribed treatment.
+This may lead to uncertainties and measurement corruption
+which may significantly degrade the quality of the results
+obtained. One solution to mitigate the adverse effects of corrupted
+measurements would be to design some preprocessing
+algorithms able to filter out highly corrupted data.
+   \\\midrule
+\end{tabular}
+\vspace*{-2em}
+%\end{tabular}
+%\end{center}
+\end{table}   
+

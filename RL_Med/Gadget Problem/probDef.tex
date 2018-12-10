@@ -1,0 +1,21 @@
+The objective of the learner is to minimize the cumulative regret till $T$, which is defined as follows:
+\begin{align*}
+R_{T}=\sum_{t'=1}^T \mu_{i^*_{t'}} - \sum_{t'=1}^T \mu_{\mathbb{I}_{t'} = i \neq i^*_{t'}}
+\end{align*}
+where $T$ is the horizon, $\mu_{i^*_{t'}}$ is the expected mean of the optimal arm at the $t'$ timestep and $\mu_{\mathbb{I}_t' = i \neq i^*_{t'}}$ is the expected mean of the arm chosen by the learner at the $t'$ timestep when it was not the optimal arm $i^*_{t'}$. Let $N_{i,g}$ is the number of times the learner has chosen arm $i_{}$ between $t_{g-1}$ to $t_{g}$. The expected regret of an algorithm after $T$ rounds can be written as,
+
+%when it was not the optimal arm $i^*_{j}$
+%$n_{i_{t'}\neq i^*_{t'},\forall t'=1:T}$
+%\vspace*{-4em}
+\begin{align*}
+\E[R_{T}] &= \E\left[\sum_{t'=1}^T \mu_{i^*_{t'}} - \sum_{t'=1}^T \mu_{\mathbb{I}_{t'} = i \neq i^*_{t'}}\right]\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+&\overset{(a)}{=} \E\left[\sum_{g=1}^{G}\sum_{t'=t_{g-1}}^{t_{g}} \mu_{i^*_{t'}} - \sum_{g=1}^{G}\sum_{t'=t_{g-1}}^{t_{g}} \mu_{\mathbb{I}_{t'} = i \neq i^*_{t'}}\right]\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+&\overset{(b)}{=}\sum_{i = 1}^K\sum_{g=1}^{G}\Delta^{opt}_{i,g}\E[N_{i,g}]
+\end{align*}
+%\vspace*{-4em}
+where $(a)$ is from Assumption \ref{assm:global}, and $(b)$ from Definition \ref{Def:opt-gap}. 
+
+% \ref{assm:space-gap}, and  \ref{assm:chg-gap}
+%we substitute $\Delta^{opt}_{i,g}= \mu_{i^*,g}-\mu_{i,g}$

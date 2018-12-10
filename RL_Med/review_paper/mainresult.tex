@@ -1,0 +1,162 @@
+
+\begin{customlemma}{3} \textbf{(Control of bad-event)}
+\label{psbandit:Lemma:1}
+Let, $\mu_{i,g}$ be the expected mean of an arm $i$ for the piece $\rho_{g}$, $N_{i,t_s:t}$ be the number of times an arm $i$ is pulled from $t_s$ till the $t$-th timestep such that $t>t_{g}$, then at the $t$-th timestep for all $\delta\in (0,1]$  it holds that,
+\begin{align*}
+\Pb\bigg\lbrace\!\forall & t'\!\!\in\! [t_s , t]\!: \big(\hat{\mu}_{i,t_s:t'} \!-\! S_{i,t_s:t'} \!>\! \hat{\mu}_{i,t'\!+\!1:t} \!+\! S_{i,t'\!+\!1:t}\big) \bigcup\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ & \big(\hat{\mu}_{i,t_s:t'} \!+\!  S_{i,t_s:t'} \!<\! \hat{\mu}_{i,t'\!+\!1:t} \!-\! S_{i,t'\!+\!1:t} \big)\!\bigg\rbrace \leq \delta
+\end{align*}
+where $S_{i,t_s:t'} = \sqrt{\frac{\log(\frac{4t^2}{\delta})}{2N_{i,t_s:t'}}}$.
+\end{customlemma}
+
+\begin{customproof}{2} \textbf{(Outline)} We first define the bad event $\xi^{chg}_{i,t}$  which determines whether the changepoint is detected or not. Next, we use Chernoff-Hoeffding inequality along with a union bound to bound the probability of this bad event $\xi^{chg}_{i,t}$.
+The proof of Lemma \ref{psbandit:Lemma:1} is given in Appendix \ref{sec:proof:Lemma:1}.
+\end{customproof}
+
+\begin{remark}
+\label{Rem:1}
+Choosing $\delta=\frac{1}{t}$, the above result of Lemma \ref{psbandit:Lemma:1} can be reduced to $\Pb\lbrace \xi^{chg}_{i,t}\rbrace \leq \frac{4}{t}$, where the event $\xi^{chg}_{i,t}$ is the bad event. Note, that $\delta$ does not depend on the knowledge of horizon $T$.
+\end{remark}
+
+%identical to Eq (\ref{event:out:1})
+
+\begin{customtheorem}{1}\textbf{(Gap-dependent bound of UCB-CPD)}
+\label{psbandit:Theorem:1}
+The expected cumulative regret of UCB-CPD using the CPD is given by,
+%(Algorithm \ref{alg:UCBCPD}) (Algorithm \ref{alg:CPD})
+\begin{align*}
+\E[R_t]  &\leq \sum_{i=1}^{K}\sum_{g=1}^{G} \bigg\lbrace 3 + \dfrac{8\log(t)}{\Delta^{opt}_{i,g}} + \dfrac{\pi^2}{3} + \dfrac{6\Delta^{opt}_{i,g}\log(t)}{(\Delta^{chg}_{i,g})^2} \\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+& + \dfrac{6\Delta^{opt}_{\max,g+1}\log(t)}{(\Delta^{}_{\epsilon_0, g})^{2}} + \dfrac{12\Delta^{opt}_{i,g+1}\log(t)}{(\Delta^{chg}_{i,g})^{2}}\bigg\rbrace.
+\end{align*}
+
+\end{customtheorem}
+
+\begin{customproof}{3} \textbf{(Outline)}
+We first bound the probability of the bad event of pulling the sub-optimal arms between two changepoints and the number of pulls required for each sub-optimal arm after which they can be discarded. Similarly, we bound the probability of the bad event of not detecting a changepoint and the minimum number of pulls required to detect a  changepoint of sufficient gap (see Lemma \ref{psbandit:Lemma:1}). In all the cases above, we use Chernoff-Hoeffding inequality to bound the probability of the bad events. The proof of Theorem \ref{psbandit:Theorem:1} is given in Appendix \ref{sec:proof:Theorem:1}.
+\end{customproof}
+
+\begin{discussion}
+\label{dis:Theorem:1}
+In Theorem \ref{psbandit:Theorem:1}, the largest contributing factor to the gap-dependent regret of  UCB-CPD is of the order $O\big(\!\max\big\lbrace \sum\limits_{g=1}^G\dfrac{\Delta^{opt}_{\max,g+1}\log(T)}{(\Delta^{}_{\epsilon_0, g})^{2}},   \! \sum\limits_{g=1}^G\dfrac{\log T}{\Delta^{opt}_{i,g}}\big\rbrace\big)$, lower than that of DUCB, SWUCB and same as CUSUM,  when $\forall i\in\A, \forall g\in\G$, $\Delta^{opt}_{i,g} = \Delta^{chg}_{i,g} = \Delta^{}_{\epsilon_0, g} = \Delta^{opt}_{\min}$ (see Table \ref{tab:comp-bds}). Note that CUSUM requires the knowledge of $G$ and $T$ to reach a similar bound but UCB-CPD does not. 
+\end{discussion}
+
+
+\begin{customtheorem}{2}\textbf{(Gap-dependent bound of ImpCPD)}
+\label{psbandit:Theorem:2}
+The expected cumulative regret of ImpCPD using CPDI is upper bounded by,
+%(Algorithm \ref{alg:ImpCPD}) (Algorithm \ref{alg:CPDI})
+\begin{align*}
+& \E[R_T] \leq \sum_{i\in\A'}\sum_{j=1}^{G}\bigg[ 1 \!+\! \Delta^{opt}_{i,g}  \!+\!  \dfrac{32 C_1\left(\gamma \right)\Delta^{opt}_{i,g}\log(\frac{T}{K\sqrt{\log K}} )}{(K\log K)^{-\frac{3}{2}}} \\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+& \!+\! \dfrac{16\log(\frac{T (\Delta^{opt}_{i,g})^2}{K\sqrt{\log K}})}{(\Delta^{opt}_{i,g})} \bigg] \!+\! \sum_{i\in\A'}\sum_{j=1}^{G}\bigg[ \dfrac{16\Delta^{opt}_{i,g+1}\log(\frac{T(\Delta^{chg}_{i,g})^2}{K\sqrt{\log K}})}{(\Delta^{chg}_{i,g})^2}  \\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ & \!+\! \Delta^{opt}_{i,g+1} \bigg] \!+\! \sum_{i\in\A}\sum_{j=1}^{G}\bigg[\Delta^{opt}_{\max,g+1} \!+\! \dfrac{16 \Delta^{opt}_{\max,g+1}\log( \frac{T(\Delta^{chg}_{i,g})^2}{K\sqrt{\log K}})}{(\Delta^{}_{\epsilon_0, g})^2}\bigg]\!
+\end{align*}
+where $\gamma$ is exploration parameter, $C_1\left( \gamma\right)=\left( \frac{1+\gamma}{\gamma}\right)^{4}$, $\A'=\big\lbrace i\in\A: \Delta^{opt}_{i,g}\geq \sqrt{\frac{e}{T}}, \Delta^{chg}_{i,g}\geq \sqrt{\frac{e}{T}},\forall g\in\G \big\rbrace$ and $\Delta^{opt}_{i,{G+1}} = 0,\forall i\in\A$.
+\end{customtheorem}
+
+\begin{customproof}{4} \textbf{(Outline)}
+We divide the proof into two modules. In the first module, we bound the optimality regret of not pulling the optimal arm between two changepoints $g-1$ to $g$ using steps $3,4$ and $5$. In the second module we bound the changepoint regret incurred for not detecting the $g$-th changepoint using steps $2,6$ and $7$. We use Chernoff-Hoeffding inequality to bound the probability of the bad events. We control the number of pulls of each sub-optimal arm using the definition of $\ell_{m_i}$ and exploration parameter $\gamma$. The proof of Theorem \ref{psbandit:Theorem:2} is given in Appendix \ref{sec:proof:Theorem:2}.
+\end{customproof}
+
+\begin{discussion}
+\label{dis:Theorem:2}
+In Theorem \ref{psbandit:Theorem:2}, the largest contributing factor to the gap-dependent regret of  ImpCPD is of the order $O\big(\max\big\lbrace\sum\limits_{g=1}^G\dfrac{\Delta^{opt}_{\max,g+1}\log( \frac{T(\Delta^{chg}_{\max,g})^2}{K\sqrt{\log K}})}{(\Delta^{\epsilon_0}_{g})^2}$ , $\sum\limits_{g=1}^G\dfrac{\log(\frac{T (\Delta^{opt}_{\max,g})^2}{K\sqrt{\log K}})}{(\Delta^{opt}_{i,g})}\big\rbrace\big)$, lower than that of CUSUM, DUCB, and SWUCB when $\forall i\in\A, \forall g\in\G$, $\Delta^{opt}_{i,g} = \Delta^{chg}_{i,g} = \Delta^{}_{\epsilon_0, g} = \Delta^{opt}_{\min}$ (see Table \ref{tab:comp-bds}). 
+\end{discussion}
+
+
+\begin{customcorollary}{1}\textbf{(Gap-independent bound of UCB-CPD)}
+\label{psbandit:Corollary:1}
+In the specific scenario, when all the gaps are same, that is $\Delta^{opt}_{i,g}=\Delta^{chg}_{i,g}=\Delta^{}_{\epsilon_0, g}=\sqrt{\frac{K\log (T/G)}{T/G}}, \forall i\in\A,\forall g\in\G$ and $\delta=\frac{1}{t}$ then the worst case gap-independent regret bound of UCB-CPD is given by,
+%\begin{align*}
+%\E[R_{T}] \leq 3KG + \dfrac{KG \pi^2}{3} + \dfrac{32\sqrt{KGT}\log T}{\sqrt{{\log K}}}.
+%\end{align*}
+\begin{align*}
+\E[R_{T}] \leq 3KG + \dfrac{KG \pi^2}{3} + 32\sqrt{KGT}\log T.
+\end{align*}
+\end{customcorollary}
+
+\begin{customproof}{5}
+The proof of Corollary \ref{psbandit:Corollary:1} is given in Appendix \ref{sec:proof:Corollary:1}.
+\end{customproof}
+
+\begin{discussion}
+\label{dis:Corollary:1}
+From Corollary \ref{psbandit:Corollary:1}, we see that the largest contributing factor to the gap-independent regret of  UCB-CPD is of the order $O\left( \! \sqrt{GT} \!\log T\right)$, same as that of DUCB. %Also, the constant $C = 32$ scales at a lower rate than $C_\eta$ indicating that UCB-CPD detects each changepoint $g\in\G$ without endangering the detection of the next changepoint.
+\end{discussion}
+
+
+
+\begin{customcorollary}{2}\textbf{(Gap-independent bound of ImpCPD)}
+\label{psbandit:Corollary:2}
+In the specific scenario, when all the gaps are same, that is $\Delta^{opt}_{i,g}=\Delta^{chg}_{i,g}=\Delta^{}_{\epsilon_0, g}=\sqrt{\frac{K\log (T/G)}{T/G}}, \forall i\in\A,\forall g\in\G$ and setting $\gamma = 0.05$ then the worst case gap-independent regret bound of ImpCPD is given by,
+%$\alpha=1.5$, $\psi = \frac{T}{K^2\log K}$ and
+\begin{align*}
+\E[R_T]&\leq 3G^{1.5}\sqrt{\dfrac{K^3\log (T/G)}{T}} + C_1 G^{1.5}K^{4.5}(\log K)^{2}\\
+%%%%%%%%%%%%%%%
+& + 48\sqrt{GKT}
+\end{align*}
+where $C_1$ is an integer constant.
+\end{customcorollary}
+
+\begin{customproof}{6}
+The proof of Corollary \ref{psbandit:Corollary:2} is given in Appendix \ref{sec:proof:Corollary:2}.
+\end{customproof}
+
+\begin{discussion}
+\label{dis:Corollary:2}
+From Corollary \ref{psbandit:Corollary:2}, we see that the largest contributing factor to the gap-independent regret of ImpCPD is of the order $O\left( \sqrt{GT}\right)$. This is lower than the regret upper bound of DUCB, SWUCB, EXP3.R and  CUSUM (table \ref{tab:comp-bds}). 
+%Again, the constant $C = 48$ scales at a lower rate than $C_\eta$ indicating that ImpCPD detects each changepoint $g\in\G$ without endangering the detection of the next changepoint.
+\end{discussion}
+
+\begin{discussion}
+\label{dis:Corollary:2_1}
+From Corollary \ref{psbandit:Corollary:2}, we see that smaller the value of $\gamma$ the larger is the constant $C_1$ associated with the factor $GK^{4.5}(\log K)^{2}$. Note, that $\gamma$ determines how frequently the CPDI is called by ImpCPD and by modifying the confidence interval we have been able to increase the probability of detecting the changepoint at the cost of additional regret that only scales with $K$ and not with $T$.
+\end{discussion}
+
+\begin{discussion}
+\label{dis:delay:corollary}
+From Corollary \ref{psbandit:Corollary:1} and \ref{psbandit:Corollary:2} we see that  UCB-CPD and ImpCPD perform better than a reasonable detection strategy as they have constant that has order $O(1)$ associated with their delays that is less than $C_\eta$ of order $O(\log(T/G))$ (see Lemma \ref{psbandit:Lemma:01}).
+\end{discussion}
+
+
+\begin{customtheorem}{3}\textbf{(Lower Bounds for oracle policy)}
+\label{psbandit:Theorem:3}
+The lower bound of an oracle policy $\pi^*$ for a horizon $T$, $K$ arms and $G$ changepoints is given by,
+\begin{align*}
+&\E_{\pi^*}[R_T]_{Gap-dependent} \geq C_1\sum\limits_{g=1}^G\sum\limits_{i=1}^K\dfrac{ \log{\frac{T}{GH^{opt}_g}}}{\Delta_{i,g}^{opt}} \text{,\hspace*{3em}} \\
+%%%%%%%%%%%%%%%%
+ &\E_{\pi^*}[R_T]_{Gap-independent} \geq \dfrac{1}{20}\sqrt{GKT},
+\end{align*}
+where, $C_1$ is a constant and $H^{opt}_g = \sum\limits_{i=1}^{K}\frac{1}{(\Delta^{opt}_{i,g})^2}$ is the optimality hardness of the problem.
+\end{customtheorem}
+
+\begin{customproof}{7}
+The proof of Theorem \ref{psbandit:Theorem:3} is given in Appendix \ref{proof:Theorem:3}.
+\end{customproof}
+
+\begin{discussion}
+\label{dis:Theorem:3}
+This lower bound of the optimal oracle policy $\pi^*$ from Theorem \ref{psbandit:Theorem:3} holds for any number of changepoints as opposed to the lower bound proved in \citet{garivier2011upper} which is valid only for $G=2$. Hence, ImpCPD which has a gap-independent regret upper bound of $O(\sqrt{GT})$ reaches the lower bound of the  policy $\pi^*$ in an order optimal sense.  Also, in the special case when all the gaps are same such that for all $i\in\A,g\in\G$, $\Delta^{opt}_{i,g} = \Delta^{}_{\epsilon_0, g} = \Delta^{chg}_{i,g} = \Delta^{opt}_{\min}$ and $H^{opt}_g = \frac{K}{(\Delta^{opt}_{\min})^2}$, then ImpCPD with a gap-dependent bound of $O\big(\sum\limits_{g=1}^G\frac{\log({T}/{H^{opt}_{g}})}{(\Delta^{opt}_{\min})}\big)$ matches the gap dependent lower bound of $\pi^*$ except the factor $G$ in the log term (ignoring the $\log(\frac{1}{\sqrt{\log K}})$ term).
+\end{discussion}
+
+%\begin{customproposition}{1}\textbf{(Lower Bounds for OUCB1)}
+%\label{psbandit:Prop:1}
+%The regret upper bound of OUCB1 for a horizon $T$ and $G$ changepoints is given by,
+%\begin{align*}
+%\E[R_T] \leq C_1\sqrt{GKT \log{\frac{T}{G}}}
+%\end{align*}
+%where, $C_1$ is an integer constant.
+%\end{customproposition}
+%
+%\begin{customproof}{8}
+%The proof of Proposition \ref{psbandit:Prop:1} is given in Appendix \ref{proof:Proposition:1}.
+%\end{customproof}
+%
+%\begin{discussion}
+%\label{dis:Prop:1}
+%Hence, CUSUM and OUCB1 has the same regret upper bound of $O(\sqrt{GT \log{\frac{T}{G}}})$.
+%\end{discussion}

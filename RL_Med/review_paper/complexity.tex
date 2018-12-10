@@ -1,0 +1,13 @@
+Some of the features that constitute the medical domain which are difficult to tackle are :-
+
+\begin{enumerate}
+\item The medical environment is a partially observed environment. At any instant the physician is only exposed to some of the factors influencing the health of the patient.
+\item Long horizon problem where you only receive the feedback at the end of the episode or the feedbacks are very sparse in nature.
+\item Time constrained treatment, which requires that the effective treatment needs to be delivered within a fixed time otherwise it may result in death.
+\item Time varying feedbacks, which may be encountered in sudden spikes in responses from the patient to the treatments administered.
+\item Both the state space and the action space can to be continuous which provides additional challenge.
+\item There maybe cases that the patients may not comply with the prescribed treatment which further complicates this sequential tasks.
+\item Since the states are not directly observable, hence off-policy algorithms need to used in these settings. Now, it's is known fact in the RL community that these off-policy algorithms have high variance.
+\item Sparse rewards and confounding variables in the real-life datasets are another set of challenges that needs to be handled carefully. If not handled with care these may result in the algorithm proposing bizarre policy which will not go well with the clinicians.
+\item Finally, from the learning theory perspective, it needs to be emphasized that the actions proposed by the algorithm at each state needs to be safe and trustworthy to the physician. Deriving such confidence interval for action for off-policy algorithms in continuous state space (and possibly continuous action space) is another important challenge.
+\end{enumerate}

@@ -1,0 +1,7599 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  9 DEC 2018 23:16
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**review_paper.tex
+(./review_paper.tex
+LaTeX2e <2017-04-15>
+Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(./nips_2018.sty
+Package: nips_2018 2018/03/03 NIPS 2018 submission/camera-ready style file
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip43
+\bibsep=\skip44
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count87
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count88
+\Gm@cntv=\count89
+\c@Gm@tempcnt=\count90
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks15
+)
+\@nipsabovecaptionskip=\skip45
+\@nipsbelowcaptionskip=\skip46
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0100 (decimal 256)
+   defining Unicode char U+0101 (decimal 257)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+0108 (decimal 264)
+   defining Unicode char U+0109 (decimal 265)
+   defining Unicode char U+010A (decimal 266)
+   defining Unicode char U+010B (decimal 267)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0112 (decimal 274)
+   defining Unicode char U+0113 (decimal 275)
+   defining Unicode char U+0114 (decimal 276)
+   defining Unicode char U+0115 (decimal 277)
+   defining Unicode char U+0116 (decimal 278)
+   defining Unicode char U+0117 (decimal 279)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011C (decimal 284)
+   defining Unicode char U+011D (decimal 285)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0120 (decimal 288)
+   defining Unicode char U+0121 (decimal 289)
+   defining Unicode char U+0122 (decimal 290)
+   defining Unicode char U+0123 (decimal 291)
+   defining Unicode char U+0124 (decimal 292)
+   defining Unicode char U+0125 (decimal 293)
+   defining Unicode char U+0128 (decimal 296)
+   defining Unicode char U+0129 (decimal 297)
+   defining Unicode char U+012A (decimal 298)
+   defining Unicode char U+012B (decimal 299)
+   defining Unicode char U+012C (decimal 300)
+   defining Unicode char U+012D (decimal 301)
+   defining Unicode char U+012E (decimal 302)
+   defining Unicode char U+012F (decimal 303)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0134 (decimal 308)
+   defining Unicode char U+0135 (decimal 309)
+   defining Unicode char U+0136 (decimal 310)
+   defining Unicode char U+0137 (decimal 311)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013B (decimal 315)
+   defining Unicode char U+013C (decimal 316)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0145 (decimal 325)
+   defining Unicode char U+0146 (decimal 326)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+014C (decimal 332)
+   defining Unicode char U+014D (decimal 333)
+   defining Unicode char U+014E (decimal 334)
+   defining Unicode char U+014F (decimal 335)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0156 (decimal 342)
+   defining Unicode char U+0157 (decimal 343)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015C (decimal 348)
+   defining Unicode char U+015D (decimal 349)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+0168 (decimal 360)
+   defining Unicode char U+0169 (decimal 361)
+   defining Unicode char U+016A (decimal 362)
+   defining Unicode char U+016B (decimal 363)
+   defining Unicode char U+016C (decimal 364)
+   defining Unicode char U+016D (decimal 365)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0172 (decimal 370)
+   defining Unicode char U+0173 (decimal 371)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+01CD (decimal 461)
+   defining Unicode char U+01CE (decimal 462)
+   defining Unicode char U+01CF (decimal 463)
+   defining Unicode char U+01D0 (decimal 464)
+   defining Unicode char U+01D1 (decimal 465)
+   defining Unicode char U+01D2 (decimal 466)
+   defining Unicode char U+01D3 (decimal 467)
+   defining Unicode char U+01D4 (decimal 468)
+   defining Unicode char U+01E2 (decimal 482)
+   defining Unicode char U+01E3 (decimal 483)
+   defining Unicode char U+01E6 (decimal 486)
+   defining Unicode char U+01E7 (decimal 487)
+   defining Unicode char U+01E8 (decimal 488)
+   defining Unicode char U+01E9 (decimal 489)
+   defining Unicode char U+01EA (decimal 490)
+   defining Unicode char U+01EB (decimal 491)
+   defining Unicode char U+01F0 (decimal 496)
+   defining Unicode char U+01F4 (decimal 500)
+   defining Unicode char U+01F5 (decimal 501)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+0232 (decimal 562)
+   defining Unicode char U+0233 (decimal 563)
+   defining Unicode char U+1E02 (decimal 7682)
+   defining Unicode char U+1E03 (decimal 7683)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2010 (decimal 8208)
+   defining Unicode char U+2011 (decimal 8209)
+   defining Unicode char U+2012 (decimal 8210)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2015 (decimal 8213)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+   defining Unicode char U+1E20 (decimal 7712)
+   defining Unicode char U+1E21 (decimal 7713)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2017/03/14 v6.85a Hypertext links for LaTeX
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen111
+\Hy@linkcounter=\count91
+\Hy@pagecounter=\count92
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count93
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4498.
+Package hyperref Info: Link nesting OFF on input line 4503.
+Package hyperref Info: Hyper index ON on input line 4506.
+Package hyperref Info: Plain pages OFF on input line 4513.
+Package hyperref Info: Backreferencing OFF on input line 4518.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4751.
+\c@Hy@tempcnt=\count94
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5104.
+\XeTeXLinkMargin=\dimen112
+\Fld@menulength=\count95
+\Field@Width=\dimen113
+\Fld@charsize=\dimen114
+Package hyperref Info: Hyper figures OFF on input line 6358.
+Package hyperref Info: Link nesting OFF on input line 6363.
+Package hyperref Info: Hyper index ON on input line 6366.
+Package hyperref Info: backreferencing OFF on input line 6373.
+Package hyperref Info: Link coloring OFF on input line 6378.
+Package hyperref Info: Link coloring with OCG OFF on input line 6383.
+Package hyperref Info: PDF/A mode OFF on input line 6388.
+LaTeX Info: Redefining \ref on input line 6428.
+LaTeX Info: Redefining \pageref on input line 6432.
+\Hy@abspage=\count96
+\c@Item=\count97
+\c@Hfootnote=\count98
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2017/03/14 v6.85a Hyperref driver for pdfTeX
+\Fld@listcount=\count99
+\c@bookmark@seq@number=\count100
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip47
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2016/04/27 v1.618033 publication quality tables
+\heavyrulewidth=\dimen115
+\lightrulewidth=\dimen116
+\cmidrulewidth=\dimen117
+\belowrulesep=\dimen118
+\belowbottomsep=\dimen119
+\aboverulesep=\dimen120
+\abovetopsep=\dimen121
+\cmidrulesep=\dimen122
+\cmidrulekern=\dimen123
+\defaultaddspace=\dimen124
+\@cmidla=\count101
+\@cmidlb=\count102
+\@aboverulesep=\dimen125
+\@belowrulesep=\dimen126
+\@thisruleclass=\count103
+\@lastruleclass=\count104
+\@thisrulewidth=\dimen127
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks18
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/units/nicefrac.sty
+Package: nicefrac 1998/08/04 v0.9b Nice fractions
+\L@UnitsRaiseDisplaystyle=\skip48
+\L@UnitsRaiseTextstyle=\skip49
+\L@UnitsRaiseScriptstyle=\skip50
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2016/05/14 v2.6a Micro-typographical refinements (RS)
+\MT@toks=\toks19
+\MT@count=\count105
+LaTeX Info: Redefining \textls on input line 774.
+\MT@outer@kern=\dimen128
+LaTeX Info: Redefining \textmicrotypecontext on input line 1310.
+\MT@listname@count=\count106
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+File: microtype-pdftex.def 2016/05/14 v2.6a Definitions specific to pdftex (RS)
+
+LaTeX Info: Redefining \lsstyle on input line 916.
+LaTeX Info: Redefining \lslig on input line 916.
+\MT@outer@space=\skip51
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2016/05/14 v2.6a microtype main configuration file (RS)
+))
+(./macros.sty (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
+LaTeX Info: Redefining \bm on input line 207.
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count107
+\float@exts=\toks20
+\float@box=\box26
+\@float@everytoks=\toks21
+\@floatcapt=\box27
+)
+\@float@every@algorithm=\toks22
+\c@algorithm=\count108
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Package: algpseudocode 
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count109
+\c@ALG@rem=\count110
+\c@ALG@nested=\count111
+\ALG@tlm=\skip52
+\ALG@thistlm=\skip53
+\c@ALG@Lnr=\count112
+\c@ALG@blocknr=\count113
+\c@ALG@storecount=\count114
+\c@ALG@tmpcounter=\count115
+\ALG@tmplength=\skip54
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
+\Gread@gobject=\count116
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/paralist/paralist.sty
+Package: paralist 2017/01/22 v2.7 Extended list environments
+\pltopsep=\skip55
+\plpartopsep=\skip56
+\plitemsep=\skip57
+\plparsep=\skip58
+\pl@lab=\toks23
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/04/14 v1.1b Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+)
+\Gin@req@height=\dimen129
+\Gin@req@width=\dimen130
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/11/05 v2.16a AMS math features
+\@mathmargin=\skip59
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks24
+\ex@=\dimen131
+))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+LaTeX Info: Redefining \boldsymbol on input line 28.
+\pmbraise@=\dimen132
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count117
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count118
+\leftroot@=\count119
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count120
+\DOTSCASE@=\count121
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box28
+\strutbox@=\box29
+\big@size=\dimen133
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count122
+\c@MaxMatrixCols=\count123
+\dotsspace@=\muskip11
+\c@parentequation=\count124
+\dspbrk@lvl=\count125
+\tag@help=\toks25
+\row@=\count126
+\column@=\count127
+\maxfields@=\count128
+\andhelp@=\toks26
+\eqnshift@=\dimen134
+\alignsep@=\dimen135
+\tagshift@=\dimen136
+\tagwidth@=\dimen137
+\totwidth@=\dimen138
+\lineht@=\dimen139
+\@envbody=\toks27
+\multlinegap=\skip60
+\multlinetaggap=\skip61
+\mathdisplay@stack=\toks28
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2015/03/04 v2.20.2
+\thm@style=\toks29
+\thm@bodyfont=\toks30
+\thm@headfont=\toks31
+\thm@notefont=\toks32
+\thm@headpunct=\toks33
+\thm@preskip=\skip62
+\thm@postskip=\skip63
+\thm@headsep=\skip64
+\dth@everypar=\toks34
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
+x
+\pgfutil@everybye=\toks35
+\pgfutil@tempdima=\dimen140
+\pgfutil@tempdimb=\dimen141
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
+sts.tex))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box30
+(/usr/local/texlive/2017/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+))
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks36
+\pgfkeys@temptoks=\toks37
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
+ode.tex
+\pgfkeys@tmptoks=\toks38
+))
+\pgf@x=\dimen142
+\pgf@y=\dimen143
+\pgf@xa=\dimen144
+\pgf@ya=\dimen145
+\pgf@xb=\dimen146
+\pgf@yb=\dimen147
+\pgf@xc=\dimen148
+\pgf@yc=\dimen149
+\w@pgf@writea=\write3
+\r@pgf@reada=\read1
+\c@pgf@counta=\count129
+\c@pgf@countb=\count130
+\c@pgf@countc=\count131
+\c@pgf@countd=\count132
+\t@pgf@toka=\toks39
+\t@pgf@tokb=\toks40
+\t@pgf@tokc=\toks41
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.d
+ef
+File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-p
+df.def
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
+code.tex
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count133
+\pgfsyssoftpath@bigbuffer@items=\count134
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
+code.tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen150
+\pgfmath@count=\count135
+\pgfmath@box=\box31
+\pgfmath@toks=\toks42
+\pgfmath@stack@operand=\toks43
+\pgfmath@stack@operation=\toks44
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
+tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic
+.code.tex)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigo
+nometric.code.tex)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.rando
+m.code.tex)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compa
+rison.code.tex)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.
+code.tex)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round
+.code.tex)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
+code.tex)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
+erarithmetics.code.tex)))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count136
+))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
+de.tex
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen151
+\pgf@picmaxx=\dimen152
+\pgf@picminy=\dimen153
+\pgf@picmaxy=\dimen154
+\pgf@pathminx=\dimen155
+\pgf@pathmaxx=\dimen156
+\pgf@pathminy=\dimen157
+\pgf@pathmaxy=\dimen158
+\pgf@xx=\dimen159
+\pgf@xy=\dimen160
+\pgf@yx=\dimen161
+\pgf@yy=\dimen162
+\pgf@zx=\dimen163
+\pgf@zy=\dimen164
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
+ruct.code.tex
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen165
+\pgf@path@lasty=\dimen166
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
+.code.tex
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen167
+\pgf@shorten@start@additional=\dimen168
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
+de.tex
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+\pgfpic=\box32
+\pgf@hbox=\box33
+\pgf@layerbox@main=\box34
+\pgf@picture@serial@count=\count137
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
+ate.code.tex
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen169
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
+ations.code.tex
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen170
+\pgf@pt@y=\dimen171
+\pgf@pt@temp=\dimen172
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
+e.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.c
+ode.tex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathproce
+ssing.code.tex
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
+de.tex
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen173
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
+e.tex
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen174
+\pgf@sys@shading@range@num=\count138
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
+e.tex
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
+code.tex
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+\pgfexternal@startupbox=\box35
+))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
+de.tex
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretranspare
+ncy.code.tex
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.
+code.tex
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
+e.tex
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box36
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
+tex
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-0-65.sty
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen175
+\pgf@nodesepend=\dimen176
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-1-18.sty
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen177
+\pgffor@skip=\dimen178
+\pgffor@stack=\toks45
+\pgffor@toks=\toks46
+))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
+e.tex
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
+dlers.code.tex
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count139
+\pgfplotmarksize=\dimen179
+)
+\tikz@lastx=\dimen180
+\tikz@lasty=\dimen181
+\tikz@lastxsaved=\dimen182
+\tikz@lastysaved=\dimen183
+\tikzleveldistance=\dimen184
+\tikzsiblingdistance=\dimen185
+\tikz@figbox=\box37
+\tikz@figbox@bg=\box38
+\tikz@tempbox=\box39
+\tikz@tempbox@bg=\box40
+\tikztreelevel=\count140
+\tikznumberofchildren=\count141
+\tikznumberofcurrentchild=\count142
+\tikz@fig@count=\count143
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
+e.tex
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count144
+\pgfmatrixcurrentcolumn=\count145
+\pgf@matrix@numberofcolumns=\count146
+)
+\tikz@expandcount=\count147
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+)))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pgfplots/pgfplots.sty
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplots 2016/08/10 v1.14 Data Visualization (1.14)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks47
+\t@pgfplots@tokb=\toks48
+\t@pgfplots@tokc=\toks49
+\pgfplots@tmpa=\dimen186
+\c@pgfplots@coordindex=\count148
+\c@pgfplots@scanlineindex=\count149
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric
+.code.tex))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.c
+ode.tex)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplot
+soldpgfsupp_loader.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.cod
+e.tex)
+Package pgfplots: loading complementary arithmetics for your pgf version...
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplot
+soldpgfsupp_pgflibraryfpu.code.tex)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplot
+soldpgfsupp_pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count150
+))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code
+.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+liststructure.code.tex)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+liststructureext.code.tex)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+array.code.tex
+\c@pgfplotsarray@tmp=\count151
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+matrix.code.tex)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable
+shared.code.tex
+\c@pgfplotstable@counta=\count152
+\t@pgfplotstable@a=\toks50
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+deque.code.tex)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.co
+de.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.da
+ta.code.tex))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb
+.code.tex)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplot
+s.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count153
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots
+.surfshading.pgfsys-pdftex.def)))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.
+code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.cod
+e.tex))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.c
+ode.tex)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.c
+ode.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandle
+r.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.
+code.tex)))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.
+tex)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessin
+g.code.tex)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.cod
+e.tex)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.
+tex)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.te
+x)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmoduledecoration
+s.code.tex
+\pgfdecoratedcompleteddistance=\dimen187
+\pgfdecoratedremainingdistance=\dimen188
+\pgfdecoratedinputsegmentcompleteddistance=\dimen189
+\pgfdecoratedinputsegmentremainingdistance=\dimen190
+\pgf@decorate@distancetomove=\dimen191
+\pgf@decorate@repeatstate=\count154
+\pgfdecorationsegmentamplitude=\dimen192
+\pgfdecorationsegmentlength=\dimen193
+)
+\tikz@lib@dec@box=\box41
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.pathmorphing.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
+brarydecorations.pathmorphing.code.tex))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.pathreplacing.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
+brarydecorations.pathreplacing.code.tex))
+\pgfplots@numplots=\count155
+\pgfplots@xmin@reg=\dimen194
+\pgfplots@xmax@reg=\dimen195
+\pgfplots@ymin@reg=\dimen196
+\pgfplots@ymax@reg=\dimen197
+\pgfplots@zmin@reg=\dimen198
+\pgfplots@zmax@reg=\dimen199
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmar
+ks.code.tex
+File: pgflibraryplotmarks.code.tex 2015/08/03 v3.0.1a (rcs-revision 1.14)
+)))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
+)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrary
+shapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
+
+))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrary
+shapes.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2013/07/18 v3.0.1a (rcs-revision 1.5)
+))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrary
+shapes.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2013/09/11 v3.0.1a (rcs-revision 1.6)
+))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrary
+shapes.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
+))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryshapes.callouts.code.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrary
+shapes.callouts.code.tex))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
+)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrary
+shapes.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
+
+\pgfnodepartlowerbox=\box42
+\pgfnodeparttwobox=\box43
+\pgfnodepartthreebox=\box44
+\pgfnodepartfourbox=\box45
+\pgfnodeparttwentybox=\box46
+\pgfnodepartnineteenbox=\box47
+\pgfnodeparteighteenbox=\box48
+\pgfnodepartseventeenbox=\box49
+\pgfnodepartsixteenbox=\box50
+\pgfnodepartfifteenbox=\box51
+\pgfnodepartfourteenbox=\box52
+\pgfnodepartthirteenbox=\box53
+\pgfnodeparttwelvebox=\box54
+\pgfnodepartelevenbox=\box55
+\pgfnodeparttenbox=\box56
+\pgfnodepartninebox=\box57
+\pgfnodeparteightbox=\box58
+\pgfnodepartsevenbox=\box59
+\pgfnodepartsixbox=\box60
+\pgfnodepartfivebox=\box61
+)))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarypatterns.code.tex
+File: tikzlibrarypatterns.code.tex 2008/01/15 v3.0.1a (rcs-revision 1.2)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibrarypattern
+s.code.tex
+File: pgflibrarypatterns.code.tex 2008/03/03 v3.0.1a (rcs-revision 1.13)
+))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryfit.code.tex
+File: tikzlibraryfit.code.tex 2013/07/12 v3.0.1a (rcs-revision 1.5)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen256
+\captionmargin@=\dimen257
+\captionwidth=\dimen258
+\caption@tempdima=\dimen259
+\caption@indent=\dimen260
+\caption@parindent=\dimen261
+\caption@hangindent=\dimen262
+)
+\c@ContinuedFloat=\count156
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/wallpaper/wallpaper.sty
+Package: wallpaper 2005/01/18, v1.01 easy wallpaper formatting (MHFW)
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count157
+\calc@Bcount=\count158
+\calc@Adimen=\dimen263
+\calc@Bdimen=\dimen264
+\calc@Askip=\skip65
+\calc@Bskip=\skip66
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count159
+\calc@Cskip=\skip67
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
+)
+\wpXoffset=\skip68
+\wpYoffset=\skip69
+\tileXoffset=\skip70
+\tileYoffset=\skip71
+\tilewidth=\skip72
+\tileheight=\skip73
+\tileX=\skip74
+\tileY=\skip75
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/lipsum/lipsum.sty
+Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
+\c@lips@count=\count160
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/todonotes/todonotes.sty
+Package: todonotes 2015/07/09 .dtx Todonotes source and documentation.
+Package: todonotes 2012/07/25
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks51
+\XKV@tempa@toks=\toks52
+)
+\XKV@depth=\count161
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+\c@@todonotes@numberoftodonotes=\count162
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip76
+\subfigcapskip=\skip77
+\subfigcaptopadj=\dimen265
+\subfigbottomskip=\skip78
+\subfigcapmargin=\dimen266
+\subfiglabelskip=\skip79
+\c@subfigure=\count163
+\c@lofdepth=\count164
+\c@subtable=\count165
+\c@lotdepth=\count166
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/local/texlive/2017/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip80
+\subfig@bottom=\skip81
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/makecell/makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tools/array.sty
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+\col@sep=\dimen267
+\extrarowheight=\dimen268
+\NC@list=\toks53
+\extratabsurround=\skip82
+\backup@length=\skip83
+)
+\rotheadsize=\dimen269
+\c@nlinenum=\count167
+\TeXr@lab=\toks54
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/cleveref/cleveref.sty
+Package: cleveref 2013/12/28 v0.19 Intelligent cross-referencing
+Package cleveref Info: `hyperref' support loaded on input line 2230.
+LaTeX Info: Redefining \cref on input line 2230.
+LaTeX Info: Redefining \Cref on input line 2230.
+LaTeX Info: Redefining \crefrange on input line 2230.
+LaTeX Info: Redefining \Crefrange on input line 2230.
+LaTeX Info: Redefining \cpageref on input line 2230.
+LaTeX Info: Redefining \Cpageref on input line 2230.
+LaTeX Info: Redefining \cpagerefrange on input line 2230.
+LaTeX Info: Redefining \Cpagerefrange on input line 2230.
+LaTeX Info: Redefining \labelcref on input line 2230.
+LaTeX Info: Redefining \labelcpageref on input line 2230.
+Package cleveref Info: `amsthm' support loaded on input line 2858.
+Package cleveref Info: `algorithmicx' support loaded on input line 2939.
+Package cleveref Info: always capitalise cross-reference names on input line 74
+70.
+Package cleveref Info: always capitalise cross-reference names on input line 74
+93.
+)
+\c@proposition=\count168
+\c@corollary=\count169
+\c@theorem=\count170
+\c@remark=\count171
+\c@assumption=\count172
+\c@definition=\count173
+\c@fact=\count174
+\c@discussion=\count175
+\c@innercustomtheorem=\count176
+\c@innercustomlemma=\count177
+\c@innercustomproposition=\count178
+\c@innercustomcorollary=\count179
+\c@innercustomproof=\count180
+)
+(./review_paper.aux)
+\openout1 = `review_paper.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 73.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(92.14519pt, 430.00462pt, 92.14519pt)
+* v-part:(T,H,B)=(95.39737pt, 556.47656pt, 143.09605pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=430.00462pt
+* \textheight=556.47656pt
+* \oddsidemargin=19.8752pt
+* \evensidemargin=19.8752pt
+* \topmargin=-13.87262pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(108.405pt, 397.48499pt, 108.40501pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43pt, 72.27pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=397.48499pt
+* \textheight=650.43pt
+* \oddsidemargin=36.13501pt
+* \evensidemargin=36.13501pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\AtBeginShipoutBox=\box62
+Package hyperref Info: Link coloring OFF on input line 73.
+(/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count181
+)
+LaTeX Info: Redefining \ref on input line 73.
+LaTeX Info: Redefining \pageref on input line 73.
+LaTeX Info: Redefining \nameref on input line 73.
+
+(./review_paper.out) (./review_paper.out)
+\@outlinefile=\write4
+\openout4 = `review_paper.out'.
+
+LaTeX Info: Redefining \microtypecontext on input line 73.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `basictext'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/mt-ptm.cfg
+File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count182
+\scratchdimen=\dimen270
+\scratchbox=\box63
+\nofMPsegments=\count183
+\nofMParguments=\count184
+\everyMPshowfont=\toks55
+\MPscratchCnt=\count185
+\MPscratchDim=\dimen271
+\MPnumerator=\count186
+\makeMPintoPDFobject=\count187
+\everyMPtoPDFconversion=\toks56
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+ABD: EveryShipout initializing macros
+
+Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
+ick labels; missing features). Consider writing \pgfplotsset{compat=1.14} into 
+your preamble.
+ on input line 73.
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfigure package is loaded.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 77.
+(/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 77.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 77.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 77.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 77.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `pcr' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 86.
+ (./intro.tex)
+(./motivation.tex <img/diabetes_idf.png, id=70, 672.5125pt x 920.43875pt>
+File: img/diabetes_idf.png Graphic file (type png)
+
+<use img/diabetes_idf.png>
+Package pdftex.def Info: img/diabetes_idf.png used on input line 22.
+(pdftex.def)             Requested size: 201.7553pt x 276.13376pt.
+
+<img/sepsis-antibiotics.jpg, id=72, 481.8pt x 376.40625pt>
+File: img/sepsis-antibiotics.jpg Graphic file (type jpg)
+
+<use img/sepsis-antibiotics.jpg>
+Package pdftex.def Info: img/sepsis-antibiotics.jpg used on input line 30.
+(pdftex.def)             Requested size: 144.5411pt x 112.92273pt.
+ [1
+
+
+{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]) (./why
+RL.tex [2 <./img/diabetes_idf.png> <./img/sepsis-antibiotics.jpg>] <img/RL1.png
+, id=102, 860.21375pt x 356.33125pt>
+File: img/RL1.png Graphic file (type png)
+
+<use img/RL1.png>
+Package pdftex.def Info: img/RL1.png used on input line 8.
+(pdftex.def)             Requested size: 344.07939pt x 142.52997pt.
+) (./notations.tex) (./mdp.tex [3 <./img/RL1.png (PNG copy)>]) (./complexity.te
+x) (./Algorithms.tex [4]) (./related_review.tex
+Underfull \hbox (badness 10000) in paragraph at lines 10--10
+[]|\T1/ptm/m/n/10 (+20) Algo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--10
+[]|\T1/ptm/m/n/10 (+20) MDP
+ []
+
+
+Overfull \hbox (0.62468pt too wide) in paragraph at lines 10--10
+[]|\T1/ptm/m/n/10 (-20) Conclusions/
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--10
+\T1/ptm/m/n/10 (+20) Ob-ser-va-
+ []
+
+
+Underfull \hbox (badness 1062) in paragraph at lines 10--11
+[]|\T1/ptm/m/n/10 (+20) Limitations &
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
+[]|[]\T1/ptm/m/n/10 (+20) Raghu
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
+\T1/ptm/m/n/10 (+20) et al.[]
+ []
+
+
+Overfull \hbox (1.57527pt too wide) in paragraph at lines 14--15
+[]|\T1/ptm/m/n/10 (-20) Dueling
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
+\T1/ptm/m/n/10 (+20) Deep
+ []
+
+
+Underfull \hbox (badness 1466) in paragraph at lines 14--15
+\T1/ptm/m/n/10 (+20) Q Net-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
+\T1/ptm/m/n/10 (+20) work
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
+\T1/ptm/m/n/10 (+20) (Off-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
+\T1/ptm/m/n/10 (+20) policy
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
+\T1/ptm/m/n/10 (+20) al-go-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--18
+\T1/ptm/m/n/10 (+20) States
+ []
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 16--18
+\T1/ptm/b/n/10 2) \T1/ptm/m/n/10 (+20) Dis-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--18
+\T1/ptm/m/n/10 (+20) crete
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--18
+\T1/ptm/m/n/10 (+20) Ac-
+ []
+
+
+Underfull \hbox (badness 7397) in paragraph at lines 19--22
+[]|\T1/ptm/b/n/10 1) \T1/ptm/m/n/10 (+20) Deep RL
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--22
+\T1/ptm/m/n/10 (+20) mod-els with
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--22
+\T1/ptm/m/n/10 (+20) continuous-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--22
+\T1/ptm/m/n/10 (+20) state spaces,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--22
+\T1/ptm/m/n/10 (+20) im-prov-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--22
+\T1/ptm/m/n/10 (+20) on ear-lier
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--22
+\T1/ptm/m/n/10 (+20) work with
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--22
+\T1/ptm/m/n/10 (+20) dis-cretized
+ []
+
+
+Underfull \hbox (badness 5592) in paragraph at lines 19--22
+\T1/ptm/m/n/10 (+20) mod-els. \T1/ptm/b/n/10 2)
+ []
+
+
+Underfull \hbox (badness 4518) in paragraph at lines 19--22
+\T1/ptm/m/n/10 (+20) Iden-tify treat-
+ []
+
+
+Underfull \hbox (badness 4569) in paragraph at lines 19--22
+\T1/ptm/m/n/10 (+20) ment poli-cies
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--22
+\T1/ptm/m/n/10 (+20) prove pa-tient
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--22
+\T1/ptm/m/n/10 (+20) out-comes \T1/ptm/b/n/10 3)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--22
+\T1/ptm/m/n/10 (+20) learned poli-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--25
+[]|\T1/ptm/b/n/10 1) \T1/ptm/m/n/10 (+20) Q-values are fre-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--25
+\T1/ptm/m/n/10 (+20) quently over-es-ti-mated
+ []
+
+
+Underfull \hbox (badness 1400) in paragraph at lines 23--25
+\T1/ptm/m/n/10 (+20) in prac-tice, lead-ing to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--25
+\T1/ptm/m/n/10 (+20) are de-ter-mined us-ing
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 23--25
+\T1/ptm/m/n/10 (+20) ac-tions found through
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--25
+\T1/ptm/m/n/10 (+20) a feed-forward pass
+ []
+
+
+Underfull \hbox (badness 3557) in paragraph at lines 23--25
+\T1/ptm/m/n/10 (+20) on the main net-work,
+ []
+
+
+Underfull \hbox (badness 8000) in paragraph at lines 23--25
+\T1/ptm/m/n/10 (+20) as op-posed to be-ing
+ []
+
+
+Underfull \hbox (badness 3250) in paragraph at lines 23--25
+\T1/ptm/m/n/10 (+20) state be-ing good (e.g.
+ []
+
+
+Underfull \hbox (badness 2126) in paragraph at lines 23--25
+\T1/ptm/m/n/10 (+20) taken at that timestep.
+ []
+
+
+Underfull \hbox (badness 1137) in paragraph at lines 23--25
+\T1/ptm/m/n/10 (+20) So, uses a Du-el-ing Q
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--25
+\T1/ptm/m/n/10 (+20) Net-work, where the
+ []
+
+
+Underfull \hbox (badness 1383) in paragraph at lines 23--25
+\T1/ptm/m/n/10 (+20) and ad-van-tage streams.
+ []
+
+
+Underfull \hbox (badness 3009) in paragraph at lines 23--25
+\T1/ptm/m/n/10 (+20) cur-rent state, and the
+ []
+
+
+Underfull \hbox (badness 3612) in paragraph at lines 23--25
+\T1/ptm/m/n/10 (+20) qual-ity of the cho-sen
+ []
+
+
+Underfull \hbox (badness 1122) in paragraph at lines 23--25
+\T1/ptm/m/n/10 (+20) ac-tion. Train-ing such
+ []
+
+
+Underfull \hbox (badness 2486) in paragraph at lines 23--25
+\T1/ptm/m/n/10 (+20) a model can be slow
+ []
+
+
+Underfull \hbox (badness 3884) in paragraph at lines 23--25
+\T1/ptm/m/n/10 (+20) as re-ward sig-nals are
+ []
+
+
+Underfull \hbox (badness 5578) in paragraph at lines 23--25
+\T1/ptm/m/n/10 (+20) on ter-mi-nal timesteps.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--25
+\T1/ptm/m/n/10 (+20) They use Pri-or-i-tized
+ []
+
+
+Underfull \hbox (badness 6859) in paragraph at lines 23--25
+\T1/ptm/m/n/10 (+20) Ex-pe-ri-ence Re-play to
+ []
+
+
+Underfull \hbox (badness 4859) in paragraph at lines 23--25
+\T1/ptm/m/n/10 (+20) ac-cel-er-ate learn-ing by
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--25
+\T1/ptm/m/n/10 (+20) sam-pling a tran-si-tion
+ []
+
+
+Underfull \hbox (badness 5939) in paragraph at lines 23--25
+\T1/ptm/m/n/10 (+20) to the pre-vi-ous er-ror
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--28
+[]|\T1/ptm/m/n/10 (+20) Their poli-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--28
+\T1/ptm/m/n/10 (+20) that va-so-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--28
+\T1/ptm/m/n/10 (+20) pres-sors
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--28
+\T1/ptm/m/n/10 (+20) re-sponse
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--28
+\T1/ptm/m/n/10 (+20) to sep-sis
+ []
+
+
+Underfull \hbox (badness 5133) in paragraph at lines 26--28
+\T1/ptm/m/n/10 (+20) and maybe
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--28
+\T1/ptm/m/n/10 (+20) harm-ful
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--28
+\T1/ptm/m/n/10 (+20) in some
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+\T1/ptm/m/n/10 (+20) as-sign-ment
+ []
+
+
+Underfull \hbox (badness 1173) in paragraph at lines 29--30
+\T1/ptm/m/n/10 (+20) in this model
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+\T1/ptm/m/n/10 (+20) is quite
+ []
+
+
+Overfull \hbox (0.50479pt too wide) in paragraph at lines 29--30
+\T1/ptm/m/n/10 (-20) wards/penalties
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+\T1/ptm/m/n/10 (+20) only be-ing
+ []
+
+
+Underfull \hbox (badness 3525) in paragraph at lines 29--30
+\T1/ptm/m/n/10 (+20) is-sued at ter-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+\T1/ptm/m/n/10 (+20) mi-nal states.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+\T1/ptm/m/n/10 (+20) for im-prove-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+\T1/ptm/m/n/10 (+20) ment here;
+ []
+
+
+Underfull \hbox (badness 5203) in paragraph at lines 29--30
+\T1/ptm/m/n/10 (+20) be to use a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+\T1/ptm/m/n/10 (+20) clin-i-cally in-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+\T1/ptm/m/n/10 (+20) on pa-tient
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+\T1/ptm/m/n/10 (+20) blood counts
+ []
+
+
+Underfull \hbox (badness 2790) in paragraph at lines 29--30
+\T1/ptm/m/n/10 (+20) to help learn
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+\T1/ptm/b/n/10 2) \T1/ptm/m/n/10 (+20) An-other
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+\T1/ptm/m/n/10 (+20) be to use
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+\T1/ptm/m/n/10 (+20) in-verse RL
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+\T1/ptm/m/n/10 (+20) tech-niques
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+\T1/ptm/m/n/10 (+20) to de-rive a
+ []
+
+
+Overfull \hbox (92.11496pt too wide) in paragraph at lines 8--35
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--46
+[]|\T1/ptm/m/n/10 (+20) Algo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--46
+[]|\T1/ptm/m/n/10 (+20) MDP
+ []
+
+
+Overfull \hbox (0.62468pt too wide) in paragraph at lines 46--46
+[]|\T1/ptm/m/n/10 (-20) Conclusions/
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--46
+\T1/ptm/m/n/10 (+20) Ob-ser-va-
+ []
+
+
+Underfull \hbox (badness 1062) in paragraph at lines 46--47
+[]|\T1/ptm/m/n/10 (+20) Limitations &
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--48
+[]|[]\T1/ptm/m/n/10 (+20) Weng
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--48
+\T1/ptm/m/n/10 (+20) et al.[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+[]|\T1/ptm/m/n/10 (+20) Off-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+\T1/ptm/m/n/10 (+20) policy
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+\T1/ptm/m/n/10 (+20) eval-u-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+\T1/ptm/m/n/10 (+20) a-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+\T1/ptm/m/n/10 (+20) us-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+\T1/ptm/m/n/10 (+20) pol-icy
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+\T1/ptm/m/n/10 (+20) it-er-a-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+\T1/ptm/m/n/10 (+20) from
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+\T1/ptm/m/n/10 (+20) real
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+\T1/ptm/m/n/10 (+20) tra-jec-
+ []
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 52--54
+[]|\T1/ptm/b/n/10 1) \T1/ptm/m/n/10 (+20) Dis-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
+\T1/ptm/m/n/10 (+20) crete
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
+\T1/ptm/m/n/10 (+20) State
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
+\T1/ptm/m/n/10 (+20) Space,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
+\T1/ptm/m/n/10 (+20) with
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
+\T1/ptm/m/n/10 (+20) pa-tient
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
+\T1/ptm/m/n/10 (+20) con-di-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
+\T1/ptm/m/n/10 (+20) tions
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
+\T1/ptm/m/n/10 (+20) be-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
+\T1/ptm/m/n/10 (+20) noted
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
+\T1/ptm/m/n/10 (+20) at
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
+\T1/ptm/m/n/10 (+20) reg-u-lar
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
+\T1/ptm/m/n/10 (+20) in-ter-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
+\T1/ptm/m/n/10 (+20) vals.
+ []
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 52--54
+\T1/ptm/b/n/10 2) \T1/ptm/m/n/10 (+20) Dis-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
+\T1/ptm/m/n/10 (+20) crete
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
+\T1/ptm/m/n/10 (+20) Ac-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
+\T1/ptm/m/n/10 (+20) tions
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
+\T1/ptm/m/n/10 (+20) with
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
+\T1/ptm/m/n/10 (+20) con-tin-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
+\T1/ptm/m/n/10 (+20) u-ous
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
+\T1/ptm/m/n/10 (+20) glu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
+\T1/ptm/m/n/10 (+20) cose
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
+\T1/ptm/m/n/10 (+20) level
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
+\T1/ptm/m/n/10 (+20) be-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
+\T1/ptm/m/n/10 (+20) cat-e-go-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
+\T1/ptm/m/n/10 (+20) rized
+ []
+
+
+Underfull \hbox (badness 1184) in paragraph at lines 55--59
+\T1/ptm/m/n/10 (+20) e-size that the
+ []
+
+
+Underfull \hbox (badness 5681) in paragraph at lines 55--59
+\T1/ptm/m/n/10 (+20) pa-tient states,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--59
+\T1/ptm/m/n/10 (+20) glycemic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--59
+\T1/ptm/m/n/10 (+20) val-ues, and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--59
+\T1/ptm/m/n/10 (+20) pa-tient out-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--59
+\T1/ptm/m/n/10 (+20) Markov de-ci-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--59
+\T1/ptm/m/n/10 (+20) sion pro-cess
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--59
+\T1/ptm/m/n/10 (+20) pa-ram-e-ters
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--59
+\T1/ptm/m/n/10 (+20) and op-ti-mal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--59
+\T1/ptm/m/n/10 (+20) learned from
+ []
+
+
+Underfull \hbox (badness 1389) in paragraph at lines 55--59
+\T1/ptm/m/n/10 (+20) de-velop a de-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--59
+\T1/ptm/m/n/10 (+20) for glycemic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--59
+\T1/ptm/m/n/10 (+20) con-trol to
+ []
+
+
+Underfull \hbox (badness 1057) in paragraph at lines 55--59
+\T1/ptm/m/n/10 (+20) tar-get spe-cific
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--59
+\T1/ptm/m/n/10 (+20) ranges of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--59
+\T1/ptm/m/n/10 (+20) out-comes
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--59
+\T1/ptm/m/n/10 (+20) and is per-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--59
+\T1/ptm/m/n/10 (+20) son-al-ized for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--59
+\T1/ptm/m/n/10 (+20) each pa-tient
+ []
+
+
+Underfull \hbox (badness 3281) in paragraph at lines 55--59
+\T1/ptm/m/n/10 (+20) de-pend-ing on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--59
+\T1/ptm/m/n/10 (+20) their spe-cific
+ []
+
+
+Underfull \hbox (badness 1360) in paragraph at lines 60--66
+\T1/ptm/m/n/10 (+20) ter-pretable clin-i-cal fea-
+ []
+
+
+Underfull \hbox (badness 2837) in paragraph at lines 60--66
+\T1/ptm/m/n/10 (+20) 500 clus-ters by us-ing
+ []
+
+
+Underfull \hbox (badness 1292) in paragraph at lines 60--66
+\T1/ptm/m/n/10 (+20) each state to only the
+ []
+
+
+Underfull \hbox (badness 3701) in paragraph at lines 67--73
+[]|\T1/ptm/b/n/10 1) \T1/ptm/m/n/10 (+20) If clin-i-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--73
+\T1/ptm/m/n/10 (+20) dosages
+ []
+
+
+Underfull \hbox (badness 2326) in paragraph at lines 67--73
+\T1/ptm/m/n/10 (+20) achieve the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--73
+\T1/ptm/m/n/10 (+20) tar-get glu-
+ []
+
+
+Underfull \hbox (badness 6316) in paragraph at lines 67--73
+\T1/ptm/m/n/10 (+20) cose lev-els
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--73
+\T1/ptm/m/n/10 (+20) cho-sen by
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--73
+\T1/ptm/m/n/10 (+20) the pol-icy
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--73
+\T1/ptm/m/n/10 (+20) re-duce the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--73
+\T1/ptm/m/n/10 (+20) mor-tal-ity
+ []
+
+
+Underfull \hbox (badness 3209) in paragraph at lines 67--73
+\T1/ptm/m/n/10 (+20) tic pa-tients.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--73
+\T1/ptm/b/n/10 2) \T1/ptm/m/n/10 (+20) Their
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--73
+\T1/ptm/m/n/10 (+20) mor-tal-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--73
+\T1/ptm/m/n/10 (-19) ity^^Uexpected
+ []
+
+
+Underfull \hbox (badness 1043) in paragraph at lines 67--73
+\T1/ptm/m/n/10 (+20) re-turn func-
+ []
+
+
+Underfull \hbox (badness 7685) in paragraph at lines 67--73
+\T1/ptm/m/n/10 (+20) tion shows
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--73
+\T1/ptm/m/n/10 (+20) that us-ing
+ []
+
+
+Underfull \hbox (badness 1953) in paragraph at lines 67--73
+\T1/ptm/m/n/10 (+20) raw fea-ture
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--73
+\T1/ptm/m/n/10 (+20) rep-re-sen-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--73
+\T1/ptm/m/n/10 (+20) ta-tion or
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--73
+\T1/ptm/m/n/10 (+20) learned
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--73
+\T1/ptm/m/n/10 (+20) fea-ture
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--73
+\T1/ptm/m/n/10 (+20) rep-re-sen-ta-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--73
+\T1/ptm/m/n/10 (+20) tion us-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--73
+\T1/ptm/m/n/10 (+20) au-toen-coder
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--73
+\T1/ptm/m/n/10 (+20) mor-tal-ity
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--73
+\T1/ptm/m/n/10 (+20) rate cal-cu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--73
+\T1/ptm/m/n/10 (+20) lated from
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--73
+\T1/ptm/m/n/10 (+20) la-tent rep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--73
+\T1/ptm/m/n/10 (+20) re-sen-ta-tion.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--73
+\T1/ptm/m/n/10 (+20) Both are
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--73
+\T1/ptm/m/n/10 (+20) mor-tal-ity
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--73
+\T1/ptm/m/n/10 (+20) rate cal-cu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--73
+\T1/ptm/m/n/10 (+20) lated from
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
+\T1/ptm/m/n/10 (+20) is dis-crete,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
+\T1/ptm/m/n/10 (+20) which is an
+ []
+
+
+Overfull \hbox (92.11496pt too wide) in paragraph at lines 44--80
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--90
+[]|\T1/ptm/m/n/10 (+20) Algo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--90
+[]|\T1/ptm/m/n/10 (+20) MDP
+ []
+
+
+Underfull \hbox (badness 1062) in paragraph at lines 90--91
+[]|\T1/ptm/m/n/10 (+20) Limitations &
+ []
+
+
+Overfull \hbox (12.4628pt too wide) in paragraph at lines 92--92
+[]|[]\T1/ptm/m/n/10 (-20) Gottesman
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--92
+\T1/ptm/m/n/10 (+20) et al.[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--92
+\T1/ptm/m/n/10 (+20) ([]2018[])
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--92
+\T1/ptm/b/n/10 This
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--92
+\T1/ptm/b/n/10 pa-per
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--92
+\T1/ptm/b/n/10 impt.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--92
+\T1/ptm/b/n/10 like a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--92
+\T1/ptm/b/n/10 re-view
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--92
+\T1/ptm/b/n/10 pa-per
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--92
+\T1/ptm/b/n/10 de-tail-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--92
+\T1/ptm/b/n/10 chal-
+ []
+
+
+Overfull \hbox (5.92644pt too wide) in paragraph at lines 94--95
+[]|\T1/ptm/m/n/10 (-20) Comapre
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+\T1/ptm/m/n/10 (+20) Per-
+ []
+
+
+Overfull \hbox (4.8385pt too wide) in paragraph at lines 94--95
+\T1/ptm/m/n/10 (-20) Decision
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+\T1/ptm/m/n/10 (+20) Im-por-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+\T1/ptm/m/n/10 (+20) tance
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+\T1/ptm/m/n/10 (+20) Sam-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+\T1/ptm/m/n/10 (+20) pling
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+\T1/ptm/m/n/10 (+20) (PDIS),
+ []
+
+
+Overfull \hbox (6.83203pt too wide) in paragraph at lines 94--95
+\T1/ptm/m/n/10 (-20) Weighted
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+\T1/ptm/m/n/10 (+20) Per-
+ []
+
+
+Overfull \hbox (2.66292pt too wide) in paragraph at lines 94--95
+\T1/ptm/m/n/10 (-20) decision
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+\T1/ptm/m/n/10 (+20) Im-por-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+\T1/ptm/m/n/10 (+20) tance
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+\T1/ptm/m/n/10 (+20) sam-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+\T1/ptm/m/n/10 (+20) pling
+ []
+
+
+Overfull \hbox (7.88423pt too wide) in paragraph at lines 94--95
+\T1/ptm/m/n/10 (-20) (WPDIS),
+ []
+
+
+Overfull \hbox (1.00319pt too wide) in paragraph at lines 94--95
+\T1/ptm/m/n/10 (-20) Doubly-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+\T1/ptm/m/n/10 (+20) Robust
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+\T1/ptm/m/n/10 (+20) (DR),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+\T1/ptm/m/n/10 (+20) and
+ []
+
+
+Overfull \hbox (6.83203pt too wide) in paragraph at lines 94--95
+\T1/ptm/m/n/10 (-20) Weighted
+ []
+
+
+Overfull \hbox (1.00319pt too wide) in paragraph at lines 94--95
+\T1/ptm/m/n/10 (-20) Doubly-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+\T1/ptm/m/n/10 (+20) Robust
+ []
+
+
+Overfull \hbox (1.50995pt too wide) in paragraph at lines 94--95
+\T1/ptm/m/n/10 (-20) (WDR).| 
+ []
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 96--101
+[]|\T1/ptm/b/n/10 1) \T1/ptm/m/n/10 (+20) Dis-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
+\T1/ptm/m/n/10 (+20) crete
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
+\T1/ptm/m/n/10 (+20) State
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
+\T1/ptm/m/n/10 (+20) Space,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
+\T1/ptm/m/n/10 (+20) with
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
+\T1/ptm/m/n/10 (+20) pa-tient
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
+\T1/ptm/m/n/10 (+20) con-di-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
+\T1/ptm/m/n/10 (+20) tions
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
+\T1/ptm/m/n/10 (+20) be-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
+\T1/ptm/m/n/10 (+20) noted
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
+\T1/ptm/m/n/10 (+20) at
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
+\T1/ptm/m/n/10 (+20) reg-u-lar
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
+\T1/ptm/m/n/10 (+20) in-ter-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
+\T1/ptm/m/n/10 (+20) vals.
+ []
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 96--101
+\T1/ptm/b/n/10 2) \T1/ptm/m/n/10 (+20) Dis-
+ []
+
+
+Overfull \hbox (1.01646pt too wide) in paragraph at lines 96--101
+\T1/ptm/m/n/10 (-20) cretized
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
+\T1/ptm/m/n/10 (+20) treat-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
+\T1/ptm/m/n/10 (+20) ment
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
+\T1/ptm/m/n/10 (+20) IV
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
+\T1/ptm/m/n/10 (+20) flu-ids
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
+\T1/ptm/m/n/10 (+20) so-pres-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
+\T1/ptm/m/n/10 (+20) sors
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
+\T1/ptm/m/n/10 (+20) each
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
+\T1/ptm/m/n/10 (+20) into 5
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
+\T1/ptm/m/n/10 (+20) bins,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
+\T1/ptm/m/n/10 (+20) rep-re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
+\T1/ptm/m/n/10 (+20) sent-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
+\T1/ptm/m/n/10 (+20) no
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
+\T1/ptm/m/n/10 (+20) treat-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
+\T1/ptm/m/n/10 (+20) ment
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
+\T1/ptm/m/n/10 (+20) (zero
+ []
+
+
+Overfull \hbox (1.67769pt too wide) in paragraph at lines 96--101
+\T1/ptm/m/n/10 (-20) dosage),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
+\T1/ptm/m/n/10 (+20) rest
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
+\T1/ptm/m/n/10 (+20) rep-re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
+\T1/ptm/m/n/10 (+20) sent-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
+\T1/ptm/m/n/10 (+20) quar-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
+\T1/ptm/m/n/10 (+20) tiles
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
+\T1/ptm/m/n/10 (+20) of the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
+\T1/ptm/m/n/10 (+20) ac-tions
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
+\T1/ptm/m/n/10 (+20) pre-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
+\T1/ptm/m/n/10 (+20) scribed
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
+\T1/ptm/m/n/10 (+20) by
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
+\T1/ptm/m/n/10 (+20) physi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
+\T1/ptm/m/n/10 (+20) cians.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
+\T1/ptm/m/n/10 (+20) Hence
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
+\T1/ptm/m/n/10 (+20) ac-tions.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
+\T1/ptm/b/n/10 3 \T1/ptm/m/n/10 (+20) Re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+\T1/ptm/m/n/10 (+20) cor-rectly
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+\T1/ptm/m/n/10 (+20) oth-er-wise
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+\T1/ptm/m/n/10 (+20) the sus-cep-ti-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+\T1/ptm/m/n/10 (+20) bil-ity of AI
+ []
+
+
+Underfull \hbox (badness 6173) in paragraph at lines 102--103
+\T1/ptm/m/n/10 (+20) al-go-rithms to
+ []
+
+
+Underfull \hbox (badness 3302) in paragraph at lines 102--103
+\T1/ptm/m/n/10 (+20) learn harm-ful
+ []
+
+
+Underfull \hbox (badness 5637) in paragraph at lines 102--103
+\T1/ptm/b/n/10 2) \T1/ptm/m/n/10 (+20) The al-go-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+\T1/ptm/m/n/10 (+20) rithm learns
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+\T1/ptm/m/n/10 (+20) to rec-og-nize
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+\T1/ptm/m/n/10 (+20) pa-tients who
+ []
+
+
+Underfull \hbox (badness 2080) in paragraph at lines 102--103
+\T1/ptm/m/n/10 (+20) care \T1/ptm/m/it/10 (+20) but \T1/ptm/m/n/10 (+20) lack
+ []
+
+
+Underfull \hbox (badness 2293) in paragraph at lines 102--103
+\T1/ptm/m/n/10 (+20) of op-tions in
+ []
+
+
+Underfull \hbox (badness 4569) in paragraph at lines 102--103
+\T1/ptm/m/n/10 (+20) the al-go-rithm
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+\T1/ptm/m/n/10 (+20) choose in-tu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+\T1/ptm/m/n/10 (+20) ba-tion which
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 102--103
+\T1/ptm/m/n/10 (+20) is not rec-om-
+ []
+
+
+Underfull \hbox (badness 3271) in paragraph at lines 102--103
+\T1/ptm/m/n/10 (+20) mended. \T1/ptm/b/n/10 3)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+\T1/ptm/m/n/10 (+20) the learned
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+\T1/ptm/m/n/10 (+20) treat-ment
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+\T1/ptm/m/n/10 (+20) for pa-tients
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+\T1/ptm/m/n/10 (+20) with very
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+\T1/ptm/m/n/10 (+20) high SOFA
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+\T1/ptm/m/n/10 (+20) (Se-quen-tial
+ []
+
+
+Underfull \hbox (badness 1259) in paragraph at lines 102--103
+\T1/ptm/m/n/10 (+20) Or-gan Fail-ure
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+\T1/ptm/m/n/10 (+20) As-sess-ment)
+ []
+
+
+Underfull \hbox (badness 3471) in paragraph at lines 102--103
+\T1/ptm/m/n/10 (+20) score. This
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+\T1/ptm/m/n/10 (+20) rec-om-men-da-
+ []
+
+
+Underfull \hbox (badness 2671) in paragraph at lines 102--103
+\T1/ptm/m/n/10 (+20) tion is faulty
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+\T1/ptm/m/n/10 (+20) pre-dict this
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+\T1/ptm/m/n/10 (+20) be-cause the
+ []
+
+
+Underfull \hbox (badness 3281) in paragraph at lines 102--103
+\T1/ptm/m/n/10 (+20) mor-tal-ity rate
+ []
+
+
+Underfull \hbox (badness 7151) in paragraph at lines 102--103
+\T1/ptm/m/n/10 (+20) for this sub-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+\T1/ptm/m/n/10 (+20) pop-u-la-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--106
+[]|\T1/ptm/b/n/10 1) \T1/ptm/m/n/10 (+20) The weighted
+ []
+
+
+Underfull \hbox (badness 8132) in paragraph at lines 104--106
+\T1/ptm/m/n/10 (+20) meth-ods (WPDIS,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--106
+\T1/ptm/m/n/10 (+20) WDR) trade in-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--106
+\T1/ptm/m/n/10 (+20) creased bias for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--106
+\T1/ptm/m/n/10 (+20) re-duced vari-ance,
+ []
+
+
+Underfull \hbox (badness 2600) in paragraph at lines 104--106
+\T1/ptm/m/n/10 (+20) while the per de-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--106
+\T1/ptm/m/n/10 (+20) ci-sion meth-ods
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--106
+\T1/ptm/m/n/10 (+20) re-duce vari-ance
+ []
+
+
+Underfull \hbox (badness 2435) in paragraph at lines 104--106
+\T1/ptm/m/n/10 (+20) by com-put-ing the
+ []
+
+
+Underfull \hbox (badness 1946) in paragraph at lines 104--106
+\T1/ptm/m/n/10 (+20) weights in a way
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--106
+\T1/ptm/m/n/10 (+20) based on fu-ture
+ []
+
+
+Underfull \hbox (badness 1430) in paragraph at lines 104--106
+\T1/ptm/m/n/10 (+20) ones. \T1/ptm/b/n/10 2) \T1/ptm/m/n/10 (+20) Dou-bly
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--106
+\T1/ptm/m/n/10 (+20) WDR) lever-age
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--106
+\T1/ptm/m/n/10 (+20) an ap-prox-i-mate
+ []
+
+
+Underfull \hbox (badness 6220) in paragraph at lines 104--106
+\T1/ptm/m/n/10 (+20) the poli-cies have
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--106
+\T1/ptm/m/n/10 (+20) rel-a-tively close
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--106
+\T1/ptm/m/n/10 (+20) large vari-ances,
+ []
+
+
+Underfull \hbox (badness 1152) in paragraph at lines 104--106
+\T1/ptm/m/n/10 (+20) mak-ing it hard to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--106
+\T1/ptm/m/n/10 (+20) draw defini-tive
+ []
+
+
+Underfull \hbox (badness 1205) in paragraph at lines 104--106
+\T1/ptm/m/n/10 (+20) con-clu-sions. The
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--106
+\T1/ptm/m/n/10 (+20) es-ti-ma-tor uses a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--106
+\T1/ptm/m/n/10 (+20) model to re-duce
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--106
+\T1/ptm/m/n/10 (+20) The model-free
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--106
+\T1/ptm/m/n/10 (+20) WPDIS es-ti-ma-tor
+ []
+
+
+Underfull \hbox (badness 5245) in paragraph at lines 104--106
+\T1/ptm/m/n/10 (+20) also suf-fers from
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--106
+\T1/ptm/m/n/10 (+20) large vari-ances.
+ []
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 104--106
+\T1/ptm/b/n/10 4) \T1/ptm/m/n/10 (+20) To the pa-tients
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--106
+\T1/ptm/m/n/10 (+20) risk group, the
+ []
+
+
+Underfull \hbox (badness 1584) in paragraph at lines 104--106
+\T1/ptm/m/n/10 (+20) to these group as
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--106
+\T1/ptm/m/n/10 (+20) they have lower
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
+[]|\T1/ptm/b/n/10 1) \T1/ptm/m/n/10 (+20) State rep-re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
+\T1/ptm/m/n/10 (+20) sen-ta-tion need
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
+\T1/ptm/m/n/10 (+20) to ac-count for
+ []
+
+
+Underfull \hbox (badness 4084) in paragraph at lines 107--108
+\T1/ptm/m/n/10 (+20) might con-found
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
+\T1/ptm/m/n/10 (+20) es-ti-mates of
+ []
+
+
+Underfull \hbox (badness 4531) in paragraph at lines 107--108
+\T1/ptm/m/n/10 (+20) out-comes un-der
+ []
+
+
+Underfull \hbox (badness 2277) in paragraph at lines 107--108
+\T1/ptm/m/n/10 (+20) the pol-icy. \T1/ptm/b/n/10 2)
+ []
+
+
+Underfull \hbox (badness 2626) in paragraph at lines 107--108
+\T1/ptm/m/n/10 (+20) ac-count for the
+ []
+
+
+Underfull \hbox (badness 3746) in paragraph at lines 107--108
+\T1/ptm/m/n/10 (+20) the pa-tient and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
+\T1/ptm/m/n/10 (+20) de-ter-mine/avoid
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
+\T1/ptm/m/n/10 (+20) such con-found-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
+\T1/ptm/m/n/10 (+20) ing vari-ables.
+ []
+
+
+Underfull \hbox (badness 1776) in paragraph at lines 107--108
+\T1/ptm/m/n/10 (+20) In-stead, do-main
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
+\T1/ptm/m/n/10 (+20) ex-pert/clinical
+ []
+
+
+Underfull \hbox (badness 5652) in paragraph at lines 107--108
+\T1/ptm/m/n/10 (+20) re-searcher must
+ []
+
+
+Underfull \hbox (badness 7907) in paragraph at lines 107--108
+\T1/ptm/m/n/10 (+20) is es-pe-cially a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
+\T1/ptm/m/n/10 (+20) dif-fi-cult prob-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
+\T1/ptm/m/n/10 (+20) lem to solve
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
+\T1/ptm/m/n/10 (+20) in se-quen-tial
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
+\T1/ptm/m/n/10 (+20) per-for-mance
+ []
+
+
+Underfull \hbox (badness 7740) in paragraph at lines 109--110
+\T1/ptm/m/n/10 (+20) suf-fers. \T1/ptm/b/n/10 2)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
+\T1/ptm/m/n/10 (+20) in the per-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
+\T1/ptm/m/n/10 (+20) for-mance of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
+\T1/ptm/m/n/10 (+20) Im-por-tance
+ []
+
+
+Underfull \hbox (badness 1466) in paragraph at lines 109--110
+\T1/ptm/m/n/10 (+20) ac-tions which
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
+\T1/ptm/m/n/10 (+20) are never
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
+\T1/ptm/m/n/10 (+20) tested has
+ []
+
+
+Underfull \hbox (badness 2310) in paragraph at lines 109--110
+\T1/ptm/m/n/10 (+20) close to zero
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
+\T1/ptm/m/n/10 (+20) prob-a-bil-ity.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
+\T1/ptm/b/n/10 3) \T1/ptm/m/n/10 (+20) Suf-fi-cient
+ []
+
+
+Underfull \hbox (badness 1721) in paragraph at lines 109--110
+\T1/ptm/m/n/10 (+20) the ac-tion by
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
+\T1/ptm/m/n/10 (+20) the poli-cies
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
+\T1/ptm/m/n/10 (+20) can-not be
+ []
+
+
+Overfull \hbox (92.11496pt too wide) in paragraph at lines 88--115
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--126
+[]|\T1/ptm/m/n/10 (+20) Algo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--126
+[]|\T1/ptm/m/n/10 (+20) MDP
+ []
+
+
+Underfull \hbox (badness 1062) in paragraph at lines 126--127
+[]|\T1/ptm/m/n/10 (+20) Limitations &
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--128
+[]|[]\T1/ptm/m/n/10 (+20) Raghu
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--128
+\T1/ptm/m/n/10 (+20) et al.[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+[]|\T1/ptm/m/n/10 (+20) Per
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+\T1/ptm/m/n/10 (+20) Hori-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+\T1/ptm/m/n/10 (+20) zon
+ []
+
+
+Overfull \hbox (6.83203pt too wide) in paragraph at lines 130--131
+\T1/ptm/m/n/10 (-20) Weighted
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+\T1/ptm/m/n/10 (+20) Im-por-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+\T1/ptm/m/n/10 (+20) tance
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+\T1/ptm/m/n/10 (+20) sam-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+\T1/ptm/m/n/10 (+20) pling
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+\T1/ptm/m/n/10 (+20) (PH-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+\T1/ptm/m/n/10 (+20) WIS),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+\T1/ptm/m/n/10 (+20) Hori-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+\T1/ptm/m/n/10 (+20) zon
+ []
+
+
+Overfull \hbox (6.83203pt too wide) in paragraph at lines 130--131
+\T1/ptm/m/n/10 (-20) Weighted
+ []
+
+
+Overfull \hbox (1.00319pt too wide) in paragraph at lines 130--131
+\T1/ptm/m/n/10 (-20) Doubly-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+\T1/ptm/m/n/10 (+20) Robust
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+\T1/ptm/m/n/10 (+20) (PH-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--134
+\T1/ptm/m/n/10 (+20) State
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--134
+\T1/ptm/m/n/10 (+20) Space
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--134
+\T1/ptm/m/n/10 (+20) (Toy
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--134
+\T1/ptm/m/n/10 (+20) do-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--134
+\T1/ptm/m/n/10 (+20) main)
+ []
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 132--134
+\T1/ptm/b/n/10 2) \T1/ptm/m/n/10 (+20) Dis-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--134
+\T1/ptm/m/n/10 (+20) crete
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--134
+\T1/ptm/m/n/10 (+20) Ac-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--134
+\T1/ptm/m/n/10 (+20) Space
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--134
+\T1/ptm/m/n/10 (+20) (Toy
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--134
+\T1/ptm/m/n/10 (+20) Do-
+ []
+
+
+Underfull \hbox (badness 1838) in paragraph at lines 135--137
+[]|\T1/ptm/b/n/10 1) \T1/ptm/m/n/10 (+20) This work
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--137
+\T1/ptm/m/n/10 (+20) eval-u-ates the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--137
+\T1/ptm/m/n/10 (+20) sen-si-tiv-ity
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--137
+\T1/ptm/m/n/10 (+20) of off-policy
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--137
+\T1/ptm/m/n/10 (+20) eval-u-a-tion to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--137
+\T1/ptm/m/n/10 (+20) cal-i-bra-tion
+ []
+
+
+Underfull \hbox (badness 4673) in paragraph at lines 135--137
+\T1/ptm/m/n/10 (+20) er-rors in the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--137
+\T1/ptm/m/n/10 (+20) learned be-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--137
+\T1/ptm/m/n/10 (+20) They show
+ []
+
+
+Underfull \hbox (badness 1394) in paragraph at lines 135--137
+\T1/ptm/m/n/10 (+20) how pow-er-ful
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--137
+\T1/ptm/m/n/10 (+20) para-met-ric
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--137
+\T1/ptm/m/n/10 (+20) mod-els such
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--137
+\T1/ptm/m/n/10 (+20) as neu-ral
+ []
+
+
+Underfull \hbox (badness 6542) in paragraph at lines 135--137
+\T1/ptm/m/n/10 (+20) net-works can
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--137
+\T1/ptm/m/n/10 (+20) un-cal-i-brated
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--137
+\T1/ptm/m/n/10 (+20) be-haviour
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--137
+\T1/ptm/m/n/10 (+20) on a real-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
+\T1/ptm/m/n/10 (+20) and PH-WDR in-
+ []
+
+
+Underfull \hbox (badness 1275) in paragraph at lines 138--139
+\T1/ptm/m/n/10 (+20) stead of step-wise
+ []
+
+
+Underfull \hbox (badness 3138) in paragraph at lines 138--139
+\T1/ptm/m/n/10 (+20) vari-ance. \T1/ptm/b/n/10 2) \T1/ptm/m/n/10 (+20) To
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
+\T1/ptm/m/n/10 (+20) split the hori-zon
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
+\T1/ptm/m/n/10 (+20) be-hav-ior pol-icy,
+ []
+
+
+Underfull \hbox (badness 7722) in paragraph at lines 138--139
+\T1/ptm/m/n/10 (+20) two meth-ods are
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
+\T1/ptm/m/n/10 (+20) and in-ter-ven-tion
+ []
+
+
+Underfull \hbox (badness 4429) in paragraph at lines 138--139
+\T1/ptm/m/n/10 (+20) split-ting ran-domly
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
+\T1/ptm/m/n/10 (+20) chooses half the
+ []
+
+
+Underfull \hbox (badness 1527) in paragraph at lines 138--139
+\T1/ptm/m/n/10 (+20) poli-cies, while in-
+ []
+
+
+Underfull \hbox (badness 2772) in paragraph at lines 138--139
+\T1/ptm/m/n/10 (+20) have been treated
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
+\T1/ptm/m/n/10 (+20) with va-so-pres-sors
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
+\T1/ptm/m/n/10 (+20) pare be-tween $\OML/cmm/m/it/10 ^^Y[]$
+ []
+
+
+Underfull \hbox (badness 8075) in paragraph at lines 140--150
+[]|\T1/ptm/b/n/10 1) \T1/ptm/m/n/10 (+20) Un-cal-i-brated
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--150
+\T1/ptm/m/n/10 (+20) be-haviour pol-
+ []
+
+
+Underfull \hbox (badness 2753) in paragraph at lines 140--150
+\T1/ptm/m/n/10 (+20) icy mod-els can
+ []
+
+
+Underfull \hbox (badness 2418) in paragraph at lines 140--150
+\T1/ptm/m/n/10 (+20) re-sult in highly
+ []
+
+
+Underfull \hbox (badness 7468) in paragraph at lines 140--150
+\T1/ptm/m/n/10 (+20) in-ac-cu-rate OPE
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--150
+\T1/ptm/m/n/10 (+20) man-age-ment
+ []
+
+
+Underfull \hbox (badness 1910) in paragraph at lines 140--150
+\T1/ptm/m/n/10 (+20) para-met-ric mod-
+ []
+
+
+Underfull \hbox (badness 3108) in paragraph at lines 140--150
+\T1/ptm/m/n/10 (+20) neu-ral net-works
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--150
+\T1/ptm/m/n/10 (+20) pro-duce highly
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--150
+\T1/ptm/m/n/10 (+20) can pro-duce
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--150
+\T1/ptm/m/n/10 (+20) over-con-fi-dent
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--150
+\T1/ptm/m/n/10 (+20) and in-cor-rect
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--150
+\T1/ptm/m/n/10 (+20) prob-a-bil-ity es-ti-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--150
+\T1/ptm/b/n/10 3) \T1/ptm/m/n/10 (+20) A sim-ple,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--150
+\T1/ptm/m/n/10 (+20) non-parametric,
+ []
+
+
+Underfull \hbox (badness 5519) in paragraph at lines 140--150
+\T1/ptm/m/n/10 (+20) k-nearest neigh-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--150
+\T1/ptm/m/n/10 (+20) bours model
+ []
+
+
+Underfull \hbox (badness 1776) in paragraph at lines 140--150
+\T1/ptm/m/n/10 (+20) is shown to be
+ []
+
+
+Underfull \hbox (badness 1975) in paragraph at lines 140--150
+\T1/ptm/m/n/10 (+20) bet-ter cal-i-brated
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--150
+\T1/ptm/m/n/10 (+20) than all the
+ []
+
+
+Underfull \hbox (badness 2762) in paragraph at lines 140--150
+\T1/ptm/m/n/10 (+20) mod-els in their
+ []
+
+
+Underfull \hbox (badness 1067) in paragraph at lines 140--150
+\T1/ptm/m/n/10 (+20) med-i-cal do-main,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--150
+\T1/ptm/m/n/10 (+20) and us-ing this
+ []
+
+
+Underfull \hbox (badness 5696) in paragraph at lines 140--150
+\T1/ptm/m/n/10 (+20) as a be-haviour
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--150
+\T1/ptm/m/n/10 (+20) pol-icy model
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--155
+[]|\T1/ptm/b/n/10 1) \T1/ptm/m/n/10 (+20) The pro-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--155
+\T1/ptm/m/n/10 (+20) posed pro-ce-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--155
+\T1/ptm/m/n/10 (+20) dure can be
+ []
+
+
+Underfull \hbox (badness 1609) in paragraph at lines 151--155
+\T1/ptm/m/n/10 (+20) used in other
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--155
+\T1/ptm/m/n/10 (+20) sit-u-a-tions
+ []
+
+
+Underfull \hbox (badness 1067) in paragraph at lines 151--155
+\T1/ptm/m/n/10 (+20) where the be-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--155
+\T1/ptm/m/n/10 (+20) is un-known,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--155
+\T1/ptm/m/n/10 (+20) and could
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--155
+\T1/ptm/m/n/10 (+20) im-prove the
+ []
+
+
+Overfull \hbox (92.11496pt too wide) in paragraph at lines 124--160
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--170
+[]|\T1/ptm/m/n/10 (+20) Algo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--170
+[]|\T1/ptm/m/n/10 (+20) MDP
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--170
+[]|\T1/ptm/m/n/10 (+20) Conclusions/
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--172
+[]|[]\T1/ptm/m/n/10 (+20) Prasad
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--172
+\T1/ptm/m/n/10 (+20) et al.[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--175
+[]|\T1/ptm/m/n/10 (+20) Fitted
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--175
+\T1/ptm/m/n/10 (+20) Q-
+ []
+
+
+Overfull \hbox (3.20183pt too wide) in paragraph at lines 174--175
+\T1/ptm/m/n/10 (-20) Iteration
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--175
+\T1/ptm/m/n/10 (+20) wither
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--175
+\T1/ptm/m/n/10 (+20) Ex-tra
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--175
+\T1/ptm/m/n/10 (+20) Trees
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--175
+\T1/ptm/m/n/10 (+20) and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--175
+\T1/ptm/m/n/10 (+20) Neu-ral
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--175
+\T1/ptm/m/n/10 (+20) Net-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--175
+\T1/ptm/m/n/10 (+20) work
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--175
+\T1/ptm/m/n/10 (+20) tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--175
+\T1/ptm/m/n/10 (+18) ap-prox-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--175
+\T1/ptm/m/n/10 i-ma-tors
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--179
+\T1/ptm/m/n/10 (+20) State
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--179
+\T1/ptm/m/n/10 (+20) Space
+ []
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 176--179
+\T1/ptm/b/n/10 2) \T1/ptm/m/n/10 (+20) Dis-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--179
+\T1/ptm/m/n/10 (+20) crete
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--179
+\T1/ptm/m/n/10 (+20) Ac-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--179
+\T1/ptm/m/n/10 (+20) Space
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--179
+\T1/ptm/b/n/10 3)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--179
+\T1/ptm/m/n/10 (+20) They
+ []
+
+
+Underfull \hbox (badness 2293) in paragraph at lines 176--179
+\T1/ptm/m/n/10 (+20) do not
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--179
+\T1/ptm/m/n/10 (+20) con-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--179
+\T1/ptm/m/n/10 (+20) sider
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--179
+\T1/ptm/m/n/10 (+20) this
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--179
+\T1/ptm/m/n/10 (+20) as a
+ []
+
+
+Overfull \hbox (3.76071pt too wide) in paragraph at lines 176--179
+\T1/ptm/m/n/10 (-20) POMDP| 
+ []
+
+
+Underfull \hbox (badness 1838) in paragraph at lines 180--182
+[]|\T1/ptm/b/n/10 1) \T1/ptm/m/n/10 (+20) This work
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--182
+\T1/ptm/m/n/10 (+20) de-vel-ops a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--182
+\T1/ptm/m/n/10 (+20) de-ci-sion sup-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--182
+\T1/ptm/m/n/10 (+20) port tool to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--182
+\T1/ptm/m/n/10 (+20) is ready for
+ []
+
+
+Underfull \hbox (badness 3792) in paragraph at lines 180--182
+\T1/ptm/m/n/10 (+20) It uses avail-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--182
+\T1/ptm/m/n/10 (+20) able pa-tient
+ []
+
+
+Underfull \hbox (badness 8170) in paragraph at lines 180--182
+\T1/ptm/m/n/10 (+20) and pro-poses
+ []
+
+
+Underfull \hbox (badness 3701) in paragraph at lines 180--182
+\T1/ptm/m/n/10 (+20) the off-policy
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--182
+\T1/ptm/m/n/10 (+20) Fit-ted Q-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--182
+\T1/ptm/m/n/10 (+20) al-go-rithm
+ []
+
+
+Underfull \hbox (badness 3396) in paragraph at lines 180--182
+\T1/ptm/m/n/10 (+20) with dif-fer-ent
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--182
+\T1/ptm/m/n/10 (+20) re-gres-sors
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--182
+\T1/ptm/m/n/10 (+20) for op-ti-mal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
+[]|\T1/ptm/b/n/10 1) \T1/ptm/m/n/10 (+20) Sim-ple
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
+\T1/ptm/m/n/10 (+20) Q-Learning
+ []
+
+
+Underfull \hbox (badness 2884) in paragraph at lines 183--184
+\T1/ptm/m/n/10 (+20) fails to learn
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
+\T1/ptm/m/n/10 (+20) (with batch
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
+\T1/ptm/m/n/10 (+20) for Func-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
+\T1/ptm/m/n/10 (+20) ap-prox-i-ma-
+ []
+
+
+Underfull \hbox (badness 3333) in paragraph at lines 183--184
+\T1/ptm/m/n/10 (+20) tion and this
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
+\T1/ptm/b/n/10 3) \T1/ptm/m/n/10 (+20) Neu-ral
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
+\T1/ptm/m/n/10 (+20) FQI with 3
+ []
+
+
+Underfull \hbox (badness 4595) in paragraph at lines 183--184
+\T1/ptm/m/n/10 (+20) hid-den lay-ers
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
+\T1/ptm/m/n/10 (+20) for func-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
+\T1/ptm/m/n/10 (+20) ap-prox-i-ma-tion
+ []
+
+
+Underfull \hbox (badness 2261) in paragraph at lines 183--184
+\T1/ptm/m/n/10 (+20) also per-forms
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
+\T1/ptm/m/n/10 (+20) well in this
+ []
+
+
+Underfull \hbox (badness 1127) in paragraph at lines 183--184
+\T1/ptm/m/n/10 (+20) four-fold gain
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--188
+\T1/ptm/m/n/10 (+20) that the al-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--188
+\T1/ptm/m/n/10 (+20) go-rithm is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--188
+\T1/ptm/m/n/10 (+20) ca-pa-ble of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--188
+\T1/ptm/m/n/10 (+20) ex-tract-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--188
+\T1/ptm/m/n/10 (+20) mean-ing-ful
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--188
+\T1/ptm/m/n/10 (+20) in-di-ca-tors in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--188
+\T1/ptm/m/n/10 rec-om-mend-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--188
+\T1/ptm/m/n/10 (+20) ex-tu-ba-tion
+ []
+
+
+Underfull \hbox (badness 6236) in paragraph at lines 185--188
+\T1/ptm/m/n/10 (+20) time and se-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--188
+\T1/ptm/m/n/10 (+20) da-tion lev-els,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--188
+\T1/ptm/m/n/10 (+20) on av-er-age
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--188
+\T1/ptm/m/n/10 (+20) out-per-form-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--188
+\T1/ptm/m/n/10 (+20) clin-i-cal prac-
+ []
+
+
+Underfull \hbox (badness 3343) in paragraph at lines 185--188
+\T1/ptm/m/n/10 (+20) tice in terms
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--188
+\T1/ptm/m/n/10 (+20) of reg-u-la-tion
+ []
+
+
+Underfull \hbox (badness 3343) in paragraph at lines 185--188
+\T1/ptm/m/n/10 (+20) of vi-tals and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--188
+\T1/ptm/m/n/10 (+20) rein-tu-ba-tions
+ []
+
+
+Underfull \hbox (badness 1360) in paragraph at lines 189--205
+\T1/ptm/m/n/10 (+20) ward shap-ing. The
+ []
+
+
+Underfull \hbox (badness 1824) in paragraph at lines 189--205
+\T1/ptm/m/n/10 (+20) cur-rent meth-ods dis-
+ []
+
+
+Underfull \hbox (badness 5359) in paragraph at lines 189--205
+\T1/ptm/m/n/10 (+20) si-tiv-ity to the rel-a-
+ []
+
+
+Underfull \hbox (badness 3930) in paragraph at lines 189--205
+\T1/ptm/m/n/10 (+20) i-ous com-po-nents of
+ []
+
+
+Underfull \hbox (badness 2103) in paragraph at lines 189--205
+\T1/ptm/m/n/10 (+20) af-ter each tran-si-tion.
+ []
+
+
+Underfull \hbox (badness 2828) in paragraph at lines 189--205
+\T1/ptm/m/n/10 (+20) of the re-ward func-
+ []
+
+
+Underfull \hbox (badness 1629) in paragraph at lines 189--205
+\T1/ptm/b/n/10 2) \T1/ptm/m/n/10 (+20) Ef-fec-tive com-mu-
+ []
+
+
+Underfull \hbox (badness 2012) in paragraph at lines 189--205
+\T1/ptm/m/n/10 (+20) ni-ca-tion of the best
+ []
+
+
+Underfull \hbox (badness 4217) in paragraph at lines 189--205
+\T1/ptm/m/n/10 (+20) ac-tion, ex-pected re-
+ []
+
+
+Underfull \hbox (badness 4181) in paragraph at lines 189--205
+\T1/ptm/m/n/10 (+20) can per-haps be ad-
+ []
+
+
+Underfull \hbox (badness 4403) in paragraph at lines 189--205
+\T1/ptm/m/n/10 (+20) ef-fects more ex-plic-
+ []
+
+
+Underfull \hbox (badness 2027) in paragraph at lines 189--205
+\T1/ptm/m/n/10 (+20) ob-ser-va-tions map to
+ []
+
+
+Underfull \hbox (badness 3826) in paragraph at lines 189--205
+\T1/ptm/m/n/10 (+20) space. \T1/ptm/b/n/10 5) \T1/ptm/m/n/10 (+20) Ex-tend-
+ []
+
+
+Overfull \hbox (92.11496pt too wide) in paragraph at lines 168--210
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 220--220
+[]|\T1/ptm/m/n/10 (+20) Algo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 220--220
+[]|\T1/ptm/m/n/10 (+20) MDP
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 220--220
+[]|\T1/ptm/m/n/10 (+20) Conclusions/
+ []
+
+
+Underfull \hbox (badness 1062) in paragraph at lines 220--221
+[]|\T1/ptm/m/n/10 (+20) Limitations &
+ []
+
+
+Overfull \hbox (4.82764pt too wide) in paragraph at lines 222--222
+[]|[]\T1/ptm/m/n/10 (-20) Padmanabhan
+ []
+
+
+Overfull \hbox (3.00172pt too wide) in paragraph at lines 222--223
+[]|\T1/ptm/m/n/10 (-20) Anesthesia
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
+\T1/ptm/m/n/10 (+20) of ICU
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
+\T1/ptm/m/n/10 (+20) pa-tient
+ []
+
+
+Underfull \hbox (badness 6691) in paragraph at lines 222--223
+\T1/ptm/m/n/10 (+20) with res-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
+\T1/ptm/m/n/10 (+20) pi-ra-tory
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
+\T1/ptm/m/n/10 (+20) dis-ease
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
+\T1/ptm/m/n/10 (+20) sym-
+ []
+
+
+Overfull \hbox (5.93623pt too wide) in paragraph at lines 224--225
+[]|\T1/ptm/m/n/10 (-20) Modified
+ []
+
+
+Overfull \hbox (4.10641pt too wide) in paragraph at lines 224--225
+\T1/ptm/m/n/10 (-20) Watkin's
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
+\T1/ptm/m/n/10 (+20) Q-
+ []
+
+
+Overfull \hbox (2.11418pt too wide) in paragraph at lines 224--225
+\T1/ptm/m/n/10 (-20) learning
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
+\T1/ptm/m/n/10 (+20) (on-
+ []
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 226--228
+[]|\T1/ptm/b/n/10 1) \T1/ptm/m/n/10 (+20) Dis-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 226--228
+\T1/ptm/m/n/10 (+20) crete
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 226--228
+\T1/ptm/m/n/10 (+20) State
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 226--228
+\T1/ptm/m/n/10 (+20) Space
+ []
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 226--228
+\T1/ptm/b/n/10 2) \T1/ptm/m/n/10 (+20) Dis-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 226--228
+\T1/ptm/m/n/10 (+20) crete
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 226--228
+\T1/ptm/m/n/10 (+20) Ac-tion
+ []
+
+
+Underfull \hbox (badness 1838) in paragraph at lines 229--233
+[]|\T1/ptm/b/n/10 1) \T1/ptm/m/n/10 (+20) This work
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--233
+\T1/ptm/m/n/10 (+20) de-velop a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--233
+\T1/ptm/m/n/10 (+20) RL-based
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--233
+\T1/ptm/m/n/10 (+20) closed- loop
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--233
+\T1/ptm/m/n/10 (+20) troller us-ing
+ []
+
+
+Underfull \hbox (badness 4608) in paragraph at lines 229--233
+\T1/ptm/m/n/10 (+20) the bis-pec-tral
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--233
+\T1/ptm/m/n/10 (+20) in-dex (BIS)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--233
+\T1/ptm/m/n/10 (+20) as a con-trol
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--233
+\T1/ptm/m/n/10 (+20) con-cur-rently
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--233
+\T1/ptm/m/n/10 (+20) ac-count-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--233
+\T1/ptm/m/n/10 (+20) rial pres-sure
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--233
+\T1/ptm/m/n/10 (+20) (MAP). \T1/ptm/b/n/10 2)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--233
+\T1/ptm/m/n/10 (+20) This work
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--233
+\T1/ptm/m/n/10 (+20) pa-ram-e-ters
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--233
+\T1/ptm/m/n/10 (+20) to con-trol
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--233
+\T1/ptm/m/n/10 (+20) propo-fol in-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--233
+\T1/ptm/m/n/10 (+20) fu-sion rates
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--233
+\T1/ptm/m/n/10 (+20) to reg-u-late
+ []
+
+
+Underfull \hbox (badness 6300) in paragraph at lines 229--233
+\T1/ptm/m/n/10 (+20) the BIS and
+ []
+
+
+Underfull \hbox (badness 1997) in paragraph at lines 234--237
+[]|\T1/ptm/b/n/10 1) \T1/ptm/m/n/10 (+20) The states
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--237
+\T1/ptm/m/n/10 (+20) should be
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--237
+\T1/ptm/m/n/10 (+20) ob-serv-able
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--237
+\T1/ptm/m/n/10 (+20) for de-ci-sion
+ []
+
+
+Underfull \hbox (badness 4556) in paragraph at lines 234--237
+\T1/ptm/m/n/10 (+20) mak-ing. \T1/ptm/b/n/10 2)
+ []
+
+
+Underfull \hbox (badness 2103) in paragraph at lines 234--237
+\T1/ptm/m/n/10 (+20) The states of
+ []
+
+
+Underfull \hbox (badness 2790) in paragraph at lines 234--237
+\T1/ptm/m/n/10 (+20) based on the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--237
+\T1/ptm/m/n/10 (+20) mea-sur-able
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--237
+\T1/ptm/m/n/10 (+20) pa-ram-e-ters
+ []
+
+
+Underfull \hbox (badness 5133) in paragraph at lines 234--237
+\T1/ptm/b/n/10 3) \T1/ptm/m/n/10 (+20) The er-ror
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--237
+\T1/ptm/m/n/10 (+20) is mea-sured
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--237
+\T1/ptm/m/n/10 (+20) based on a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--237
+\T1/ptm/m/n/10 (+20) er-ror of the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--237
+\T1/ptm/m/n/10 (+20) MAP(error).
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--237
+\T1/ptm/m/n/10 (+20) This re-duces
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--237
+\T1/ptm/m/n/10 (+20) the com-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--237
+\T1/ptm/m/n/10 (+20) pu-ta-tional
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--237
+\T1/ptm/m/n/10 (+20) com-plex-ity
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--237
+\T1/ptm/m/n/10 (+20) of the RL
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--237
+\T1/ptm/m/n/10 (+20) con-se-quently
+ []
+
+
+Underfull \hbox (badness 5050) in paragraph at lines 234--237
+\T1/ptm/m/n/10 (+20) the con-troller
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--237
+\T1/ptm/m/n/10 (+20) pro-cess-ing
+ []
+
+
+Underfull \hbox (badness 1874) in paragraph at lines 234--237
+\T1/ptm/m/n/10 (+20) used to learn
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--237
+\T1/ptm/m/n/10 (+20) the se-quence
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--237
+\T1/ptm/m/n/10 (+20) of in-fu-sion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--237
+\T1/ptm/m/n/10 (+20) rates that
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--237
+\T1/ptm/m/n/10 (+20) re-sults in a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--237
+\T1/ptm/m/n/10 (+20) min-i-mum
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--246
+[]|\T1/ptm/b/n/10 1) \T1/ptm/m/n/10 (+20) In this
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--246
+\T1/ptm/m/n/10 (+20) pa-per, a re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--246
+\T1/ptm/m/n/10 (+20) in-force-ment
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--246
+\T1/ptm/m/n/10 (+19) learning-based
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--246
+\T1/ptm/m/n/10 (+20) ap-proach for
+ []
+
+
+Underfull \hbox (badness 1418) in paragraph at lines 238--246
+\T1/ptm/m/n/10 (+20) the si-mul-ta-ne-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--246
+\T1/ptm/m/n/10 (+20) se-da-tion and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--246
+\T1/ptm/m/n/10 (+20) hemo-dy-namic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--246
+\T1/ptm/m/n/10 (+20) pa-ram-e-ter
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--246
+\T1/ptm/m/n/10 (+20) man-age-ment
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--246
+\T1/ptm/m/n/10 (+20) is pro-posed
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--246
+\T1/ptm/m/n/10 (+20) us-ing the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--246
+\T1/ptm/m/n/10 (+20) reg-u-la-tion of
+ []
+
+
+Underfull \hbox (badness 2261) in paragraph at lines 238--246
+\T1/ptm/m/n/10 (+20) the anes-thetic
+ []
+
+
+Underfull \hbox (badness 2503) in paragraph at lines 238--246
+\T1/ptm/b/n/10 2) \T1/ptm/m/n/10 (+20) Sim-u-la-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--246
+\T1/ptm/m/n/10 (+20) re-sults us-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--246
+\T1/ptm/m/n/10 (+20) 30 pa-tient
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--246
+\T1/ptm/m/n/10 (+20) mod-els with
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--246
+\T1/ptm/m/n/10 (+20) vary-ing phar-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--246
+\T1/ptm/m/n/10 (+20) ma-coki-netic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--246
+\T1/ptm/m/n/10 (+20) and pharma-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--246
+\T1/ptm/m/n/10 (+20) codynamic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--246
+\T1/ptm/m/n/10 (+20) pa-ram-e-ters
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--246
+\T1/ptm/m/n/10 (+20) show that
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--246
+\T1/ptm/m/n/10 (+20) the pro-posed
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--246
+\T1/ptm/m/n/10 (+20) RL con-trol
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--246
+\T1/ptm/m/n/10 (+20) strat-egy is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--246
+\T1/ptm/m/n/10 (+20) promis-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--246
+\T1/ptm/m/n/10 (+20) in de-sign-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--246
+\T1/ptm/m/n/10 (+20) closed-loop
+ []
+
+
+Underfull \hbox (badness 6220) in paragraph at lines 238--246
+\T1/ptm/m/n/10 (+20) ICU se-da-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--246
+\T1/ptm/m/n/10 (+20) to reg-u-late
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--246
+\T1/ptm/m/n/10 (+20) se-da-tion and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--246
+\T1/ptm/m/n/10 (+20) hemo-dy-namic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--246
+\T1/ptm/m/n/10 (+20) mul-ta-ne-ously.
+ []
+
+
+Underfull \hbox (badness 2005) in paragraph at lines 238--246
+\T1/ptm/m/n/10 (+20) the RL-based,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--246
+\T1/ptm/m/n/10 (+20) closed-loop
+ []
+
+
+Underfull \hbox (badness 2753) in paragraph at lines 238--246
+\T1/ptm/m/n/10 (+20) con-trol is ro-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--249
+[]|\T1/ptm/b/n/10 1) \T1/ptm/m/n/10 (+20) Dis-crete
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--249
+\T1/ptm/m/n/10 (+20) State and
+ []
+
+
+Underfull \hbox (badness 5592) in paragraph at lines 247--249
+\T1/ptm/m/n/10 (+20) Ac-tion Space
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--249
+\T1/ptm/b/n/10 2) \T1/ptm/m/n/10 (+20) Too less
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--249
+\T1/ptm/m/n/10 (+20) num-ber of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--249
+\T1/ptm/m/n/10 (+20) ex-per-i-ment,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--249
+\T1/ptm/m/n/10 (+20) so doubt-ful
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--249
+\T1/ptm/m/n/10 (+20) con-clu-sions
+ []
+
+
+Overfull \hbox (92.11496pt too wide) in paragraph at lines 218--254
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--263
+[]|\T1/ptm/m/n/10 (+20) Algo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--263
+[]|\T1/ptm/m/n/10 (+20) MDP
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--263
+[]|\T1/ptm/m/n/10 (+20) Conclusions/
+ []
+
+
+Underfull \hbox (badness 1062) in paragraph at lines 263--264
+[]|\T1/ptm/m/n/10 (+20) Limitations &
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--265
+[]|[]\T1/ptm/m/n/10 (+20) Zhao
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--265
+\T1/ptm/m/n/10 (+20) et al.[]
+ []
+
+
+Overfull \hbox (2.85199pt too wide) in paragraph at lines 265--266
+[]|\T1/ptm/m/n/10 (-20) Treating
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--266
+\T1/ptm/m/n/10 (+20) Non-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--266
+\T1/ptm/m/n/10 (+20) Small
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--266
+\T1/ptm/m/n/10 (+20) Cell
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--266
+\T1/ptm/m/n/10 (+20) Lung
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--266
+\T1/ptm/m/n/10 (+20) Can-cer
+ []
+
+
+Overfull \hbox (7.78186pt too wide) in paragraph at lines 265--266
+\T1/ptm/m/n/10 (-20) (NSCLC)| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--268
+[]|\T1/ptm/m/n/10 (+20) Q-
+ []
+
+
+Overfull \hbox (2.11418pt too wide) in paragraph at lines 267--268
+\T1/ptm/m/n/10 (-20) learning
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--268
+\T1/ptm/m/n/10 (+20) with
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--268
+\T1/ptm/m/n/10 (+20) SVR
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--268
+\T1/ptm/m/n/10 (+20) used
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--268
+\T1/ptm/m/n/10 (+20) for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--268
+\T1/ptm/m/n/10 (+20) func-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--268
+\T1/ptm/m/n/10 (+20) tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--268
+\T1/ptm/m/n/10 (+18) ap-prox-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--268
+\T1/ptm/m/n/10 (+20) i-ma-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--268
+\T1/ptm/m/n/10 (+20) tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--268
+\T1/ptm/m/n/10 (+20) (on-
+ []
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 269--271
+[]|\T1/ptm/b/n/10 1) \T1/ptm/m/n/10 (+20) Dis-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--271
+\T1/ptm/m/n/10 (+20) crete
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--271
+\T1/ptm/m/n/10 (+20) State
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--271
+\T1/ptm/m/n/10 (+20) Space
+ []
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 269--271
+\T1/ptm/b/n/10 2) \T1/ptm/m/n/10 (+20) Dis-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--271
+\T1/ptm/m/n/10 (+20) crete
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--271
+\T1/ptm/m/n/10 (+20) Ac-tion
+ []
+
+
+Underfull \hbox (badness 1838) in paragraph at lines 272--277
+[]|\T1/ptm/b/n/10 1) \T1/ptm/m/n/10 (+20) This work
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--277
+\T1/ptm/m/n/10 (+20) presents an
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--277
+\T1/ptm/m/n/10 (+20) adap-tive re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--277
+\T1/ptm/m/n/10 (+20) in-force-ment
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--277
+\T1/ptm/m/n/10 (+20) learn-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--277
+\T1/ptm/m/n/10 (+20) ap-proach
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--277
+\T1/ptm/m/n/10 (+20) to dis-cover
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--277
+\T1/ptm/m/n/10 (+20) op-ti-mal in-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--277
+\T1/ptm/m/n/10 (+20) di-vid-u-al-ized
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--277
+\T1/ptm/m/n/10 (+20) treat-ment
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--277
+\T1/ptm/m/n/10 (+20) reg-i-mens for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--277
+\T1/ptm/m/n/10 (+20) pa-tients with
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--277
+\T1/ptm/m/n/10 (+20) ad-vanced
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--277
+\T1/ptm/m/n/10 (+20) NSCLC. \T1/ptm/b/n/10 2)
+ []
+
+
+Underfull \hbox (badness 8170) in paragraph at lines 272--277
+\T1/ptm/m/n/10 (+20) Q-learning is
+ []
+
+
+Underfull \hbox (badness 1874) in paragraph at lines 272--277
+\T1/ptm/m/n/10 (+20) used to learn
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--277
+\T1/ptm/m/n/10 (+20) an op-ti-mal
+ []
+
+
+Underfull \hbox (badness 2512) in paragraph at lines 272--277
+\T1/ptm/m/n/10 (+20) reg-i-men from
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--277
+\T1/ptm/m/n/10 (+20) pa-tient data
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--277
+\T1/ptm/m/n/10 (+20) the clin-i-cal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--277
+\T1/ptm/m/n/10 (+20) re-in-force-ment
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 278--279
+\T1/ptm/m/n/10 (+20) a ran-dom-iza-tion of
+ []
+
+
+Underfull \hbox (badness 8189) in paragraph at lines 278--279
+\T1/ptm/m/n/10 (+20) pa-tients among the
+ []
+
+
+Underfull \hbox (badness 1484) in paragraph at lines 278--279
+\T1/ptm/m/n/10 (+20) first and second-line
+ []
+
+
+Underfull \hbox (badness 6961) in paragraph at lines 278--279
+\T1/ptm/m/n/10 (+20) treat-ments, as well
+ []
+
+
+Underfull \hbox (badness 2772) in paragraph at lines 278--279
+\T1/ptm/m/n/10 (+20) as ran-dom-iza-tion of
+ []
+
+
+Underfull \hbox (badness 1424) in paragraph at lines 278--279
+\T1/ptm/m/n/10 (+20) second-line ini-ti-a-tion
+ []
+
+
+Underfull \hbox (badness 3138) in paragraph at lines 278--279
+\T1/ptm/m/n/10 (+20) time. This de-sign
+ []
+
+
+Underfull \hbox (badness 7925) in paragraph at lines 278--279
+\T1/ptm/m/n/10 (+20) Next, re-in-force-ment
+ []
+
+
+Underfull \hbox (badness 6859) in paragraph at lines 278--279
+\T1/ptm/m/n/10 (+20) to fit non-lin-ear Q-
+ []
+
+
+Underfull \hbox (badness 5091) in paragraph at lines 278--279
+\T1/ptm/m/n/10 (+20) be-fore sec-ond line).
+ []
+
+
+Underfull \hbox (badness 4441) in paragraph at lines 278--279
+\T1/ptm/m/n/10 (+20) This is re-quired to
+ []
+
+
+Underfull \hbox (badness 4416) in paragraph at lines 278--279
+\T1/ptm/m/n/10 (+20) han-dle the com-plex
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 278--279
+\T1/ptm/m/n/10 (+20) in treat-ment across
+ []
+
+
+Underfull \hbox (badness 1189) in paragraph at lines 278--279
+\T1/ptm/m/n/10 (+20) sec-ond, con-fir-ma-tory
+ []
+
+
+Underfull \hbox (badness 3240) in paragraph at lines 278--279
+\T1/ptm/m/n/10 (+20) val-i-date the op-ti-mal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 280--281
+[]|\T1/ptm/b/n/10 1) \T1/ptm/m/n/10 (+20) They be-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 280--281
+\T1/ptm/m/n/10 (+20) lieve that
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 280--281
+\T1/ptm/m/n/10 (+20) Q-functions
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 280--281
+\T1/ptm/m/n/10 (+20) in clin-i-cal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 280--281
+\T1/ptm/m/n/10 (+20) ap-pli-ca-tions
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 280--281
+\T1/ptm/m/n/10 (+20) will be too
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 280--281
+\T1/ptm/m/n/10 (+20) com-plex for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 280--281
+\T1/ptm/m/n/10 (+20) para-metric
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 280--281
+\T1/ptm/m/n/10 (+20) re-gres-sion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 280--281
+\T1/ptm/m/n/10 (+20) parametric
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 280--281
+\T1/ptm/m/n/10 (+20) and non-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 280--281
+\T1/ptm/m/n/10 (+20) parametric
+ []
+
+
+Underfull \hbox (badness 2452) in paragraph at lines 280--281
+\T1/ptm/m/n/10 (+20) re-gres-sion ap-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 282--284
+\T1/ptm/m/n/10 (+20) a con-fi-dence
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 282--284
+\T1/ptm/m/n/10 (+20) set for the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 282--284
+\T1/ptm/m/n/10 (+20) Q-functions
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 282--284
+\T1/ptm/b/n/10 2) \T1/ptm/m/n/10 (+20) How to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 282--284
+\T1/ptm/m/n/10 (+20) de-ter-mine an
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 282--284
+\T1/ptm/m/n/10 (+20) ap-pro-pri-ate
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 282--284
+\T1/ptm/m/n/10 (+20) sam-ple size
+ []
+
+
+Underfull \hbox (badness 2310) in paragraph at lines 282--284
+\T1/ptm/m/n/10 (+20) for a clin-i-cal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 282--284
+\T1/ptm/m/n/10 (+20) re-in-force-ment
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 282--284
+\T1/ptm/m/n/10 (+20) ob-tain treat-
+ []
+
+
+Underfull \hbox (badness 1655) in paragraph at lines 282--284
+\T1/ptm/m/n/10 (+20) ment reg-i-men
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 282--284
+\T1/ptm/m/n/10 (+20) that is very
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 282--284
+\T1/ptm/m/n/10 (+20) close to the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 282--284
+\T1/ptm/m/n/10 (+20) true op-ti-mal
+ []
+
+
+Overfull \hbox (92.11496pt too wide) in paragraph at lines 261--289
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 298--298
+[]|\T1/ptm/m/n/10 (+20) Algo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 298--298
+[]|\T1/ptm/m/n/10 (+20) MDP
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 298--298
+[]|\T1/ptm/m/n/10 (+20) Conclusions/
+ []
+
+
+Overfull \hbox (9.7052pt too wide) in paragraph at lines 300--300
+[]|[]\T1/ptm/m/n/10 (-20) Escandell-
+ []
+
+
+Overfull \hbox (3.75085pt too wide) in paragraph at lines 300--300
+\T1/ptm/m/n/10 (-20) Montero
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 300--300
+\T1/ptm/m/n/10 (+20) et al.[]
+ []
+
+
+Overfull \hbox (1.02643pt too wide) in paragraph at lines 300--301
+[]|\T1/ptm/m/n/10 (-20) Anemia
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 300--301
+\T1/ptm/m/n/10 (+20) treat-
+ []
+
+
+Overfull \hbox (10.25406pt too wide) in paragraph at lines 300--301
+\T1/ptm/m/n/10 (-20) Hemodial-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 300--301
+\T1/ptm/m/n/10 (+20) y-sis
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 300--301
+\T1/ptm/m/n/10 (+20) pa-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
+[]|\T1/ptm/m/n/10 (+20) Fitted
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
+\T1/ptm/m/n/10 (+20) Q-
+ []
+
+
+Overfull \hbox (3.20183pt too wide) in paragraph at lines 302--303
+\T1/ptm/m/n/10 (-20) Iteration
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
+\T1/ptm/m/n/10 (+20) al-go-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
+\T1/ptm/m/n/10 (+20) rithm
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
+\T1/ptm/m/n/10 (+20) with
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
+\T1/ptm/m/n/10 (+20) Ex-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
+\T1/ptm/m/n/10 (-7) tremely
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
+\T1/ptm/m/n/10 (+20) Ran-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
+\T1/ptm/m/n/10 (+20) dom-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
+\T1/ptm/m/n/10 (+20) ized
+ []
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 304--306
+[]|\T1/ptm/b/n/10 1) \T1/ptm/m/n/10 (+20) Dis-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--306
+\T1/ptm/m/n/10 (+20) crete
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--306
+\T1/ptm/m/n/10 (+20) State
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--306
+\T1/ptm/m/n/10 (+20) Space
+ []
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 304--306
+\T1/ptm/b/n/10 2) \T1/ptm/m/n/10 (+20) Dis-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--306
+\T1/ptm/m/n/10 (+20) crete
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--306
+\T1/ptm/m/n/10 (+20) Ac-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 307--315
+\T1/ptm/m/n/10 (+20) ol-ogy pro-
+ []
+
+
+Underfull \hbox (badness 2293) in paragraph at lines 307--315
+\T1/ptm/m/n/10 (+20) posed in this
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 307--315
+\T1/ptm/m/n/10 (+20) al-go-rithm fit-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 307--315
+\T1/ptm/m/n/10 (+20) to learn a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 307--315
+\T1/ptm/m/n/10 (+20) ad-min-is-tra-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 307--315
+\T1/ptm/m/n/10 (+20) from a set
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 307--315
+\T1/ptm/m/n/10 (+20) of med-i-cal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 307--315
+\T1/ptm/m/n/10 (+20) fea-tures em-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 307--315
+\T1/ptm/m/n/10 (+20) ployed to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 307--315
+\T1/ptm/m/n/10 (+20) de-fine the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 307--315
+\T1/ptm/m/n/10 (+20) MDP model
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 307--315
+\T1/ptm/m/n/10 (+20) are ex-tracted
+ []
+
+
+Underfull \hbox (badness 5446) in paragraph at lines 307--315
+\T1/ptm/m/n/10 (+20) in part from
+ []
+
+
+Underfull \hbox (badness 1226) in paragraph at lines 307--315
+\T1/ptm/m/n/10 (+20) the lab-o-ra-tory
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 307--315
+\T1/ptm/m/n/10 (+20) tests and in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 307--315
+\T1/ptm/m/n/10 (+20) part from a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 307--315
+\T1/ptm/m/n/10 (+20) clus-ter-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 307--315
+\T1/ptm/m/n/10 (+20) pro-ce-dure of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 307--315
+\T1/ptm/m/n/10 (+20) the pa-tient's
+ []
+
+
+Underfull \hbox (badness 3199) in paragraph at lines 307--315
+\T1/ptm/m/n/10 (+20) the method-ol-
+ []
+
+
+Underfull \hbox (badness 2635) in paragraph at lines 307--315
+\T1/ptm/m/n/10 (+20) ogy, a se-ries
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 307--315
+\T1/ptm/m/n/10 (+20) com-pu-ta-tional
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 307--315
+\T1/ptm/m/n/10 (+20) model that
+ []
+
+
+Underfull \hbox (badness 8132) in paragraph at lines 307--315
+\T1/ptm/m/n/10 (+20) sim-u-lates the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 307--315
+\T1/ptm/m/n/10 (+20) per-for-mance
+ []
+
+
+Underfull \hbox (badness 6252) in paragraph at lines 307--315
+\T1/ptm/m/n/10 (+20) has been as-
+ []
+
+
+Underfull \hbox (badness 4569) in paragraph at lines 307--315
+\T1/ptm/m/n/10 (+20) the al-go-rithm
+ []
+
+
+Underfull \hbox (badness 1502) in paragraph at lines 307--315
+\T1/ptm/m/n/10 (+20) to-col of dose
+ []
+
+
+Underfull \hbox (badness 1975) in paragraph at lines 316--318
+[]|\T1/ptm/b/n/10 1) \T1/ptm/m/n/10 (+20) The Gaus-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 316--318
+\T1/ptm/m/n/10 (+20) sian RBF
+ []
+
+
+Underfull \hbox (badness 6510) in paragraph at lines 316--318
+\T1/ptm/m/n/10 (+20) net-work with
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 316--318
+\T1/ptm/m/n/10 (+20) em-ployed to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 316--318
+\T1/ptm/m/n/10 (+20) ap-prox-i-mate
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 316--318
+\T1/ptm/m/n/10 (+20) This re-quires
+ []
+
+
+Underfull \hbox (badness 6173) in paragraph at lines 316--318
+\T1/ptm/m/n/10 (+20) the def-i-ni-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 316--318
+\T1/ptm/m/n/10 (+20) of Gaus-sian
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 316--318
+\T1/ptm/m/n/10 (+20) func-tions,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 316--318
+\T1/ptm/m/n/10 (+20) their cen-ters
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 316--318
+\T1/ptm/m/n/10 (+20) and stan-dard
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 316--318
+\T1/ptm/m/n/10 (+20) de-vi-a-tions.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 316--318
+\T1/ptm/m/n/10 (+20) This pro-cess
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 316--318
+\T1/ptm/m/n/10 (+20) typ-i-cally re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 316--318
+\T1/ptm/m/n/10 (+20) quires trial
+ []
+
+
+Underfull \hbox (badness 2913) in paragraph at lines 316--318
+\T1/ptm/m/n/10 (+20) and er-ror ex-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 316--318
+\T1/ptm/m/n/10 (+20) per-i-men-ta-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 316--318
+\T1/ptm/m/n/10 (+20) with var-i-ous
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--327
+[]|\T1/ptm/b/n/10 1) \T1/ptm/m/n/10 (+20) In this
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--327
+\T1/ptm/m/n/10 (+20) pa-per, a re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--327
+\T1/ptm/m/n/10 (+20) in-force-ment
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--327
+\T1/ptm/m/n/10 (+19) learning-based
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--327
+\T1/ptm/m/n/10 (+20) ap-proach for
+ []
+
+
+Underfull \hbox (badness 1418) in paragraph at lines 319--327
+\T1/ptm/m/n/10 (+20) the si-mul-ta-ne-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--327
+\T1/ptm/m/n/10 (+20) se-da-tion and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--327
+\T1/ptm/m/n/10 (+20) hemo-dy-namic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--327
+\T1/ptm/m/n/10 (+20) pa-ram-e-ter
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--327
+\T1/ptm/m/n/10 (+20) man-age-ment
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--327
+\T1/ptm/m/n/10 (+20) is pro-posed
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--327
+\T1/ptm/m/n/10 (+20) us-ing the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--327
+\T1/ptm/m/n/10 (+20) reg-u-la-tion of
+ []
+
+
+Underfull \hbox (badness 2261) in paragraph at lines 319--327
+\T1/ptm/m/n/10 (+20) the anes-thetic
+ []
+
+
+Underfull \hbox (badness 2503) in paragraph at lines 319--327
+\T1/ptm/b/n/10 2) \T1/ptm/m/n/10 (+20) Sim-u-la-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--327
+\T1/ptm/m/n/10 (+20) re-sults us-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--327
+\T1/ptm/m/n/10 (+20) 30 pa-tient
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--327
+\T1/ptm/m/n/10 (+20) mod-els with
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--327
+\T1/ptm/m/n/10 (+20) vary-ing phar-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--327
+\T1/ptm/m/n/10 (+20) ma-coki-netic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--327
+\T1/ptm/m/n/10 (+20) and pharma-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--327
+\T1/ptm/m/n/10 (+20) codynamic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--327
+\T1/ptm/m/n/10 (+20) pa-ram-e-ters
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--327
+\T1/ptm/m/n/10 (+20) show that
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--327
+\T1/ptm/m/n/10 (+20) the pro-posed
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--327
+\T1/ptm/m/n/10 (+20) RL con-trol
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--327
+\T1/ptm/m/n/10 (+20) strat-egy is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--327
+\T1/ptm/m/n/10 (+20) promis-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--327
+\T1/ptm/m/n/10 (+20) in de-sign-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--327
+\T1/ptm/m/n/10 (+20) closed-loop
+ []
+
+
+Underfull \hbox (badness 6220) in paragraph at lines 319--327
+\T1/ptm/m/n/10 (+20) ICU se-da-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--327
+\T1/ptm/m/n/10 (+20) to reg-u-late
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--327
+\T1/ptm/m/n/10 (+20) se-da-tion and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--327
+\T1/ptm/m/n/10 (+20) hemo-dy-namic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--327
+\T1/ptm/m/n/10 (+20) mul-ta-ne-ously.
+ []
+
+
+Underfull \hbox (badness 2005) in paragraph at lines 319--327
+\T1/ptm/m/n/10 (+20) the RL-based,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--327
+\T1/ptm/m/n/10 (+20) closed-loop
+ []
+
+
+Underfull \hbox (badness 2753) in paragraph at lines 319--327
+\T1/ptm/m/n/10 (+20) con-trol is ro-
+ []
+
+
+Overfull \hbox (92.11496pt too wide) in paragraph at lines 296--335
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 345--345
+[]|\T1/ptm/m/n/10 (+20) Algo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 345--345
+[]|\T1/ptm/m/n/10 (+20) MDP
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 345--345
+[]|\T1/ptm/m/n/10 (+20) Conclusions/
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 347--347
+[]|[]\T1/ptm/m/n/10 (+20) Guez
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 347--347
+\T1/ptm/m/n/10 (+20) et al.[]
+ []
+
+
+Overfull \hbox (4.29958pt too wide) in paragraph at lines 347--348
+[]|\T1/ptm/m/n/10 (-20) Epilepsy| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 349--350
+[]|\T1/ptm/m/n/10 (+20) Fitted-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 349--350
+\T1/ptm/m/n/10 (+20) Q
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 349--350
+\T1/ptm/m/n/10 (+20) It-er-a-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 349--350
+\T1/ptm/m/n/10 (+20) tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 349--350
+\T1/ptm/m/n/10 (+20) (on-
+ []
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 351--353
+[]|\T1/ptm/b/n/10 1) \T1/ptm/m/n/10 (+20) Dis-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 351--353
+\T1/ptm/m/n/10 (+20) crete
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 351--353
+\T1/ptm/m/n/10 (+20) State
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 351--353
+\T1/ptm/m/n/10 (+20) Space
+ []
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 351--353
+\T1/ptm/b/n/10 2) \T1/ptm/m/n/10 (+20) Dis-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 351--353
+\T1/ptm/m/n/10 (+20) crete
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 351--353
+\T1/ptm/m/n/10 (+20) Ac-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 354--360
+\T1/ptm/m/n/10 (+20) ex-am-ines
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 354--360
+\T1/ptm/m/n/10 (+20) the prob-lem
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 354--360
+\T1/ptm/m/n/10 (+20) of ap-ply-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 354--360
+\T1/ptm/m/n/10 (+20) re-in-force-ment
+ []
+
+
+Underfull \hbox (badness 4518) in paragraph at lines 354--360
+\T1/ptm/m/n/10 (+20) learn-ing tech-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 354--360
+\T1/ptm/m/n/10 (+20) nol-ogy to
+ []
+
+
+Underfull \hbox (badness 4492) in paragraph at lines 354--360
+\T1/ptm/m/n/10 (+20) op-ti-mize con-
+ []
+
+
+Underfull \hbox (badness 3601) in paragraph at lines 354--360
+\T1/ptm/m/n/10 (+20) trol strate-gies
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 354--360
+\T1/ptm/m/n/10 (+20) elec-tri-cal
+ []
+
+
+Underfull \hbox (badness 1442) in paragraph at lines 354--360
+\T1/ptm/m/n/10 (+20) stim-u-la-tion in
+ []
+
+
+Underfull \hbox (badness 8170) in paragraph at lines 354--360
+\T1/ptm/m/n/10 (+20) the treat-ment
+ []
+
+
+Underfull \hbox (badness 7963) in paragraph at lines 354--360
+\T1/ptm/m/n/10 (+20) In this case,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 354--360
+\T1/ptm/m/n/10 (+20) amounts of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 354--360
+\T1/ptm/m/n/10 (+20) pa-tient data
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 354--360
+\T1/ptm/m/n/10 (+20) is ex-tremely
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 354--360
+\T1/ptm/m/n/10 (+20) ex-pen-sive
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 354--360
+\T1/ptm/m/n/10 (+20) and in-va-sive.
+ []
+
+
+Underfull \hbox (badness 4673) in paragraph at lines 354--360
+\T1/ptm/m/n/10 (+20) use of batch
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 354--360
+\T1/ptm/m/n/10 (+20) re-in-force-ment
+ []
+
+
+Underfull \hbox (badness 4518) in paragraph at lines 354--360
+\T1/ptm/m/n/10 (+20) learn-ing tech-
+ []
+
+
+Underfull \hbox (badness 1867) in paragraph at lines 354--360
+\T1/ptm/m/n/10 (+20) from in vitro
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 354--360
+\T1/ptm/m/n/10 (+20) stud-ies of
+ []
+
+
+Underfull \hbox (badness 3471) in paragraph at lines 361--366
+[]|\T1/ptm/b/n/10 1) \T1/ptm/m/n/10 (+20) In-for-mally,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--366
+\T1/ptm/m/n/10 (+20) the learn-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--366
+\T1/ptm/m/n/10 (+20) prob-lem can
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--366
+\T1/ptm/m/n/10 (+20) some in-for-
+ []
+
+
+Underfull \hbox (badness 8132) in paragraph at lines 361--366
+\T1/ptm/m/n/10 (+20) ma-tion about
+ []
+
+
+Underfull \hbox (badness 3965) in paragraph at lines 361--366
+\T1/ptm/m/n/10 (+20) to the sig-nal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--366
+\T1/ptm/m/n/10 (+20) pre-vi-ously
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--366
+\T1/ptm/m/n/10 (+20) to min-i-mize
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--366
+\T1/ptm/m/n/10 (+20) seizures now
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--366
+\T1/ptm/m/n/10 (+20) and in the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--366
+\T1/ptm/m/n/10 (+20) fu-ture. \T1/ptm/b/n/10 2)
+ []
+
+
+Underfull \hbox (badness 5077) in paragraph at lines 361--366
+\T1/ptm/m/n/10 (+20) The fit-ted Q
+ []
+
+
+Underfull \hbox (badness 2197) in paragraph at lines 361--366
+\T1/ptm/m/n/10 (+20) it-er-a-tion al-go-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--366
+\T1/ptm/m/n/10 (+20) a su-per-vised
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--366
+\T1/ptm/m/n/10 (+20) re-gres-sion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--366
+\T1/ptm/m/n/10 (+20) al-go-rithm to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--366
+\T1/ptm/m/n/10 (+20) learn the Q-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--366
+\T1/ptm/m/n/10 (+20) Ran-dom-ized
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 367--372
+[]|\T1/ptm/b/n/10 1) \T1/ptm/m/n/10 (+20) Their re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 367--372
+\T1/ptm/m/n/10 (+20) sults show
+ []
+
+
+Underfull \hbox (badness 1496) in paragraph at lines 367--372
+\T1/ptm/m/n/10 (+20) that by us-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 367--372
+\T1/ptm/m/n/10 (+20) re-in-force-ment
+ []
+
+
+Underfull \hbox (badness 1342) in paragraph at lines 367--372
+\T1/ptm/m/n/10 (+20) learn-ing, they
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 367--372
+\T1/ptm/m/n/10 (+20) are able to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 367--372
+\T1/ptm/m/n/10 (+20) re-duce the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 367--372
+\T1/ptm/m/n/10 (+20) in-ci-dence of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 367--372
+\T1/ptm/m/n/10 (+20) seizures by
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 367--372
+\T1/ptm/m/n/10 (+20) 25%, com-
+ []
+
+
+Underfull \hbox (badness 6300) in paragraph at lines 367--372
+\T1/ptm/m/n/10 (+20) pared to the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 367--372
+\T1/ptm/m/n/10 (+20) cur-rent best
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 367--372
+\T1/ptm/m/n/10 (+20) stim-u-la-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 367--372
+\T1/ptm/m/n/10 (+20) strate-gies
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 367--372
+\T1/ptm/m/n/10 (+20) in the neu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 367--372
+\T1/ptm/m/n/10 (+20) ro-science
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 367--372
+\T1/ptm/m/n/10 (+20) 60% com-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 367--372
+\T1/ptm/m/n/10 (+20) there is no
+ []
+
+
+Underfull \hbox (badness 8000) in paragraph at lines 373--380
+\T1/ptm/m/n/10 (+20) Ac-tion Space is a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--380
+\T1/ptm/m/n/10 (+20) draw-back \T1/ptm/b/n/10 2) \T1/ptm/m/n/10 (+20) Some
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--380
+\T1/ptm/m/n/10 (+20) of the im-por-tant
+ []
+
+
+Underfull \hbox (badness 1484) in paragraph at lines 373--380
+\T1/ptm/m/n/10 (+20) ques-tions and fu-ture
+ []
+
+
+Underfull \hbox (badness 6808) in paragraph at lines 373--380
+\T1/ptm/m/n/10 (+20) di-rec-tions noted by
+ []
+
+
+Underfull \hbox (badness 2772) in paragraph at lines 373--380
+\T1/ptm/m/n/10 (+20) them are men-tioned
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--380
+\T1/ptm/m/n/10 (+20) here:- How should
+ []
+
+
+Underfull \hbox (badness 8151) in paragraph at lines 373--380
+\T1/ptm/m/n/10 (+20) we quan-tify per-for-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--380
+\T1/ptm/m/n/10 (+20) mance of adap-tive
+ []
+
+
+Underfull \hbox (badness 1264) in paragraph at lines 373--380
+\T1/ptm/m/n/10 (+20) can learn from very
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--380
+\T1/ptm/m/n/10 (+20) lit-tle train-ing data?
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--380
+\T1/ptm/m/n/10 (+20) ex-plo-ration poli-cies,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--380
+\T1/ptm/m/n/10 (+20) poli-cies, be-tween
+ []
+
+
+Overfull \hbox (92.11496pt too wide) in paragraph at lines 343--385
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 394--394
+[]|\T1/ptm/m/n/10 (+20) Algo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 394--394
+[]|\T1/ptm/m/n/10 (+20) MDP
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 394--394
+[]|\T1/ptm/m/n/10 (+20) Conclusions/
+ []
+
+
+Underfull \hbox (badness 1062) in paragraph at lines 394--395
+[]|\T1/ptm/m/n/10 (+20) Limitations &
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 396--396
+[]|[]\T1/ptm/m/n/10 (+19) Nemati
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 396--396
+\T1/ptm/m/n/10 (+20) et al.[]
+ []
+
+
+Overfull \hbox (1.56548pt too wide) in paragraph at lines 396--397
+[]|\T1/ptm/m/n/10 (-20) Heparin
+ []
+
+
+Overfull \hbox (27.85025pt too wide) in paragraph at lines 398--400
+[]|\T1/ptm/m/n/10 (-20) Discriminative
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 398--400
+\T1/ptm/m/n/10 (+19) Hid-den
+ []
+
+
+Overfull \hbox (0.52667pt too wide) in paragraph at lines 398--400
+\T1/ptm/m/n/10 (-20) Markov
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 398--400
+\T1/ptm/m/n/10 (+20) Model
+ []
+
+
+Overfull \hbox (7.10205pt too wide) in paragraph at lines 398--400
+\T1/ptm/m/n/10 (-20) (DHMM)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 398--400
+\T1/ptm/m/n/10 (+20) for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 398--400
+\T1/ptm/m/n/10 (+20) state
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 398--400
+\T1/ptm/m/n/10 (+20) es-ti-ma-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 398--400
+\T1/ptm/m/n/10 (+20) tion.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 398--400
+\T1/ptm/m/n/10 (+20) Within
+ []
+
+
+Underfull \hbox (badness 3250) in paragraph at lines 398--400
+\T1/ptm/m/n/10 (+20) the fit-
+ []
+
+
+Underfull \hbox (badness 6188) in paragraph at lines 398--400
+\T1/ptm/m/n/10 (+20) ted Q-
+ []
+
+
+Overfull \hbox (2.11418pt too wide) in paragraph at lines 398--400
+\T1/ptm/m/n/10 (-20) learning
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 398--400
+\T1/ptm/m/n/10 (+20) frame-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 398--400
+\T1/ptm/m/n/10 (+20) work
+ []
+
+
+Underfull \hbox (badness 6188) in paragraph at lines 398--400
+\T1/ptm/m/n/10 (+20) the Q-
+ []
+
+
+Overfull \hbox (2.66304pt too wide) in paragraph at lines 398--400
+\T1/ptm/m/n/10 (-20) function
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 398--400
+\T1/ptm/m/n/10 (+20) is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 398--400
+\T1/ptm/m/n/10 (+20) rep-re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 398--400
+\T1/ptm/m/n/10 (+20) sented
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 398--400
+\T1/ptm/m/n/10 (+20) by a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 398--400
+\T1/ptm/m/n/10 (+20) neu-ral
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 398--400
+\T1/ptm/m/n/10 (+20) net-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 398--400
+\T1/ptm/m/n/10 (+20) work.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 398--400
+\T1/ptm/m/n/10 (+20) (off-
+ []
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 401--403
+[]|\T1/ptm/b/n/10 1) \T1/ptm/m/n/10 (+20) Dis-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 401--403
+\T1/ptm/m/n/10 (+20) crete
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 401--403
+\T1/ptm/m/n/10 (+20) State
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 401--403
+\T1/ptm/m/n/10 (+20) Space
+ []
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 401--403
+\T1/ptm/b/n/10 2) \T1/ptm/m/n/10 (+20) Dis-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 401--403
+\T1/ptm/m/n/10 (+20) crete
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 401--403
+\T1/ptm/m/n/10 (+20) Ac-tion
+ []
+
+
+Underfull \hbox (badness 1838) in paragraph at lines 404--406
+[]|\T1/ptm/b/n/10 1) \T1/ptm/m/n/10 (+20) This work
+ []
+
+
+Underfull \hbox (badness 4168) in paragraph at lines 404--406
+\T1/ptm/m/n/10 (+20) tries to in-fer
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 404--406
+\T1/ptm/m/n/10 (+20) an op-ti-mal
+ []
+
+
+Underfull \hbox (badness 8170) in paragraph at lines 404--406
+\T1/ptm/m/n/10 (+20) that ac-counts
+ []
+
+
+Underfull \hbox (badness 7238) in paragraph at lines 404--406
+\T1/ptm/m/n/10 (+20) for both the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 404--406
+\T1/ptm/m/n/10 (+20) ac-ti-vated
+ []
+
+
+Underfull \hbox (badness 4492) in paragraph at lines 404--406
+\T1/ptm/m/n/10 (+20) par-tial throm-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 404--406
+\T1/ptm/m/n/10 (+20) (aPTT) level,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 404--406
+\T1/ptm/m/n/10 (+20) and evolv-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 404--406
+\T1/ptm/m/n/10 (+20) ing pa-tient
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 404--406
+\T1/ptm/m/n/10 (+20) phys-i-o-log-i-cal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 404--406
+\T1/ptm/m/n/10 (+20) con-di-tion.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 404--406
+[]\T1/ptm/m/n/10 (+20) To ac-com-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 404--406
+\T1/ptm/m/n/10 (+20) plish this
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 404--406
+\T1/ptm/m/n/10 (+20) train a RL
+ []
+
+
+Underfull \hbox (badness 8132) in paragraph at lines 404--406
+\T1/ptm/m/n/10 (+20) model (us-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 404--406
+\T1/ptm/m/n/10 (+20) DHMM and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 404--406
+\T1/ptm/m/n/10 (+20) Neu-ral FQI)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 404--406
+\T1/ptm/m/n/10 (+20) us-ing the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 404--406
+\T1/ptm/m/n/10 (+20) sev-eral com-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 404--406
+\T1/ptm/m/n/10 (+20) mon clin-i-cal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 404--406
+\T1/ptm/m/n/10 (+20) mea-sure-ments
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 404--406
+\T1/ptm/m/n/10 (+20) within the
+ []
+
+
+Underfull \hbox (badness 3199) in paragraph at lines 404--406
+\T1/ptm/m/n/10 (+20) pa-tient's elec-
+ []
+
+
+Underfull \hbox (badness 2310) in paragraph at lines 407--418
+[]|\T1/ptm/b/n/10 1) \T1/ptm/m/n/10 (+20) The ob-jec-tive of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 407--418
+\T1/ptm/m/n/10 (+20) the RL med-i-ca-tion
+ []
+
+
+Underfull \hbox (badness 6893) in paragraph at lines 407--418
+\T1/ptm/m/n/10 (+20) dos-ing agent is to
+ []
+
+
+Underfull \hbox (badness 8189) in paragraph at lines 407--418
+\T1/ptm/m/n/10 (+20) that max-i-mizes the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 407--418
+\T1/ptm/m/n/10 (+20) over-all frac-tion of
+ []
+
+
+Underfull \hbox (badness 1033) in paragraph at lines 407--418
+\T1/ptm/m/n/10 (+20) time a given pa-tient
+ []
+
+
+Underfull \hbox (badness 4832) in paragraph at lines 407--418
+\T1/ptm/m/n/10 (+20) stays within his/her
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 407--418
+\T1/ptm/m/n/10 (+20) ther-a-peu-tic aPTT
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 407--418
+\T1/ptm/m/n/10 (+20) ac-tual phys-i-o-log-i-cal
+ []
+
+
+Underfull \hbox (badness 3668) in paragraph at lines 407--418
+\T1/ptm/m/n/10 (+20) ob-served, the agent
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 407--418
+\T1/ptm/m/n/10 (+20) its in-ter-ac-tion with
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 407--418
+\T1/ptm/m/n/10 (+20) mini-batches with
+ []
+
+
+Underfull \hbox (badness 1946) in paragraph at lines 407--418
+\T1/ptm/m/n/10 (+20) a few it-er-a-tions per
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 407--418
+\T1/ptm/m/n/10 (+20) tum term^^Vyielded
+ []
+
+
+Underfull \hbox (badness 3826) in paragraph at lines 407--418
+\T1/ptm/m/n/10 (+20) im-proved gen-er-al-iza-
+ []
+
+
+Underfull \hbox (badness 2088) in paragraph at lines 407--418
+\T1/ptm/m/n/10 (+20) sig-nif-i-cant speed up.
+ []
+
+
+Underfull \hbox (badness 6675) in paragraph at lines 407--418
+\T1/ptm/b/n/10 4) \T1/ptm/m/n/10 (+20) Hyper-parameters
+ []
+
+
+Underfull \hbox (badness 2970) in paragraph at lines 407--418
+\T1/ptm/m/n/10 (+20) of the DHMM and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 407--418
+\T1/ptm/m/n/10 (+20) the neu-ral net-work
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--432
+[]|\T1/ptm/b/n/10 1) \T1/ptm/m/n/10 (+20) The RL
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--432
+\T1/ptm/m/n/10 (+20) agent's rec-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--432
+\T1/ptm/m/n/10 (+20) om-men-da-tion
+ []
+
+
+Underfull \hbox (badness 5504) in paragraph at lines 419--432
+\T1/ptm/m/n/10 (+20) starts slightly
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--432
+\T1/ptm/m/n/10 (+20) above the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--432
+\T1/ptm/m/n/10 (+20) pop-u-la-tion
+ []
+
+
+Underfull \hbox (badness 1184) in paragraph at lines 419--432
+\T1/ptm/m/n/10 (+20) arin and then
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--432
+\T1/ptm/m/n/10 (+20) con-verges to
+ []
+
+
+Underfull \hbox (badness 7540) in paragraph at lines 419--432
+\T1/ptm/m/n/10 (+20) mean, which
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--432
+\T1/ptm/m/n/10 (+20) is likely to
+ []
+
+
+Underfull \hbox (badness 2245) in paragraph at lines 419--432
+\T1/ptm/m/n/10 (+20) bring pa-tients
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--432
+\T1/ptm/m/n/10 (+20) within their
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--432
+\T1/ptm/m/n/10 (+20) ther-a-peu-tic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--432
+\T1/ptm/m/n/10 (+20) range more
+ []
+
+
+Underfull \hbox (badness 5133) in paragraph at lines 419--432
+\T1/ptm/m/n/10 (+20) quickly. \T1/ptm/b/n/10 2)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--432
+\T1/ptm/m/n/10 (+20) They fur-ther
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--432
+\T1/ptm/m/n/10 (+20) tested this
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--432
+\T1/ptm/m/n/10 (+20) hy-poth-e-sis,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--432
+\T1/ptm/m/n/10 (+20) ad-min-is-tered
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--432
+\T1/ptm/m/n/10 (+20) hep-arin tra-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--432
+\T1/ptm/m/n/10 (+20) jec-tory most
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--432
+\T1/ptm/m/n/10 (+20) closely fol-
+ []
+
+
+Underfull \hbox (badness 1371) in paragraph at lines 419--432
+\T1/ptm/m/n/10 (+20) agent's pol-icy
+ []
+
+
+Underfull \hbox (badness 3525) in paragraph at lines 419--432
+\T1/ptm/m/n/10 (+20) age ex-pect a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--432
+\T1/ptm/m/n/10 (+20) stay within
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 433--437
+[]|\T1/ptm/b/n/10 1) \T1/ptm/m/n/10 (+20) Whether
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 433--437
+\T1/ptm/m/n/10 (+20) we ob-served
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 433--437
+\T1/ptm/m/n/10 (+20) were from
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 433--437
+\T1/ptm/m/n/10 (+20) in-ten-tional
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 433--437
+\T1/ptm/m/n/10 (+20) ac-tions on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 433--437
+\T1/ptm/m/n/10 (+20) the part of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 433--437
+\T1/ptm/m/n/10 (+20) the clin-i-cian,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 433--437
+\T1/ptm/m/n/10 (+20) mis-takes, or
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 433--437
+\T1/ptm/m/n/10 (+20) sim-ply due
+ []
+
+
+Underfull \hbox (badness 3375) in paragraph at lines 433--437
+\T1/ptm/m/n/10 (+20) to a lack of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 433--437
+\T1/ptm/m/n/10 (+20) ad-her-ence
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 433--437
+\T1/ptm/m/n/10 (+20) to hos-pi-tal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 433--437
+\T1/ptm/m/n/10 (+20) be-yond our
+ []
+
+
+Underfull \hbox (badness 5359) in paragraph at lines 433--437
+\T1/ptm/m/n/10 (+20) abil-ity to in-
+ []
+
+
+Underfull \hbox (badness 1325) in paragraph at lines 433--437
+\T1/ptm/m/n/10 (+20) ves-ti-gate with
+ []
+
+
+Underfull \hbox (badness 1184) in paragraph at lines 433--437
+\T1/ptm/m/n/10 (+20) the dataset at
+ []
+
+
+Underfull \hbox (badness 4819) in paragraph at lines 433--437
+\T1/ptm/m/n/10 (+20) hand. This
+ []
+
+
+Underfull \hbox (badness 1867) in paragraph at lines 433--437
+\T1/ptm/m/n/10 (+20) points at one
+ []
+
+
+Underfull \hbox (badness 4168) in paragraph at lines 433--437
+\T1/ptm/m/n/10 (+20) of the ma-jor
+ []
+
+
+Underfull \hbox (badness 6236) in paragraph at lines 433--437
+\T1/ptm/m/n/10 (+20) chal-lenges of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 433--437
+\T1/ptm/m/n/10 (+20) ret-ro-spec-tive
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 433--437
+\T1/ptm/m/n/10 (+20) anal-y-sis of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 433--437
+\T1/ptm/m/n/10 (+20) clin-i-cal big
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 433--437
+\T1/ptm/m/n/10 (+20) data; the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 433--437
+\T1/ptm/m/n/10 (+20) ra-tio-nal for
+ []
+
+
+Underfull \hbox (badness 1478) in paragraph at lines 433--437
+\T1/ptm/m/n/10 (+20) some fea-tures
+ []
+
+
+Underfull \hbox (badness 6741) in paragraph at lines 433--437
+\T1/ptm/m/n/10 (+20) im-por-tant for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 433--437
+\T1/ptm/m/n/10 (+20) un-der-stand-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 433--437
+\T1/ptm/m/n/10 (+20) be miss-ing,
+ []
+
+
+Overfull \hbox (92.11496pt too wide) in paragraph at lines 392--442
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 451--451
+[]|\T1/ptm/m/n/10 (+20) Algo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 451--451
+[]|\T1/ptm/m/n/10 (+20) MDP
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 451--451
+[]|\T1/ptm/m/n/10 (+20) Conclusions/
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 453--453
+[]|[]\T1/ptm/m/n/10 (+20) Ernst
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 453--453
+\T1/ptm/m/n/10 (+20) et al.[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 453--454
+\T1/ptm/m/n/10 (+20) fected
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 455--456
+[]|\T1/ptm/m/n/10 (+20) fitted
+ []
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 457--459
+[]|\T1/ptm/b/n/10 1) \T1/ptm/m/n/10 (+20) Dis-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 457--459
+\T1/ptm/m/n/10 (+20) crete
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 457--459
+\T1/ptm/m/n/10 (+20) State
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 457--459
+\T1/ptm/m/n/10 (+20) Space
+ []
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 457--459
+\T1/ptm/b/n/10 2) \T1/ptm/m/n/10 (+20) Dis-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 457--459
+\T1/ptm/m/n/10 (+20) crete
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 457--459
+\T1/ptm/m/n/10 (+20) Ac-tion
+ []
+
+
+Underfull \hbox (badness 1838) in paragraph at lines 460--462
+[]|\T1/ptm/b/n/10 1) \T1/ptm/m/n/10 (+20) This work
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 460--462
+\T1/ptm/m/n/10 (+20) com-putes
+ []
+
+
+Underfull \hbox (badness 3199) in paragraph at lines 460--462
+\T1/ptm/m/n/10 (+20) op-ti-mal struc-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 460--462
+\T1/ptm/m/n/10 (+20) in-ter-rup-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 460--462
+\T1/ptm/m/n/10 (+20) strate-gies for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 460--462
+\T1/ptm/m/n/10 (+20) HIV in-fected
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 460--462
+\T1/ptm/m/n/10 (+20) show that
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 460--462
+\T1/ptm/m/n/10 (+20) re-in-force-ment
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 460--462
+\T1/ptm/m/n/10 (+20) learn-ing may
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 460--462
+\T1/ptm/m/n/10 (+20) be use-ful
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 460--462
+\T1/ptm/m/n/10 (+20) to ex-tract
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 460--462
+\T1/ptm/m/n/10 (+20) such strate-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 460--462
+\T1/ptm/m/n/10 (+20) gies di-rectly
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 460--462
+\T1/ptm/m/n/10 (+20) from clin-i-cal
+ []
+
+
+Underfull \hbox (badness 4726) in paragraph at lines 460--462
+\T1/ptm/m/n/10 (+20) data, with-out
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 460--462
+\T1/ptm/m/n/10 (+20) the need of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 460--462
+\T1/ptm/m/n/10 (+20) an ac-cu-rate
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 460--462
+\T1/ptm/m/n/10 (+20) math-e-mat-i-cal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 460--462
+\T1/ptm/m/n/10 (+20) model of
+ []
+
+
+Package natbib Warning: Citation `geurts2006extremely' on page 5 undefined on i
+nput line 463.
+
+
+Underfull \hbox (badness 6825) in paragraph at lines 463--466
+[]|\T1/ptm/b/n/10 1) \T1/ptm/m/n/10 (+20) They use
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 463--466
+\T1/ptm/m/n/10 (+20) batch-mode
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 463--466
+\T1/ptm/m/n/10 (+20) su-per-vised
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 463--466
+\T1/ptm/m/n/10 (+20) learn-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 463--466
+\T1/ptm/m/n/10 (+20) Extra-Trees
+ []
+
+
+Underfull \hbox (badness 4254) in paragraph at lines 463--466
+\T1/ptm/m/n/10 (+20) al-go-rithm (\T1/ptm/b/n/10 ?\T1/ptm/m/n/10 (+20) ).
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 463--466
+\T1/ptm/m/n/10 (+20) the av-er-age
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 463--466
+\T1/ptm/m/n/10 (+20) pre-dic-tion of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 463--466
+\T1/ptm/m/n/10 (+20) an en-sem-ble
+ []
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 463--466
+\T1/ptm/m/n/10 (+20) of re-gres-sions
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 467--470
+\T1/ptm/m/n/10 (+20) were cho-sen
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 467--470
+\T1/ptm/m/n/10 (+20) for set-ting
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 467--470
+\T1/ptm/m/n/10 (+20) the hyper-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 467--470
+\T1/ptm/m/n/10 (+20) parameters.
+ []
+
+
+Underfull \hbox (badness 1748) in paragraph at lines 467--470
+\T1/ptm/m/n/10 (+20) But this is a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 467--470
+\T1/ptm/m/n/10 (+20) and can-not
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 467--470
+\T1/ptm/m/n/10 (+20) be used on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 467--470
+\T1/ptm/m/n/10 (+20) real pa-tients.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 467--470
+\T1/ptm/m/n/10 (+20) There is a
+ []
+
+
+Underfull \hbox (badness 6876) in paragraph at lines 467--470
+\T1/ptm/m/n/10 (+20) need to rely
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 467--470
+\T1/ptm/m/n/10 (+20) on med-i-cal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 467--470
+\T1/ptm/m/n/10 (+20) ex-per-tise in
+ []
+
+
+Underfull \hbox (badness 1184) in paragraph at lines 467--470
+\T1/ptm/m/n/10 (+20) or-der to state
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 467--470
+\T1/ptm/m/n/10 (+20) prop-erly the
+ []
+
+
+Underfull \hbox (badness 2237) in paragraph at lines 467--470
+\T1/ptm/m/n/10 (+20) prob-lem. \T1/ptm/b/n/10 2)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 467--470
+\T1/ptm/m/n/10 (+20) Also some
+ []
+
+
+Underfull \hbox (badness 8132) in paragraph at lines 467--470
+\T1/ptm/m/n/10 (+20) spe-cific tools
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 467--470
+\T1/ptm/m/n/10 (+20) amount of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 467--470
+\T1/ptm/m/n/10 (+20) re-in-force-ment
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 467--470
+\T1/ptm/m/n/10 (+20) learn-ing was
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 467--470
+\T1/ptm/m/n/10 (+20) a-pies which
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 467--470
+\T1/ptm/m/n/10 (+20) ap-pear as
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 467--470
+\T1/ptm/m/n/10 (+20) sim-u-lated
+ []
+
+
+Underfull \hbox (badness 1466) in paragraph at lines 471--479
+\T1/ptm/m/n/10 (+20) not nec-es-sar-ily com-
+ []
+
+
+Underfull \hbox (badness 1859) in paragraph at lines 471--479
+\T1/ptm/m/n/10 (+20) lead to un-cer-tain-ties
+ []
+
+
+Underfull \hbox (badness 1616) in paragraph at lines 471--479
+\T1/ptm/m/n/10 (+20) verse ef-fects of cor-
+ []
+
+
+Underfull \hbox (badness 2556) in paragraph at lines 471--479
+\T1/ptm/m/n/10 (+20) would be to de-sign
+ []
+
+
+Underfull \hbox (badness 1163) in paragraph at lines 471--479
+\T1/ptm/m/n/10 (+20) out highly cor-rupted
+ []
+
+
+Overfull \hbox (92.11496pt too wide) in paragraph at lines 449--484
+[][]
+ []
+
+) [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16] (./domain.tex)
+(./expt.tex [17
+
+]
+PGFPlots: reading {results/NewExpt/Expt1/comp_subsampled_QlearningA.txt}
+PGFPlots: reading {results/NewExpt/Expt1/comp_subsampled_SarsaA.txt}
+PGFPlots: reading {results/NewExpt/Expt1/comp_subsampled_QlearningL.txt}
+PGFPlots: reading {results/NewExpt/Expt1/comp_subsampled_SarsaL.txt}
+PGFPlots: reading {results/NewExpt/Expt2/comp_subsampled_QlearningA.txt}
+PGFPlots: reading {results/NewExpt/Expt2/comp_subsampled_SarsaA.txt}
+PGFPlots: reading {results/NewExpt/Expt2/comp_subsampled_QlearningL.txt}
+PGFPlots: reading {results/NewExpt/Expt2/comp_subsampled_SarsaL.txt}
+
+Overfull \hbox (43.89133pt too wide) in paragraph at lines 12--74
+ [] 
+ []
+
+
+Package natbib Warning: Citation `Efficient memory-based learning for robot con
+trol' on page 18 undefined on input line 82.
+
+
+Underfull \vbox (badness 2875) has occurred while \output is active []
+
+ [18]
+<img/mountain_car.jpeg, id=321, 481.8pt x 361.35pt>
+File: img/mountain_car.jpeg Graphic file (type jpg)
+
+<use img/mountain_car.jpeg>
+Package pdftex.def Info: img/mountain_car.jpeg used on input line 95.
+(pdftex.def)             Requested size: 168.63252pt x 126.4744pt.
+PGFPlots: reading {results/NewExpt/Expt3/comp_subsampled_Qlearning.txt}
+PGFPlots: reading {results/NewExpt/Expt3/comp_subsampled_Sarsa.txt}
+PGFPlots: reading {results/NewExpt/Expt3/comp_subsampled_Qlearning1.txt}
+PGFPlots: reading {results/NewExpt/Expt3/comp_subsampled_Sarsa1.txt}
+
+Overfull \hbox (3.08777pt too wide) in paragraph at lines 88--127
+ [] 
+ []
+
+) (./conclusion.tex) [19 <./img/mountain_car.jpeg>] (./review_paper.bbl
+[20
+
+])
+
+Package natbib Warning: There were undefined citations.
+
+[21]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 148.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 148.
+ (./review_paper.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 148.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 148.
+Package rerunfilecheck Info: File `review_paper.out' has not changed.
+(rerunfilecheck)             Checksum: A21C4EEB565DF3BB6B3F5ED2B2F0DC59;880.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 148.
+ ) 
+Here is how much of TeX's memory you used:
+ 36281 strings out of 492995
+ 840801 string characters out of 6132704
+ 1291739 words of memory out of 5000000
+ 38809 multiletter control sequences out of 15000+600000
+ 56879 words of font info for 219 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 69i,27n,107p,1171b,2537s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
+xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
+live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texl
+ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texliv
+e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/
+2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/20
+17/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2017/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2017/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2017/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2017/texmf-dist
+/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2017/texmf-
+dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2017/texmf-dist/fon
+ts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/u
+rw/times/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/u
+tmri8a.pfb>
+Output written on review_paper.pdf (21 pages, 882036 bytes).
+PDF statistics:
+ 422 PDF objects out of 1000 (max. 8388607)
+ 373 compressed objects within 4 object streams
+ 114 named destinations out of 1000 (max. 500000)
+ 31385 words of extra memory for PDF output out of 35830 (max. 10000000)
+

@@ -1,0 +1,65 @@
+Our contributions are mainly three fold. First, we propose two actively adaptive upper confidence bound (UCB) algorithms, referred to as UCB-Changepoint Detection (UCB-CPD) and Improved Changepoint Detector (ImpCPD), which try to locate the changepoints in the distribution and adapt accordingly to minimize the cumulative regret. Our algorithms try to minimize the regret by quickly detecting small enough changepoint gaps and within two changepoints they quickly find the optimal arm. UCB-CPD is an anytime algorithm whereas ImpCPD is the first phase-based algorithm for this setting. Secondly, we analyze these algorithms theoretically and prove the gap-dependent regret upper bound that consist of both the changepoint gaps ($\Delta^{chg}_{i,g}$) as well as the optimality gaps ($\Delta^{opt}_{i,g}$) for each changepoint $g=1,2,\ldots,G$, $i\in\A$. In stark contrast, DUCB, SWUCB, and CUSUM only consider the minimum optimality gap ($\Delta^{opt}_{\min}$) over the entire horizon to prove their regret bounds, which scales very badly with a large number of changepoints $G$ and large horizon $T$. This is shown in Table \ref{tab:comp-bds} in the special case when all the gaps are same such that for all $i\in\A,g\in\G$, $\Delta^{opt}_{i,g} = \Delta^{chg}_{i,g} =  \Delta^{opt}_{\min}$ and $H^{opt}_g = \frac{K}{(\Delta^{opt}_{\min})^2}$. We also prove the gap-dependent and independent lower bound for an optimal oracle policy $\pi^*$ as opposed to \citet{garivier2011upper} which proves a lower bound for a policy $\pi$ only when $G=2$. Thirdly, we prove gap-independent regret upper bound of $O( \sqrt{GT}\log T)$ for UCB-CPD and an order optimal regret upper bound of $O( \sqrt{GT})$ for ImpCPD algorithm with the additional knowledge of $T$. Hence, ImpCPD has the best theoretical guarantees than all the existing algorithms (see Table \ref{tab:comp-bds}). We show that UCB-CPD and ImpCPD perform very well across diverse piecewise i.i.d environments. In all the environments considered ImpCPD outperforms all the passively adaptive and actively adaptive algorithms except the oracle algorithms. Also, both our algorithms do not require the knowledge of the number of changepoints $G$ for optimal performance and UCB-CPD also does not require the knowledge of horizon $T$ as opposed to other algorithms (see Table \ref{tab:comp-bds}: column 5,6). A detailed table on gap-dependent bound can be found in Table \ref{tab:comp-GD-bds}, Appendix \ref{regret-table}.
+
+
+
+
+\begin{table}[!th]
+\begin{center}
+%\begin{tabular}{p{18em}p{18em}}
+\vspace*{-1.5em}
+%\begin{tabular}{p{30em}}
+\caption{Regret Bound of Algorithms}
+\label{tab:comp-bds}
+%\begin{tabular}{p{5em}p{3em}p{7em}}
+\begin{tabular}{|p{4 em}|p{1em}|p{10em}|p{7em}|p{1em}|p{1em}|}
+\toprule
+Algorithm  &   \hspace*{1mm}Type &Gap-Dependent & Gap-Independent & T & G \\
+\hline
+ImpCPD        & A &$O\big(\sum\limits_{g=1}^G\dfrac{\log({T}/{H^{opt}_{g}})}{(\Delta^{opt}_{\min})}\big)$ & $O\left(\sqrt{GT}\right)$ & Y & N\\
+UCB-CPD        & A &$O\big(\sum\limits_{g=1}^G\dfrac{\log T}{(\Delta^{opt}_{\min})}\big)$ & $O\left(\sqrt{GT}\log T\right)$ & N & N \\%\midrule
+CUSUM             & A &$O\big(\dfrac{G\log T}{(\Delta^{opt}_{\min})}\big)$& $O\left( \sqrt{GT\log \frac{T}{G}}\right)$ & Y & Y \\%\midrule
+EXP3.R         & A &N/A& $O\left( G\sqrt{T\log T}\right)$ & Y & N\\%\midrule
+DUCB        & P &$O\big(\dfrac{\sqrt{GT}\log T}{(\Delta^{opt}_{\min})}\big)$& $O\left(\sqrt{GT}\log T\right)$ & Y & Y\\
+SWUCB         & P &$O\big(\dfrac{\sqrt{GT\log T}}{(\Delta^{opt}_{\min})}\big)$& $O\left(\sqrt{GT\log T}\right)$ & Y & Y\\%\midrule
+Lower Bound         & O &$O\big(\sum\limits_{g=1}^G\dfrac{ \log ({T}/{(GH^{opt}_g)})}{\Delta^{opt}_{\min}}\big)$ & $\Omega\left( \sqrt{GT}\right)$ & Y & Y\\\midrule
+\end{tabular}
+\vspace*{-2em}
+%\end{tabular}
+\end{center}
+\end{table}    
+
+%\begin{table}[!th]
+%\begin{center}
+%%\begin{tabular}{p{18em}p{18em}}
+%\vspace*{-2em}
+%%\begin{tabular}{p{30em}}
+%\caption{Regret Bound of Algorithms}
+%\label{tab:comp-bds}
+%%\begin{tabular}{p{5em}p{3em}p{7em}}
+%\begin{tabular}{p{7 em}p{3em}p{7em}p{1em}p{1em}}
+%\toprule
+%Algorithm  &   \hspace*{1mm}Type & Gap-Independent & T & G \\
+%\hline
+%ImpCPD        & Active & $O\left(\sqrt{GT}\right)$ & Y & N\\
+%UCB-CPD        & Active  & $O\left(\sqrt{GT}\log T\right)$ & N & N \\%\midrule
+%CUSUM             & Active & $O\left( \sqrt{GT\log \frac{T}{G}}\right)$ & Y & Y \\%\midrule
+%EXP3.R         & Active & $O\left( G\sqrt{T\log T}\right)$ & Y & N\\%\midrule
+%DUCB        & Passive & $O\left(\sqrt{GT}\log T\right)$ & Y & Y\\
+%SWUCB         & Passive & $O\left(\sqrt{GT\log T}\right)$ & Y & Y\\%\midrule
+%Lower Bound         & N/A  & $\Omega\left( \sqrt{GT}\right)$ & Y & Y\\\midrule
+%\end{tabular}
+%\vspace*{-2em}
+%%\end{tabular}
+%\end{center}
+%\end{table}    
+
+%+ \dfrac{\alpha T}{K}
+%$O\big(WG + \dfrac{T\log W}{W \Delta_{\min}^2} \big)$
+%$O\big(WG + \dfrac{T\log W}{W \Delta_{\min}^2} \big)$
+    %Also, our proposed algorithms do not require any additional exploration parameters to be tuned. Further, both of the proposed algorithms are anytime algorithm which does not require horizon $T$ as input. 
+    
+    The rest of the paper is organized as follows. We first state the notations, definitions, and assumptions required for this setting in Section~\ref{psbandit:notations}. Then we define our problem statement in Section~\ref{psbandit:probDef} and in Section~\ref{psbandit:algorithm} we present the changepoint detection algorithms. Section~\ref{psbandit:results} contains our main result, remarks and discussions, Section~\ref{psbandit:expt} contains numerical simulations where we test our proposed algorithms and finally we conclude in Section \ref{psbandit:conclusion}. The proofs are provided in Appendices.
+    
+    %and further discussions 
+    %\ref{psbandit:appendix}
+    %and in section~\ref{psbandit:related} we discuss the related works in this setting. We elaborate our contributions in section~\ref{psbandit:contribution} and 
