@@ -28,6 +28,11 @@ Escandell{-}Montero, P., Chermisi, M., Mart{\'{\i}}nez{-}Mart{\'{\i}}nez,
   reinforcement learning.
 \newblock {\em Artificial Intelligence in Medicine}, 62(1):47--60.
 
+\bibitem[Geurts et~al., 2006]{geurts2006extremely}
+Geurts, P., Ernst, D., and Wehenkel, L. (2006).
+\newblock Extremely randomized trees.
+\newblock {\em Machine learning}, 63(1):3--42.
+
 \bibitem[Gottesman et~al., 2018]{DBLP:journals/corr/abs-1805-12298}
 Gottesman, O., Johansson, F.~D., Meier, J., Dent, J., Lee, D., Srinivasan, S.,
   Zhang, L., Ding, Y., Wihl, D., Peng, X., Yao, J., Lage, I., Mosch, C.,
@@ -53,6 +58,18 @@ Holt, R., Cockram, C., Flyvbjerg, A., and Goldstein, B. (2011).
 Jiang, N. and Li, L. (2015).
 \newblock Doubly robust off-policy evaluation for reinforcement learning.
 \newblock {\em CoRR}, abs/1511.03722.
+
+\bibitem[Kappor et~al., 2018]{kappor2018current}
+Kappor, R., Walters, S.~P., and Al-Aswad, L.~A. (2018).
+\newblock The current state of artificial intelligence in ophthalmology.
+\newblock {\em Survey of ophthalmology}.
+
+\bibitem[Mahmud et~al., 2018]{mahmud2018applications}
+Mahmud, M., Kaiser, M.~S., Hussain, A., and Vassanelli, S. (2018).
+\newblock Applications of deep learning and reinforcement learning to
+  biological data.
+\newblock {\em IEEE transactions on neural networks and learning systems},
+  29(6):2063--2079.
 
 \bibitem[Nemati et~al., 2016]{DBLP:conf/embc/NematiGC16}
 Nemati, S., Ghassemi, M.~M., and Clifford, G.~D. (2016).
