@@ -6,10 +6,17 @@
 \BOOKMARK [1][-]{section.4}{Notations, Assumptions and Definitions}{}% 6
 \BOOKMARK [1][-]{section.5}{MDP Formulation}{}% 7
 \BOOKMARK [1][-]{section.6}{Some Challenges of Medical Domain}{}% 8
-\BOOKMARK [1][-]{section.7}{Discussion on Algorithms}{}% 9
-\BOOKMARK [1][-]{section.8}{Related Papers}{}% 10
-\BOOKMARK [1][-]{section.9}{Some Toy Domains}{}% 11
-\BOOKMARK [1][-]{section.10}{Experiments}{}% 12
-\BOOKMARK [2][-]{subsection.10.1}{Toy Gridworld Domain}{section.10}% 13
-\BOOKMARK [2][-]{subsection.10.2}{Classic Domain}{section.10}% 14
-\BOOKMARK [1][-]{section.11}{Conclusions and Future Works}{}% 15
+\BOOKMARK [2][-]{subsection.6.1}{State Representation}{section.6}% 9
+\BOOKMARK [2][-]{subsection.6.2}{Reward function formulation}{section.6}% 10
+\BOOKMARK [2][-]{subsection.6.3}{Action formulation}{section.6}% 11
+\BOOKMARK [1][-]{section.7}{Discussion on Algorithms}{}% 12
+\BOOKMARK [2][-]{subsection.7.1}{Off-Policy algorithms}{section.7}% 13
+\BOOKMARK [2][-]{subsection.7.2}{Value Function based methods}{section.7}% 14
+\BOOKMARK [2][-]{subsection.7.3}{Policy Gradient Methods}{section.7}% 15
+\BOOKMARK [2][-]{subsection.7.4}{Using Linear and Non-Linear function approximation}{section.7}% 16
+\BOOKMARK [1][-]{section.8}{Related Papers}{}% 17
+\BOOKMARK [1][-]{section.9}{Some Toy Domains}{}% 18
+\BOOKMARK [1][-]{section.10}{Experiments}{}% 19
+\BOOKMARK [2][-]{subsection.10.1}{Toy Gridworld Domain}{section.10}% 20
+\BOOKMARK [2][-]{subsection.10.2}{Classic Domain}{section.10}% 21
+\BOOKMARK [1][-]{section.11}{Conclusions and Future Works}{}% 22

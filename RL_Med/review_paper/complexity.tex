@@ -1,13 +1,35 @@
-Some of the features that constitute the medical domain which are difficult to tackle are :-
+%Some of the features that constitute the medical domain which are difficult to tackle are :-
+%
+%\begin{enumerate}
+%\item 
+%\item 
+%\item Time constrained treatment, which requires that the effective treatment needs to be delivered within a fixed time otherwise it may result in death.
+%\item Time varying feedbacks, which may be encountered in sudden spikes in responses from the patient to the treatments administered.
+%\item Both the state space and the action space can to be continuous which provides additional challenge.
+%\item There maybe cases that the patients may not comply with the prescribed treatment which further complicates this sequential tasks.
+%\item Since the states are not directly observable, hence off-policy algorithms need to used in these settings. Now, it's is known fact in the RL community that these off-policy algorithms have high variance.
+%\item Sparse rewards and confounding variables in the real-life datasets are another set of challenges that needs to be handled carefully. If not handled with care these may result in the algorithm proposing bizarre policy which will not go well with the clinicians.
+%\item Finally, from the learning theory perspective, it needs to be emphasized that the actions proposed by the algorithm at each state needs to be safe and trustworthy to the physician. Deriving such confidence interval for action for off-policy algorithms in continuous state space (and possibly continuous action space) is another important challenge.
+%\end{enumerate}
 
-\begin{enumerate}
-\item The medical environment is a partially observed environment. At any instant the physician is only exposed to some of the factors influencing the health of the patient.
-\item The medical environment suffers from long horizon problem where you only receive the feedback at the end of the episode or the feedbacks are very sparse in nature.
-\item Time constrained treatment, which requires that the effective treatment needs to be delivered within a fixed time otherwise it may result in death.
-\item Time varying feedbacks, which may be encountered in sudden spikes in responses from the patient to the treatments administered.
-\item Both the state space and the action space can to be continuous which provides additional challenge.
-\item There maybe cases that the patients may not comply with the prescribed treatment which further complicates this sequential tasks.
-\item Since the states are not directly observable, hence off-policy algorithms need to used in these settings. Now, it's is known fact in the RL community that these off-policy algorithms have high variance.
-\item Sparse rewards and confounding variables in the real-life datasets are another set of challenges that needs to be handled carefully. If not handled with care these may result in the algorithm proposing bizarre policy which will not go well with the clinicians.
-\item Finally, from the learning theory perspective, it needs to be emphasized that the actions proposed by the algorithm at each state needs to be safe and trustworthy to the physician. Deriving such confidence interval for action for off-policy algorithms in continuous state space (and possibly continuous action space) is another important challenge.
-\end{enumerate}
+%\subsection{Challenges in  MDP formulation}
+
+Some of the challenges that rises out of the medical domain is to formulate the various aspects of the MDP. 
+\subsection{State Representation}
+
+%\textbf{1. State Representation:} 
+
+The medical environment is a partially observed environment. At any instant the physician is only exposed to some of the factors influencing the health of the patient. The state space can be discrete or continuous, depending on the disease that is being specified or how the model is defined. The continuous state space suffers from the same problems as in general reinforcement learning. Often the data about the patient history is inadequate or missing and hence cannot be represented effectively by all the features specified. There maybe cases when the patient itself does not comply with the prescribed treatment and so the interaction itself is missing.  Often treatments cannot be directly administered to the patient and the policy needs to be learnt from the patient's history of interaction. This results in the situation called off-policy policy evaluation algorithms that learns an effective treatment policy without actually running the treatment itself. Again these off-policy algorithms have high variance and in the continuous state space their performance suffers heavily.
+
+\subsection{Reward function formulation}
+%\textbf{2. Reward function formulation:} 
+
+The medical environment suffers from long horizon problem where the learner only receives the feedback at the end of the episode or the feedbacks are very sparse in nature. Often the reward function itself has to be defined based on the disease itself. This can be handled to some extent by the inverse RL \citep{DBLP:conf/icml/NgR00} approach where we learn the reward function itself from the patient history. parse rewards and confounding variables in the real-life datasets are another set of challenges that needs to be handled carefully. If not handled with care these may result in the algorithm proposing bizarre policy which will not go well with the clinicians.
+
+\subsection{Action formulation}
+
+%\textbf{Action formulation:} 
+
+As specified earlier, for a variety of reasons, the state-action interaction history may not exist at all. Handling such situation is a difficult situation. The action space can also be  continuous, for example dosing range \citep{bastani2014model} which is a difficult scenario to handle. The actions proposed by the algorithm at each state needs to be safe and trustworthy to the physician. Deriving such confidence interval for action for off-policy algorithms in continuous state space (and possibly continuous action space) is another important challenge.
+
+\textbf{3. Transition Probability formulation:} (Have to write)

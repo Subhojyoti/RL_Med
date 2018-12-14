@@ -1,5 +1,11 @@
 \begin{thebibliography}{}
 
+\bibitem[Bastani, 2014]{bastani2014model}
+Bastani, M. (2014).
+\newblock {\em Model-free intelligent diabetes management using machine
+  learning}.
+\newblock PhD thesis, University of Alberta.
+
 \bibitem[Bertsekas and Tsitsiklis, 1996]{bertsekas1996neuro}
 Bertsekas, D.~P. and Tsitsiklis, J.~N. (1996).
 \newblock Neuro-dynamic programming (optimization and neural computation

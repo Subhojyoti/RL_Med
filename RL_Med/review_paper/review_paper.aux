@@ -50,12 +50,14 @@
 \@writefile{toc}{\contentsline {section}{\numberline {5}MDP Formulation}{3}{section.5}}
 \newlabel{review:mdp}{{5}{3}{MDP Formulation}{section.5}{}}
 \newlabel{review:mdp@cref}{{[section][5][]5}{3}}
+\citation{DBLP:conf/icml/NgR00}
+\citation{bastani2014model}
 \@writefile{toc}{\contentsline {section}{\numberline {6}Some Challenges of Medical Domain}{4}{section.6}}
 \newlabel{review:complexity}{{6}{4}{Some Challenges of Medical Domain}{section.6}{}}
 \newlabel{review:complexity@cref}{{[section][6][]6}{4}}
-\@writefile{toc}{\contentsline {section}{\numberline {7}Discussion on Algorithms}{4}{section.7}}
-\newlabel{review:algorithm}{{7}{4}{Discussion on Algorithms}{section.7}{}}
-\newlabel{review:algorithm@cref}{{[section][7][]7}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}State Representation}{4}{subsection.6.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Reward function formulation}{4}{subsection.6.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Action formulation}{4}{subsection.6.3}}
 \citation{DBLP:books/lib/Rubinstein81}
 \citation{DBLP:conf/icml/PrecupSS00}
 \citation{DBLP:conf/icml/PrecupSS00}
@@ -80,6 +82,13 @@
 \citation{DBLP:conf/embc/NematiGC16}
 \citation{ernst2006clinical}
 \citation{geurts2006extremely}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Discussion on Algorithms}{5}{section.7}}
+\newlabel{review:algorithm}{{7}{5}{Discussion on Algorithms}{section.7}{}}
+\newlabel{review:algorithm@cref}{{[section][7][]7}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Off-Policy algorithms}{5}{subsection.7.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Value Function based methods}{5}{subsection.7.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Policy Gradient Methods}{5}{subsection.7.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.4}Using Linear and Non-Linear function approximation}{5}{subsection.7.4}}
 \@writefile{toc}{\contentsline {section}{\numberline {8}Related Papers}{5}{section.8}}
 \newlabel{review}{{8}{5}{Related Papers}{section.8}{}}
 \newlabel{review@cref}{{[section][8][]8}{5}}
@@ -167,29 +176,30 @@
 \newlabel{review:conc@cref}{{[section][11][]11}{20}}
 \bibstyle{apalike}
 \bibdata{biblio1}
-\bibcite{bertsekas1996neuro}{{1}{1996}{{Bertsekas and Tsitsiklis}}{{}}}
-\bibcite{DBLP:journals/jmlr/ErnstGW05}{{2}{2005}{{Ernst et~al.}}{{}}}
-\bibcite{ernst2006clinical}{{3}{2006}{{Ernst et~al.}}{{}}}
-\bibcite{DBLP:journals/artmed/Escandell-MonteroCMGBSMVSGM14}{{4}{2014}{{Escandell{-}Montero et~al.}}{{}}}
-\bibcite{geurts2006extremely}{{5}{2006}{{Geurts et~al.}}{{}}}
-\bibcite{DBLP:journals/corr/abs-1805-12298}{{6}{2018}{{Gottesman et~al.}}{{}}}
-\bibcite{DBLP:conf/aaai/GuezVAP08}{{7}{2008}{{Guez et~al.}}{{}}}
-\bibcite{holt2011textbook}{{8}{2011}{{Holt et~al.}}{{}}}
-\bibcite{DBLP:journals/corr/JiangL15}{{9}{2015}{{Jiang and Li}}{{}}}
-\bibcite{kappor2018current}{{10}{2018}{{Kappor et~al.}}{{}}}
-\bibcite{mahmud2018applications}{{11}{2018}{{Mahmud et~al.}}{{}}}
-\bibcite{DBLP:conf/embc/NematiGC16}{{12}{2016}{{Nemati et~al.}}{{}}}
-\bibcite{DBLP:conf/icml/NgR00}{{13}{2000}{{Ng and Russell}}{{}}}
-\bibcite{DBLP:conf/adprl/PadmanabhanMH14}{{14}{2014}{{Padmanabhan et~al.}}{{}}}
-\bibcite{DBLP:journals/corr/PrasadCCDE17}{{15}{2017}{{Prasad et~al.}}{{}}}
-\bibcite{DBLP:conf/icml/PrecupSS00}{{16}{2000}{{Precup et~al.}}{{}}}
-\bibcite{DBLP:journals/corr/abs-1807-01066}{{17}{2018}{{Raghu et~al.}}{{}}}
-\bibcite{DBLP:journals/corr/RaghuKCSG17}{{18}{2017}{{Raghu et~al.}}{{}}}
-\bibcite{DBLP:books/lib/Rubinstein81}{{19}{1981}{{Rubinstein}}{{}}}
-\bibcite{DBLP:journals/ml/SinghS96}{{20}{1996}{{Singh and Sutton}}{{}}}
-\bibcite{sutton1998reinforcement}{{21}{1998}{{Sutton and Barto}}{{}}}
-\bibcite{DBLP:conf/icml/ThomasB16}{{22}{2016}{{Thomas and Brunskill}}{{}}}
-\bibcite{DBLP:conf/nips/VapnikGS96}{{23}{1996}{{Vapnik et~al.}}{{}}}
-\bibcite{DBLP:journals/ml/WatkinsD92}{{24}{1992}{{Watkins and Dayan}}{{}}}
-\bibcite{DBLP:journals/corr/abs-1712-00654}{{25}{2017}{{Weng et~al.}}{{}}}
-\bibcite{zhao2011reinforcement}{{26}{2011}{{Zhao et~al.}}{{}}}
+\bibcite{bastani2014model}{{1}{2014}{{Bastani}}{{}}}
+\bibcite{bertsekas1996neuro}{{2}{1996}{{Bertsekas and Tsitsiklis}}{{}}}
+\bibcite{DBLP:journals/jmlr/ErnstGW05}{{3}{2005}{{Ernst et~al.}}{{}}}
+\bibcite{ernst2006clinical}{{4}{2006}{{Ernst et~al.}}{{}}}
+\bibcite{DBLP:journals/artmed/Escandell-MonteroCMGBSMVSGM14}{{5}{2014}{{Escandell{-}Montero et~al.}}{{}}}
+\bibcite{geurts2006extremely}{{6}{2006}{{Geurts et~al.}}{{}}}
+\bibcite{DBLP:journals/corr/abs-1805-12298}{{7}{2018}{{Gottesman et~al.}}{{}}}
+\bibcite{DBLP:conf/aaai/GuezVAP08}{{8}{2008}{{Guez et~al.}}{{}}}
+\bibcite{holt2011textbook}{{9}{2011}{{Holt et~al.}}{{}}}
+\bibcite{DBLP:journals/corr/JiangL15}{{10}{2015}{{Jiang and Li}}{{}}}
+\bibcite{kappor2018current}{{11}{2018}{{Kappor et~al.}}{{}}}
+\bibcite{mahmud2018applications}{{12}{2018}{{Mahmud et~al.}}{{}}}
+\bibcite{DBLP:conf/embc/NematiGC16}{{13}{2016}{{Nemati et~al.}}{{}}}
+\bibcite{DBLP:conf/icml/NgR00}{{14}{2000}{{Ng and Russell}}{{}}}
+\bibcite{DBLP:conf/adprl/PadmanabhanMH14}{{15}{2014}{{Padmanabhan et~al.}}{{}}}
+\bibcite{DBLP:journals/corr/PrasadCCDE17}{{16}{2017}{{Prasad et~al.}}{{}}}
+\bibcite{DBLP:conf/icml/PrecupSS00}{{17}{2000}{{Precup et~al.}}{{}}}
+\bibcite{DBLP:journals/corr/abs-1807-01066}{{18}{2018}{{Raghu et~al.}}{{}}}
+\bibcite{DBLP:journals/corr/RaghuKCSG17}{{19}{2017}{{Raghu et~al.}}{{}}}
+\bibcite{DBLP:books/lib/Rubinstein81}{{20}{1981}{{Rubinstein}}{{}}}
+\bibcite{DBLP:journals/ml/SinghS96}{{21}{1996}{{Singh and Sutton}}{{}}}
+\bibcite{sutton1998reinforcement}{{22}{1998}{{Sutton and Barto}}{{}}}
+\bibcite{DBLP:conf/icml/ThomasB16}{{23}{2016}{{Thomas and Brunskill}}{{}}}
+\bibcite{DBLP:conf/nips/VapnikGS96}{{24}{1996}{{Vapnik et~al.}}{{}}}
+\bibcite{DBLP:journals/ml/WatkinsD92}{{25}{1992}{{Watkins and Dayan}}{{}}}
+\bibcite{DBLP:journals/corr/abs-1712-00654}{{26}{2017}{{Weng et~al.}}{{}}}
+\bibcite{zhao2011reinforcement}{{27}{2011}{{Zhao et~al.}}{{}}}

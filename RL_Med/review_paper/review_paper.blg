@@ -1,7 +1,7 @@
 This is BibTeX, Version 0.99d (TeX Live 2017)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: review_paper.aux
-White space in argument---line 125 of file review_paper.aux
+White space in argument---line 130 of file review_paper.aux
  : \citation{Efficient
  :                     memory-based learning for robot control}
 I'm skipping whatever remains of this command
@@ -9,12 +9,12 @@ The style file: apalike.bst
 Database file #1: biblio1.bib
 A bad cross reference---entry "DBLP:conf/embc/NematiGC16"
 refers to entry "DBLP:conf/embc/2016", which doesn't exist
+A bad cross reference---entry "DBLP:conf/icml/NgR00"
+refers to entry "DBLP:conf/icml/2000", which doesn't exist
 A bad cross reference---entry "DBLP:conf/icml/PrecupSS00"
 refers to entry "DBLP:conf/icml/2000", which doesn't exist
 A bad cross reference---entry "DBLP:conf/icml/ThomasB16"
 refers to entry "DBLP:conf/icml/2016", which doesn't exist
-A bad cross reference---entry "DBLP:conf/icml/NgR00"
-refers to entry "DBLP:conf/icml/2000", which doesn't exist
 A bad cross reference---entry "DBLP:conf/adprl/PadmanabhanMH14"
 refers to entry "DBLP:conf/adprl/2014", which doesn't exist
 A bad cross reference---entry "DBLP:conf/nips/VapnikGS96"
@@ -27,45 +27,45 @@ Warning--I didn't find a database entry for "DBLP:conf/embc/2016"
 Warning--I didn't find a database entry for "DBLP:conf/icml/2016"
 Warning--I didn't find a database entry for "DBLP:conf/icml/2000"
 Warning--I didn't find a database entry for "DBLP:conf/nips/1996N"
-You've used 26 entries,
+You've used 27 entries,
             1935 wiz_defined-function locations,
-            647 strings with 10372 characters,
-and the built_in function-call counts, 12218 in all, are:
-= -- 1188
-> -- 617
-< -- 16
-+ -- 220
-- -- 216
-* -- 1026
-:= -- 2075
-add.period$ -- 80
-call.type$ -- 26
-change.case$ -- 235
-chr.to.int$ -- 26
-cite$ -- 26
-duplicate$ -- 463
-empty$ -- 783
-format.name$ -- 256
-if$ -- 2423
+            651 strings with 10489 characters,
+and the built_in function-call counts, 12481 in all, are:
+= -- 1215
+> -- 624
+< -- 17
++ -- 222
+- -- 218
+* -- 1044
+:= -- 2128
+add.period$ -- 83
+call.type$ -- 27
+change.case$ -- 240
+chr.to.int$ -- 27
+cite$ -- 27
+duplicate$ -- 475
+empty$ -- 800
+format.name$ -- 259
+if$ -- 2471
 int.to.chr$ -- 1
 int.to.str$ -- 0
 missing$ -- 29
-newline$ -- 133
-num.names$ -- 78
-pop$ -- 240
+newline$ -- 138
+num.names$ -- 81
+pop$ -- 244
 preamble$ -- 1
-purify$ -- 238
+purify$ -- 244
 quote$ -- 0
-skip$ -- 363
+skip$ -- 373
 stack$ -- 0
-substring$ -- 771
-swap$ -- 100
+substring$ -- 783
+swap$ -- 101
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 150
+type$ -- 156
 warning$ -- 0
-while$ -- 92
+while$ -- 94
 width$ -- 0
-write$ -- 338
+write$ -- 351
 (There were 8 error messages)
